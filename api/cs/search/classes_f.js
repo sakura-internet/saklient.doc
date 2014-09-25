@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['samelicenserequiredexception',['SameLicenseRequiredException',['../class_saklient_1_1_cloud_1_1_errors_1_1_same_license_required_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['script',['Script',['../class_saklient_1_1_cloud_1_1_resources_1_1_script.html',1,'Saklient::Cloud::Resources']]],
+  ['server',['Server',['../class_saklient_1_1_cloud_1_1_resources_1_1_server.html',1,'Saklient::Cloud::Resources']]],
+  ['servercouldnotstopexception',['ServerCouldNotStopException',['../class_saklient_1_1_cloud_1_1_errors_1_1_server_could_not_stop_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['serverinstance',['ServerInstance',['../class_saklient_1_1_cloud_1_1_resources_1_1_server_instance.html',1,'Saklient::Cloud::Resources']]],
+  ['serveriscleaningexception',['ServerIsCleaningException',['../class_saklient_1_1_cloud_1_1_errors_1_1_server_is_cleaning_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['serveroperationfailureexception',['ServerOperationFailureException',['../class_saklient_1_1_cloud_1_1_errors_1_1_server_operation_failure_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['serverplan',['ServerPlan',['../class_saklient_1_1_cloud_1_1_resources_1_1_server_plan.html',1,'Saklient::Cloud::Resources']]],
+  ['serverpowermustbedownexception',['ServerPowerMustBeDownException',['../class_saklient_1_1_cloud_1_1_errors_1_1_server_power_must_be_down_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['serverpowermustbeupexception',['ServerPowerMustBeUpException',['../class_saklient_1_1_cloud_1_1_errors_1_1_server_power_must_be_up_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['servicetemporarilyunavailableexception',['ServiceTemporarilyUnavailableException',['../class_saklient_1_1_cloud_1_1_errors_1_1_service_temporarily_unavailable_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['sizemismatchexception',['SizeMismatchException',['../class_saklient_1_1_cloud_1_1_errors_1_1_size_mismatch_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['snapshotinmigrationexception',['SnapshotInMigrationException',['../class_saklient_1_1_cloud_1_1_errors_1_1_snapshot_in_migration_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['stillcreatingexception',['StillCreatingException',['../class_saklient_1_1_cloud_1_1_errors_1_1_still_creating_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['storageabnormalexception',['StorageAbnormalException',['../class_saklient_1_1_cloud_1_1_errors_1_1_storage_abnormal_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['storageoperationfailureexception',['StorageOperationFailureException',['../class_saklient_1_1_cloud_1_1_errors_1_1_storage_operation_failure_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['switchhybridconnectedexception',['SwitchHybridConnectedException',['../class_saklient_1_1_cloud_1_1_errors_1_1_switch_hybrid_connected_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['swytch',['Swytch',['../class_saklient_1_1_cloud_1_1_resources_1_1_swytch.html',1,'Saklient::Cloud::Resources']]]
+];

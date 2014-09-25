@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['deletediskb4templateexception',['DeleteDiskB4TemplateException',['../class_saklient_1_1_cloud_1_1_errors_1_1_delete_disk_b4_template_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['deleteipv6netsfirstexception',['DeleteIpV6NetsFirstException',['../class_saklient_1_1_cloud_1_1_errors_1_1_delete_ip_v6_nets_first_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['deleteresb4accountexception',['DeleteResB4AccountException',['../class_saklient_1_1_cloud_1_1_errors_1_1_delete_res_b4_account_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['deleterouterb4switchexception',['DeleteRouterB4SwitchException',['../class_saklient_1_1_cloud_1_1_errors_1_1_delete_router_b4_switch_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['deletestaticroutefirstexception',['DeleteStaticRouteFirstException',['../class_saklient_1_1_cloud_1_1_errors_1_1_delete_static_route_first_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['disabledinsandboxexception',['DisabledInSandboxException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disabled_in_sandbox_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['disconnectb4deleteexception',['DisconnectB4DeleteException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disconnect_b4_delete_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['disconnectb4updateexception',['DisconnectB4UpdateException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disconnect_b4_update_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['disk',['Disk',['../class_saklient_1_1_cloud_1_1_resources_1_1_disk.html',1,'Saklient::Cloud::Resources']]],
+  ['diskconfig',['DiskConfig',['../class_saklient_1_1_cloud_1_1_resources_1_1_disk_config.html',1,'Saklient::Cloud::Resources']]],
+  ['diskconnectionlimitexception',['DiskConnectionLimitException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disk_connection_limit_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['diskiscopyingexception',['DiskIsCopyingException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disk_is_copying_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['diskisnotavailableexception',['DiskIsNotAvailableException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disk_is_not_available_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['disklicensemismatchexception',['DiskLicenseMismatchException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disk_license_mismatch_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['diskorssinmigrationexception',['DiskOrSsInMigrationException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disk_or_ss_in_migration_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['diskplan',['DiskPlan',['../class_saklient_1_1_cloud_1_1_resources_1_1_disk_plan.html',1,'Saklient::Cloud::Resources']]],
+  ['diskstockrunoutexception',['DiskStockRunOutException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disk_stock_run_out_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['dnsaaaarecordnotfoundexception',['DnsAaaaRecordNotFoundException',['../class_saklient_1_1_cloud_1_1_errors_1_1_dns_aaaa_record_not_found_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['dnsarecordnotfoundexception',['DnsARecordNotFoundException',['../class_saklient_1_1_cloud_1_1_errors_1_1_dns_a_record_not_found_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['dnsptrupdatefailureexception',['DnsPtrUpdateFailureException',['../class_saklient_1_1_cloud_1_1_errors_1_1_dns_ptr_update_failure_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['dontcreateinsandboxexception',['DontCreateInSandboxException',['../class_saklient_1_1_cloud_1_1_errors_1_1_dont_create_in_sandbox_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['duplicateaccountcodeexception',['DuplicateAccountCodeException',['../class_saklient_1_1_cloud_1_1_errors_1_1_duplicate_account_code_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['duplicateentryexception',['DuplicateEntryException',['../class_saklient_1_1_cloud_1_1_errors_1_1_duplicate_entry_exception.html',1,'Saklient::Cloud::Errors']]],
+  ['duplicateusercodeexception',['DuplicateUserCodeException',['../class_saklient_1_1_cloud_1_1_errors_1_1_duplicate_user_code_exception.html',1,'Saklient::Cloud::Errors']]]
+];
