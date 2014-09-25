@@ -62,9 +62,9 @@
 
 		<div class="jumbotron">
 			<div class="container">
-				<h1>saklient (β)</h1>
-				<p>An easy interface to control your resources on <strong>SAKURA Cloud</strong>.</p>
+				<h1>saklient</h1>
 				<p><a href="http://cloud.sakura.ad.jp/" target="_blank"><strong>さくらのクラウド</strong></a>上のリソースを簡単にコントロールするためのライブラリです。</p>
+				<p>An easy interface to control your resources on <strong>SAKURA Cloud</strong>.</p>
 			</div>
 		</div>
 
@@ -76,7 +76,7 @@
 				</div>
 				<div class="row" id="code-wrapper">
 					<div id="code-body">
-						<div class="code-each pull-left code-php"><h4><div class="pull-right"><a href="./api/php/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.php" target="_blank" class="btn btn-primary btn-xs">Github</a></div>PHP<div class="clearfix" /></h4><pre><code class="php">&lt;?php
+						<div class="code-each pull-left code-php"><h4><div class="pull-right"><a href="./files/saklient.php-examples.zip" class="btn btn-primary btn-xs">ZIP</a> <a href="./api/php/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://packagist.org/packages/sakura-internet/saklient" target="_blank" class="btn btn-primary btn-xs">Packagist</a> <a href="https://github.com/sakura-internet/saklient.php" target="_blank" class="btn btn-primary btn-xs">Github</a></div>PHP <small class="text-danger">(Beta)</small><div class="clearfix" /></h4><pre><code class="php">&lt;?php
 
 
 require_once 'vendor/autoload.php';
@@ -191,352 +191,7 @@ $disk-&gt;destroy();
 
 
 
-</code></pre></div><div class="code-each pull-left code-ruby"><h4><div class="pull-right"><a href="./api/ruby/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.rb" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Ruby<div class="clearfix" /></h4><pre><code class="ruby">#!/usr/bin/ruby
-
-
-
-require 'saklient/cloud/api'
-
-
-
-
-# settings
-token = $*[0]
-secret = $*[1]
-zone = $*[2]
-name = 'saklient demo'
-description = 'saklient demo'
-tag = 'saklient-test'
-cpu = 1
-mem = 2
-host_name = 'saklient-test'
-password = 'C8#mf92mp!*s'
-ssh_public_key = 'ssh-rsa AAAA...'
-
-# authorize
-api = Saklient::Cloud::API::
-       authorize(token, secret, zone)
-
-# search archives
-puts 'searching archives'
-archives = api.archive.
-  with_name_like('CentOS 6.5 64bit').
-  with_size_gib(20).
-  with_shared_scope.
-  limit(1).
-  find
-archive = archives[0]
-
-# search scripts
-puts 'searching scripts'
-scripts = api.script.
-  with_name_like('WordPress').
-  with_shared_scope.
-  limit(1).
-  find
-script = scripts[0]
-
-# create a disk
-puts 'creating a disk'
-disk = api.disk.create
-disk.name = name
-disk.description = description
-disk.tags = [tag]
-disk.plan = api.product.disk.ssd
-disk.source = archive
-disk.save
-
-# create a server
-puts 'creating a server'
-server = api.server.create
-server.name = name
-server.description = description
-server.tags = [tag]
-server.plan = api.product.server.
-               get_by_spec(cpu, mem)
-server.save
-
-# connect to shared segment
-puts 'connecting the server' +
-                  ' to shared segment'
-iface = server.add_iface
-iface.connect_to_shared_segment
-
-# wait disk copy
-puts 'waiting disk copy'
-disk.sleep_while_copying or
-                       abort 'failed'
-
-
-# connect the disk to the server
-puts 'connecting the disk'
-disk.connect_to(server)
-
-# config the disk
-diskconf = disk.createConfig
-diskconf.host_name = host_name
-diskconf.password = password
-diskconf.ssh_key = ssh_public_key
-diskconf.scripts.push(script)
-diskconf.write
-
-# boot
-puts 'booting the server'
-server.boot
-
-# stop
-sleep 3
-puts 'stopping the server'
-server.stop
-server.sleep_until_down or
-                       abort 'failed'
-
-
-# disconnect the disk from the server
-puts 'disconnecting the disk'
-disk.disconnect
-
-# delete the server
-puts 'deleting the server'
-server.destroy
-
-# delete the disk
-puts 'deleting the disk'
-disk.destroy
-
-
-
-</code></pre></div><div class="code-each pull-left code-python"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.python" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Python<div class="clearfix" /></h4><pre><code class="python">#!/usr/local/bin/python3
-
-import sys, time
-
-from saklient.cloud.api import API
-
-
-
-
-# settings
-token = sys.argv[1]
-secret = sys.argv[2]
-zone = sys.argv[3]
-name = 'saklient demo'
-description = 'saklient demo'
-tag = 'saklient-test'
-cpu = 1
-mem = 2
-host_name = 'saklient-test'
-password = 'C8#mf92mp!*s'
-ssh_public_key = 'ssh-rsa AAAA...'
-
-# authorize
-api = API.authorize(token,secret,zone)
-
-
-# search archives
-print('searching archives')
-archives = api.archive \
-  .with_name_like('CentOS 6.5 64bit') \
-  .with_size_gib(20) \
-  .with_shared_scope() \
-  .limit(1) \
-  .find()
-archive = archives[0]
-
-# search scripts
-print('searching scripts')
-scripts = api.script \
-  .with_name_like('WordPress') \
-  .with_shared_scope() \
-  .limit(1) \
-  .find()
-script = scripts[0]
-
-# create a disk
-print('creating a disk')
-disk = api.disk.create()
-disk.name = name
-disk.description = description
-disk.tags = [tag]
-disk.source = archive
-disk.plan = api.product.disk.ssd
-disk.save()
-
-# create a server
-print('creating a server')
-server = api.server.create()
-server.name = name
-server.description = description
-server.tags = [tag]
-server.plan = api.product.server \
-                 .get_by_spec(cpu, mem)
-server.save()
-
-# connect to shared segment
-print('connecting the server' +\
-                  ' to shared segment')
-iface = server.add_iface()
-iface.connect_to_shared_segment()
-
-# wait disk copy
-print('waiting disk copy')
-if not disk.sleep_while_copying():
-    raise Exception('failed')
-
-
-# connect the disk to the server
-print('connecting the disk')
-disk.connect_to(server)
-
-# config the disk
-diskconf = disk.create_config()
-diskconf.host_name = host_name
-diskconf.password = password
-diskconf.ssh_key = ssh_public_key
-diskconf.add_script = script
-diskconf.write()
-
-# boot
-print('booting the server')
-server.boot()
-
-# stop
-time.sleep(3)
-print('stopping the server')
-server.stop()
-if not server.sleep_until_down():
-    raise Exception('failed')
-
-
-# disconnect the disk from the server
-print('disconnecting the disk')
-disk.disconnect()
-
-# delete the server
-print('deleting the server')
-server.destroy()
-
-# delete the disk
-print('deleting the disk')
-disk.destroy()
-
-
-
-</code></pre></div><div class="code-each pull-left code-perl"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.perl" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Perl<div class="clearfix" /></h4><pre><code class="perl">#!/usr/bin/perl
-
-use strict;
-use warnings;
-use Saklient::Cloud::API;
-
-
-
-
-# settings
-my $token = $ARGV[0];
-my $secret = $ARGV[1];
-my $zone = $ARGV[2];
-my $name = 'saklient demo';
-my $description = 'saklient demo';
-my $tag = 'saklient-test';
-my $cpu = 1;
-my $mem = 2;
-my $host_name = 'saklient-test';
-my $password = 'C8#mf92mp!*s';
-my $ssh_public_key = 'ssh-rsa AAAA...';
-
-# authorize
-my $api=Saklient::Cloud::API::authorize
-              ($token, $secret, $zone);
-
-# search archives
-print &quot;searching archives\n&quot;;
-my $archives = $api-&gt;archive
-  -&gt;with_name_like('CentOS 6.5 64bit')
-  -&gt;with_size_gib(20)
-  -&gt;with_shared_scope
-  -&gt;limit(1)
-  -&gt;find;
-my $archive = $archives-&gt;[0];
-
-# search scripts
-print &quot;searching scripts\n&quot;;
-my $scripts = $api-&gt;script
-  -&gt;with_name_like('WordPress')
-  -&gt;with_shared_scope
-  -&gt;limit(1)
-  -&gt;find;
-my $script = $scripts-&gt;[0];
-
-# create a disk
-print &quot;creating a disk\n&quot;;
-my $disk = $api-&gt;disk-&gt;create
-  -&gt;name($name)
-  -&gt;description($description)
-  -&gt;tags([$tag])
-  -&gt;source($archive)
-  -&gt;plan($api-&gt;product-&gt;disk-&gt;ssd)
-  -&gt;save;
-
-# create a server
-print &quot;creating a server\n&quot;;
-my $server = $api-&gt;server-&gt;create
-  -&gt;name($name)
-  -&gt;description($description)
-  -&gt;tags([$tag])
-  -&gt;plan($api-&gt;product-&gt;server
-           -&gt;get_by_spec($cpu, $mem))
-  -&gt;save;
-
-# connect to shared segment
-print &quot;connecting the server&quot; .
-               &quot; to shared segment\n&quot;;
-my $iface = $server-&gt;add_iface;
-$iface-&gt;connect_to_shared_segment;
-
-# wait disk copy
-print &quot;waiting disk copy\n&quot;;
-$disk-&gt;sleep_while_copying
-                      or die 'failed';
-
-
-# connect the disk to the server
-print &quot;connecting the disk\n&quot;;
-$disk-&gt;connect_to($server);
-
-# config the disk
-$disk-&gt;create_config
-  -&gt;host_name($host_name)
-  -&gt;password($password)
-  -&gt;ssh_key($ssh_public_key)
-  -&gt;add_script($script)
-  -&gt;write;
-
-# boot
-print &quot;booting the server\n&quot;;
-$server-&gt;boot;
-
-# stop
-sleep 3;
-print &quot;stopping the server\n&quot;;
-$server-&gt;stop;
-$server-&gt;sleep_until_down
-                      or die 'failed';
-
-
-# disconnect the disk from the server
-print &quot;disconnecting the disk\n&quot;;
-$disk-&gt;disconnect;
-
-# delete the server
-print &quot;deleting the server\n&quot;;
-$server-&gt;destroy;
-
-# delete the disk
-print &quot;deleting the disk\n&quot;;
-$disk-&gt;destroy;
-
-
-
-</code></pre></div><div class="code-each pull-left code-cs"><h4><div class="pull-right"><a href="./api/cs/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.cs" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>C#<div class="clearfix" /></h4><pre><code class="cs">using System;
+</code></pre></div><div class="code-each pull-left code-cs"><h4><div class="pull-right"><a href="./files/saklient.cs-examples.zip" class="btn btn-primary btn-xs">ZIP</a> <a href="./api/cs/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://www.nuget.org/packages/Saklient/" target="_blank" class="btn btn-primary btn-xs">NuGet.org</a> <a href="https://github.com/sakura-internet/saklient.cs" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>C# <small class="text-danger">(Beta)</small><div class="clearfix" /></h4><pre><code class="cs">using System;
 using System.Collections.Generic;
 using System.Threading;
 using Saklient.Cloud;
@@ -651,7 +306,352 @@ class CreateServerExample {
   
  }
 }
-</code></pre></div><div class="code-each pull-left code-javascript"><h4><div class="pull-right"><a href="./node/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.node" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Node.js <small class="text-danger">(Experimental)</small><div class="clearfix" /></h4><pre><code class="javascript">
+</code></pre></div><div class="code-each pull-left code-ruby"><h4><div class="pull-right"><a href="./api/rb/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.rb" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Ruby <small class="text-danger">(Alpha)</small><div class="clearfix" /></h4><pre><code class="ruby">#!/usr/bin/ruby
+
+
+
+require 'saklient/cloud/api'
+
+
+
+
+# settings
+token = $*[0]
+secret = $*[1]
+zone = $*[2]
+name = 'saklient demo'
+description = 'saklient demo'
+tag = 'saklient-test'
+cpu = 1
+mem = 2
+host_name = 'saklient-test'
+password = 'C8#mf92mp!*s'
+ssh_public_key = 'ssh-rsa AAAA...'
+
+# authorize
+api = Saklient::Cloud::API::
+       authorize(token, secret, zone)
+
+# search archives
+puts 'searching archives'
+archives = api.archive.
+  with_name_like('CentOS 6.5 64bit').
+  with_size_gib(20).
+  with_shared_scope.
+  limit(1).
+  find
+archive = archives[0]
+
+# search scripts
+puts 'searching scripts'
+scripts = api.script.
+  with_name_like('WordPress').
+  with_shared_scope.
+  limit(1).
+  find
+script = scripts[0]
+
+# create a disk
+puts 'creating a disk'
+disk = api.disk.create
+disk.name = name
+disk.description = description
+disk.tags = [tag]
+disk.plan = api.product.disk.ssd
+disk.source = archive
+disk.save
+
+# create a server
+puts 'creating a server'
+server = api.server.create
+server.name = name
+server.description = description
+server.tags = [tag]
+server.plan = api.product.server.
+               get_by_spec(cpu, mem)
+server.save
+
+# connect to shared segment
+puts 'connecting the server' +
+                  ' to shared segment'
+iface = server.add_iface
+iface.connect_to_shared_segment
+
+# wait disk copy
+puts 'waiting disk copy'
+disk.sleep_while_copying or
+                       abort 'failed'
+
+
+# connect the disk to the server
+puts 'connecting the disk'
+disk.connect_to(server)
+
+# config the disk
+diskconf = disk.createConfig
+diskconf.host_name = host_name
+diskconf.password = password
+diskconf.ssh_key = ssh_public_key
+diskconf.scripts.push(script)
+diskconf.write
+
+# boot
+puts 'booting the server'
+server.boot
+
+# stop
+sleep 3
+puts 'stopping the server'
+server.stop
+server.sleep_until_down or
+                       abort 'failed'
+
+
+# disconnect the disk from the server
+puts 'disconnecting the disk'
+disk.disconnect
+
+# delete the server
+puts 'deleting the server'
+server.destroy
+
+# delete the disk
+puts 'deleting the disk'
+disk.destroy
+
+
+
+</code></pre></div><div class="code-each pull-left code-python"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.python" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Python <small class="text-danger">(Alpha)</small><div class="clearfix" /></h4><pre><code class="python">#!/usr/local/bin/python3
+
+import sys, time
+
+from saklient.cloud.api import API
+
+
+
+
+# settings
+token = sys.argv[1]
+secret = sys.argv[2]
+zone = sys.argv[3]
+name = 'saklient demo'
+description = 'saklient demo'
+tag = 'saklient-test'
+cpu = 1
+mem = 2
+host_name = 'saklient-test'
+password = 'C8#mf92mp!*s'
+ssh_public_key = 'ssh-rsa AAAA...'
+
+# authorize
+api = API.authorize(token,secret,zone)
+
+
+# search archives
+print('searching archives')
+archives = api.archive \
+  .with_name_like('CentOS 6.5 64bit') \
+  .with_size_gib(20) \
+  .with_shared_scope() \
+  .limit(1) \
+  .find()
+archive = archives[0]
+
+# search scripts
+print('searching scripts')
+scripts = api.script \
+  .with_name_like('WordPress') \
+  .with_shared_scope() \
+  .limit(1) \
+  .find()
+script = scripts[0]
+
+# create a disk
+print('creating a disk')
+disk = api.disk.create()
+disk.name = name
+disk.description = description
+disk.tags = [tag]
+disk.source = archive
+disk.plan = api.product.disk.ssd
+disk.save()
+
+# create a server
+print('creating a server')
+server = api.server.create()
+server.name = name
+server.description = description
+server.tags = [tag]
+server.plan = api.product.server \
+                 .get_by_spec(cpu, mem)
+server.save()
+
+# connect to shared segment
+print('connecting the server' +\
+                  ' to shared segment')
+iface = server.add_iface()
+iface.connect_to_shared_segment()
+
+# wait disk copy
+print('waiting disk copy')
+if not disk.sleep_while_copying():
+    raise Exception('failed')
+
+
+# connect the disk to the server
+print('connecting the disk')
+disk.connect_to(server)
+
+# config the disk
+diskconf = disk.create_config()
+diskconf.host_name = host_name
+diskconf.password = password
+diskconf.ssh_key = ssh_public_key
+diskconf.add_script = script
+diskconf.write()
+
+# boot
+print('booting the server')
+server.boot()
+
+# stop
+time.sleep(3)
+print('stopping the server')
+server.stop()
+if not server.sleep_until_down():
+    raise Exception('failed')
+
+
+# disconnect the disk from the server
+print('disconnecting the disk')
+disk.disconnect()
+
+# delete the server
+print('deleting the server')
+server.destroy()
+
+# delete the disk
+print('deleting the disk')
+disk.destroy()
+
+
+
+</code></pre></div><div class="code-each pull-left code-perl"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.perl" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Perl <small class="text-danger">(Alpha)</small><div class="clearfix" /></h4><pre><code class="perl">#!/usr/bin/perl
+
+use strict;
+use warnings;
+use Saklient::Cloud::API;
+
+
+
+
+# settings
+my $token = $ARGV[0];
+my $secret = $ARGV[1];
+my $zone = $ARGV[2];
+my $name = 'saklient demo';
+my $description = 'saklient demo';
+my $tag = 'saklient-test';
+my $cpu = 1;
+my $mem = 2;
+my $host_name = 'saklient-test';
+my $password = 'C8#mf92mp!*s';
+my $ssh_public_key = 'ssh-rsa AAAA...';
+
+# authorize
+my $api=Saklient::Cloud::API::authorize
+              ($token, $secret, $zone);
+
+# search archives
+print &quot;searching archives\n&quot;;
+my $archives = $api-&gt;archive
+  -&gt;with_name_like('CentOS 6.5 64bit')
+  -&gt;with_size_gib(20)
+  -&gt;with_shared_scope
+  -&gt;limit(1)
+  -&gt;find;
+my $archive = $archives-&gt;[0];
+
+# search scripts
+print &quot;searching scripts\n&quot;;
+my $scripts = $api-&gt;script
+  -&gt;with_name_like('WordPress')
+  -&gt;with_shared_scope
+  -&gt;limit(1)
+  -&gt;find;
+my $script = $scripts-&gt;[0];
+
+# create a disk
+print &quot;creating a disk\n&quot;;
+my $disk = $api-&gt;disk-&gt;create
+  -&gt;name($name)
+  -&gt;description($description)
+  -&gt;tags([$tag])
+  -&gt;source($archive)
+  -&gt;plan($api-&gt;product-&gt;disk-&gt;ssd)
+  -&gt;save;
+
+# create a server
+print &quot;creating a server\n&quot;;
+my $server = $api-&gt;server-&gt;create
+  -&gt;name($name)
+  -&gt;description($description)
+  -&gt;tags([$tag])
+  -&gt;plan($api-&gt;product-&gt;server
+           -&gt;get_by_spec($cpu, $mem))
+  -&gt;save;
+
+# connect to shared segment
+print &quot;connecting the server&quot; .
+               &quot; to shared segment\n&quot;;
+my $iface = $server-&gt;add_iface;
+$iface-&gt;connect_to_shared_segment;
+
+# wait disk copy
+print &quot;waiting disk copy\n&quot;;
+$disk-&gt;sleep_while_copying
+                      or die 'failed';
+
+
+# connect the disk to the server
+print &quot;connecting the disk\n&quot;;
+$disk-&gt;connect_to($server);
+
+# config the disk
+$disk-&gt;create_config
+  -&gt;host_name($host_name)
+  -&gt;password($password)
+  -&gt;ssh_key($ssh_public_key)
+  -&gt;add_script($script)
+  -&gt;write;
+
+# boot
+print &quot;booting the server\n&quot;;
+$server-&gt;boot;
+
+# stop
+sleep 3;
+print &quot;stopping the server\n&quot;;
+$server-&gt;stop;
+$server-&gt;sleep_until_down
+                      or die 'failed';
+
+
+# disconnect the disk from the server
+print &quot;disconnecting the disk\n&quot;;
+$disk-&gt;disconnect;
+
+# delete the server
+print &quot;deleting the server\n&quot;;
+$server-&gt;destroy;
+
+# delete the disk
+print &quot;deleting the disk\n&quot;;
+$disk-&gt;destroy;
+
+
+
+</code></pre></div><div class="code-each pull-left code-javascript"><h4><div class="pull-right"><a href="./api/node/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.node" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Node.js <small class="text-danger">(Experimental)</small><div class="clearfix" /></h4><pre><code class="javascript">
 
 
 var Fiber = require('fibers');
@@ -778,7 +778,7 @@ disk.destroy();
 				</div>
 				<div class="row" id="code-wrapper">
 					<div id="code-body">
-						<div class="code-each pull-left code-php"><h4><div class="pull-right"><a href="./api/php/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.php" target="_blank" class="btn btn-primary btn-xs">Github</a></div>PHP<div class="clearfix" /></h4><pre><code class="php">&lt;?php
+						<div class="code-each pull-left code-php"><h4><div class="pull-right"><a href="./files/saklient.php-examples.zip" class="btn btn-primary btn-xs">ZIP</a> <a href="./api/php/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://packagist.org/packages/sakura-internet/saklient" target="_blank" class="btn btn-primary btn-xs">Packagist</a> <a href="https://github.com/sakura-internet/saklient.php" target="_blank" class="btn btn-primary btn-xs">Github</a></div>PHP <small class="text-danger">(Beta)</small><div class="clearfix" /></h4><pre><code class="php">&lt;?php
 
 
 require_once 'vendor/autoload.php';
@@ -848,217 +848,7 @@ $archive-&gt;destroy();
 
 
 
-</code></pre></div><div class="code-each pull-left code-ruby"><h4><div class="pull-right"><a href="./api/ruby/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.rb" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Ruby<div class="clearfix" /></h4><pre><code class="ruby">#!/usr/bin/ruby
-
-
-
-require 'saklient/cloud/api'
-
-
-
-
-
-# settings
-token = $*[0]
-secret = $*[1]
-zone = $*[2]
-src_name = 'GitLab'
-
-# authorize
-api = Saklient::Cloud::API::
-        authorize(token, secret, zone)
-
-# search the source disk
-disks = api.disk.
-  withNameLike(src_name).
-  limit(1).
-  find()
-disk = disks[0]
-
-# copy the disk to a new archive
-puts 'copying the disk ' +
-                    'to a new archive'
-archive = api.archive.create
-archive.name = 'Copy:' + disk.name
-archive.source = disk
-archive.save
-archive.sleep_while_copying or
-                        abort 'failed'
-
-
-# get FTP information
-ftp = archive.open_ftp.ftp_info
-puts 'FTP information:'
-puts '  user: ' + ftp.user
-puts '  pass: ' + ftp.password
-puts '  host: ' + ftp.host_name
-
-# download the archive via FTPS
-puts 'downloading the archive'
-
-# ...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# delete the archive after download
-puts 'deleting the archive'
-archive.close_ftp
-archive.destroy
-
-
-
-</code></pre></div><div class="code-each pull-left code-python"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.python" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Python<div class="clearfix" /></h4><pre><code class="python">#!/usr/local/bin/python3
-
-import sys, time
-from ftplib import FTP_TLS
-from saklient.cloud.api import API
-
-
-
-
-
-# settings
-token = sys.argv[1]
-secret = sys.argv[2]
-zone = sys.argv[3]
-src_name = 'GitLab'
-
-# authorize
-api = API.authorize(token,secret,zone)
-
-
-# search the source disk
-disks = api.disk \
-  .with_name_like(src_name) \
-  .limit(1) \
-  .find()
-disk = disks[0]
-
-# copy the disk to a new archive
-print('copying the disk ' +\
-                    'to a new archive')
-archive = api.archive.create()
-archive.name = 'Copy:' + disk.name
-archive.source = disk
-archive.save()
-if not archive.sleep_while_copying():
-    raise Exception('failed')
-
-
-# get FTP information
-ftp = archive.open_ftp().ftp_info
-print('FTP information:')
-print('  user: %s' % ftp.user)
-print('  pass: %s' % ftp.password)
-print('  host: %s' % ftp.host_name)
-
-# download the archive via FTPS
-print('downloading the archive')
-ftps = FTP_TLS(ftp.host_name, \
-                ftp.user, ftp.password)
-ftps.prot_p()
-file = open('archive.img', 'wb')
-ftps.retrbinary('RETR archive.img', \
-                            file.write)
-file.close()
-ftps.close()
-
-
-
-
-
-
-
-
-# delete the archive after download
-print('deleting the archive')
-archive.close_ftp()
-archive.destroy()
-
-
-
-</code></pre></div><div class="code-each pull-left code-perl"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.perl" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Perl<div class="clearfix" /></h4><pre><code class="perl">#!/usr/bin/perl
-
-use strict;
-use warnings;
-use Saklient::Cloud::API;
-use Net::FTPSSL;
-
-
-
-
-# settings
-my $token = $ARGV[0];
-my $secret = $ARGV[1];
-my $zone = $ARGV[2];
-my $src_name = 'GitLab';
-
-# authorize
-my $api=Saklient::Cloud::API::authorize
-              ($token, $secret, $zone);
-
-# search the source disk
-my $disks = $api-&gt;disk
-  -&gt;with_name_like($src_name)
-  -&gt;limit(1)
-  -&gt;find;
-my $disk = $disks-&gt;[0];
-
-# copy the disk to a new archive
-print &quot;copying the disk &quot; .
-                  &quot;to a new archive\n&quot;;
-my $archive = $api-&gt;archive-&gt;create
-  -&gt;name('Copy:'.$disk-&gt;name)
-  -&gt;source($disk)
-  -&gt;save;
-$archive-&gt;sleep_while_copying
-                      or die('failed');
-
-
-# get FTP information
-my $ftp = $archive-&gt;open_ftp-&gt;ftp_info;
-print &quot;FTP information:\n&quot;;
-printf &quot;  user: %s\n&quot;, $ftp-&gt;user;
-printf &quot;  pass: %s\n&quot;, $ftp-&gt;password;
-printf &quot;  host: %s\n&quot;, $ftp-&gt;host_name;
-
-# download the archive via FTPS
-print &quot;downloading the archive\n&quot;;
-my $ftps = Net::FTPSSL
-                 -&gt;new($ftp-&gt;host_name)
-                      or die 'failure';
-$ftps-&gt;login($ftp-&gt;user,$ftp-&gt;password)
-            or die $ftps-&gt;last_message;
-$ftps-&gt;get('archive.img','archive.img')
-            or die $ftps-&gt;last_message;
-$ftps-&gt;quit;
-
-
-
-
-
-
-
-
-# delete the archive after download
-print &quot;deleting the archive\n&quot;;
-$archive-&gt;close_ftp;
-$archive-&gt;destroy;
-
-
-
-</code></pre></div><div class="code-each pull-left code-cs"><h4><div class="pull-right"><a href="./api/cs/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.cs" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>C#<div class="clearfix" /></h4><pre><code class="cs">using System;
+</code></pre></div><div class="code-each pull-left code-cs"><h4><div class="pull-right"><a href="./files/saklient.cs-examples.zip" class="btn btn-primary btn-xs">ZIP</a> <a href="./api/cs/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://www.nuget.org/packages/Saklient/" target="_blank" class="btn btn-primary btn-xs">NuGet.org</a> <a href="https://github.com/sakura-internet/saklient.cs" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>C# <small class="text-danger">(Beta)</small><div class="clearfix" /></h4><pre><code class="cs">using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
@@ -1128,7 +918,217 @@ class DownloadArchiveExample {
   
  }
 }
-</code></pre></div><div class="code-each pull-left code-javascript"><h4><div class="pull-right"><a href="./node/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.node" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Node.js <small class="text-danger">(Experimental)</small><div class="clearfix" /></h4><pre><code class="javascript">
+</code></pre></div><div class="code-each pull-left code-ruby"><h4><div class="pull-right"><a href="./api/rb/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.rb" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Ruby <small class="text-danger">(Alpha)</small><div class="clearfix" /></h4><pre><code class="ruby">#!/usr/bin/ruby
+
+
+
+require 'saklient/cloud/api'
+
+
+
+
+
+# settings
+token = $*[0]
+secret = $*[1]
+zone = $*[2]
+src_name = 'GitLab'
+
+# authorize
+api = Saklient::Cloud::API::
+        authorize(token, secret, zone)
+
+# search the source disk
+disks = api.disk.
+  withNameLike(src_name).
+  limit(1).
+  find()
+disk = disks[0]
+
+# copy the disk to a new archive
+puts 'copying the disk ' +
+                    'to a new archive'
+archive = api.archive.create
+archive.name = 'Copy:' + disk.name
+archive.source = disk
+archive.save
+archive.sleep_while_copying or
+                        abort 'failed'
+
+
+# get FTP information
+ftp = archive.open_ftp.ftp_info
+puts 'FTP information:'
+puts '  user: ' + ftp.user
+puts '  pass: ' + ftp.password
+puts '  host: ' + ftp.host_name
+
+# download the archive via FTPS
+puts 'downloading the archive'
+
+# ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# delete the archive after download
+puts 'deleting the archive'
+archive.close_ftp
+archive.destroy
+
+
+
+</code></pre></div><div class="code-each pull-left code-python"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.python" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Python <small class="text-danger">(Alpha)</small><div class="clearfix" /></h4><pre><code class="python">#!/usr/local/bin/python3
+
+import sys, time
+from ftplib import FTP_TLS
+from saklient.cloud.api import API
+
+
+
+
+
+# settings
+token = sys.argv[1]
+secret = sys.argv[2]
+zone = sys.argv[3]
+src_name = 'GitLab'
+
+# authorize
+api = API.authorize(token,secret,zone)
+
+
+# search the source disk
+disks = api.disk \
+  .with_name_like(src_name) \
+  .limit(1) \
+  .find()
+disk = disks[0]
+
+# copy the disk to a new archive
+print('copying the disk ' +\
+                    'to a new archive')
+archive = api.archive.create()
+archive.name = 'Copy:' + disk.name
+archive.source = disk
+archive.save()
+if not archive.sleep_while_copying():
+    raise Exception('failed')
+
+
+# get FTP information
+ftp = archive.open_ftp().ftp_info
+print('FTP information:')
+print('  user: %s' % ftp.user)
+print('  pass: %s' % ftp.password)
+print('  host: %s' % ftp.host_name)
+
+# download the archive via FTPS
+print('downloading the archive')
+ftps = FTP_TLS(ftp.host_name, \
+                ftp.user, ftp.password)
+ftps.prot_p()
+file = open('archive.img', 'wb')
+ftps.retrbinary('RETR archive.img', \
+                            file.write)
+file.close()
+ftps.close()
+
+
+
+
+
+
+
+
+# delete the archive after download
+print('deleting the archive')
+archive.close_ftp()
+archive.destroy()
+
+
+
+</code></pre></div><div class="code-each pull-left code-perl"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.perl" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Perl <small class="text-danger">(Alpha)</small><div class="clearfix" /></h4><pre><code class="perl">#!/usr/bin/perl
+
+use strict;
+use warnings;
+use Saklient::Cloud::API;
+use Net::FTPSSL;
+
+
+
+
+# settings
+my $token = $ARGV[0];
+my $secret = $ARGV[1];
+my $zone = $ARGV[2];
+my $src_name = 'GitLab';
+
+# authorize
+my $api=Saklient::Cloud::API::authorize
+              ($token, $secret, $zone);
+
+# search the source disk
+my $disks = $api-&gt;disk
+  -&gt;with_name_like($src_name)
+  -&gt;limit(1)
+  -&gt;find;
+my $disk = $disks-&gt;[0];
+
+# copy the disk to a new archive
+print &quot;copying the disk &quot; .
+                  &quot;to a new archive\n&quot;;
+my $archive = $api-&gt;archive-&gt;create
+  -&gt;name('Copy:'.$disk-&gt;name)
+  -&gt;source($disk)
+  -&gt;save;
+$archive-&gt;sleep_while_copying
+                      or die('failed');
+
+
+# get FTP information
+my $ftp = $archive-&gt;open_ftp-&gt;ftp_info;
+print &quot;FTP information:\n&quot;;
+printf &quot;  user: %s\n&quot;, $ftp-&gt;user;
+printf &quot;  pass: %s\n&quot;, $ftp-&gt;password;
+printf &quot;  host: %s\n&quot;, $ftp-&gt;host_name;
+
+# download the archive via FTPS
+print &quot;downloading the archive\n&quot;;
+my $ftps = Net::FTPSSL
+                 -&gt;new($ftp-&gt;host_name)
+                      or die 'failure';
+$ftps-&gt;login($ftp-&gt;user,$ftp-&gt;password)
+            or die $ftps-&gt;last_message;
+$ftps-&gt;get('archive.img','archive.img')
+            or die $ftps-&gt;last_message;
+$ftps-&gt;quit;
+
+
+
+
+
+
+
+
+# delete the archive after download
+print &quot;deleting the archive\n&quot;;
+$archive-&gt;close_ftp;
+$archive-&gt;destroy;
+
+
+
+</code></pre></div><div class="code-each pull-left code-javascript"><h4><div class="pull-right"><a href="./api/node/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.node" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Node.js <small class="text-danger">(Experimental)</small><div class="clearfix" /></h4><pre><code class="javascript">
 
 
 var Fiber = require('fibers');
