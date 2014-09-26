@@ -523,7 +523,7 @@ puts 'connecting the disk'
 disk.connect_to(server)
 
 # config the disk
-diskconf = disk.createConfig
+diskconf = disk.create_config
 diskconf.host_name = host_name
 diskconf.password = password
 diskconf.ssh_key = ssh_public_key
