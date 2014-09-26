@@ -9,7 +9,10 @@
 			
 			.jumbotron {
 				min-width: 2340px;
-				padding: 0 0 24px 0;
+				padding: 0 0 20px 175px;
+				background-image: url(./img/sakura_logo_200x200.png);
+				background-repeat: no-repeat;
+				background-position: left center;
 			}
 
 			.container {
@@ -63,12 +66,19 @@
 		<div class="jumbotron">
 			<div class="container">
 				<h1>saklient</h1>
-				<p><a href="http://cloud.sakura.ad.jp/" target="_blank"><strong>さくらのクラウド</strong></a>上のリソースを簡単にコントロールするためのライブラリです。</p>
-				<p>An easy interface to control your resources on <strong>SAKURA Cloud</strong>.</p>
+				<p>
+					<a href="http://cloud.sakura.ad.jp/" target="_blank"><strong>さくらのクラウド</strong></a>上のリソースを簡単にコントロールするためのライブラリです。<br/>
+					An easy interface to control your resources on <strong>SAKURA Cloud</strong>.
+				</p>
 			</div>
 		</div>
 
 		<div class="container">
+			<div class="row">
+				<div class="col-md-12 alert alert-warning">
+					saklient.node（Node.js版）の実装は実験的なものです。Node.jsでは <a href="https://github.com/sakura-internet/node-sacloud/" target="_blank">node-sacloud</a> をご利用いただけます。
+				</div>
+			</div>
 							<div class="row">
 					<div class="col-md-12">
 						<h2>サーバの作成&emsp;<small>Create a server</small></h2>
@@ -306,7 +316,7 @@ class CreateServerExample {
   
  }
 }
-</code></pre></div><div class="code-each pull-left code-ruby"><h4><div class="pull-right"><a href="./api/rb/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.rb" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Ruby <small class="text-danger">(Alpha)</small><div class="clearfix" /></h4><pre><code class="ruby">#!/usr/bin/ruby
+</code></pre></div><div class="code-each pull-left code-ruby"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.rb" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Ruby <small class="text-danger">(Alpha)</small><div class="clearfix" /></h4><pre><code class="ruby">#!/usr/bin/ruby
 
 
 
@@ -651,7 +661,7 @@ $disk-&gt;destroy;
 
 
 
-</code></pre></div><div class="code-each pull-left code-javascript"><h4><div class="pull-right"><a href="./api/node/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.node" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Node.js <small class="text-danger">(Experimental)</small><div class="clearfix" /></h4><pre><code class="javascript">
+</code></pre></div><div class="code-each pull-left code-javascript"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.node" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Node.js <small class="text-danger">(Experimental)</small><div class="clearfix" /></h4><pre><code class="javascript">
 
 
 var Fiber = require('fibers');
@@ -918,7 +928,7 @@ class DownloadArchiveExample {
   
  }
 }
-</code></pre></div><div class="code-each pull-left code-ruby"><h4><div class="pull-right"><a href="./api/rb/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.rb" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Ruby <small class="text-danger">(Alpha)</small><div class="clearfix" /></h4><pre><code class="ruby">#!/usr/bin/ruby
+</code></pre></div><div class="code-each pull-left code-ruby"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.rb" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Ruby <small class="text-danger">(Alpha)</small><div class="clearfix" /></h4><pre><code class="ruby">#!/usr/bin/ruby
 
 
 
@@ -1128,7 +1138,7 @@ $archive-&gt;destroy;
 
 
 
-</code></pre></div><div class="code-each pull-left code-javascript"><h4><div class="pull-right"><a href="./api/node/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://github.com/sakura-internet/saklient.node" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Node.js <small class="text-danger">(Experimental)</small><div class="clearfix" /></h4><pre><code class="javascript">
+</code></pre></div><div class="code-each pull-left code-javascript"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.node" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Node.js <small class="text-danger">(Experimental)</small><div class="clearfix" /></h4><pre><code class="javascript">
 
 
 var Fiber = require('fibers');
