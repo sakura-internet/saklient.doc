@@ -1,0 +1,4 @@
+var classsaklient_1_1errors_1_1httprequesturitoolongexception_1_1_http_request_uri_too_long_exception =
+[
+    [ "__init__", "classsaklient_1_1errors_1_1httprequesturitoolongexception_1_1_http_request_uri_too_long_exception.html#a760ff61d0d408ba750614634086fd04e", null ]
+];

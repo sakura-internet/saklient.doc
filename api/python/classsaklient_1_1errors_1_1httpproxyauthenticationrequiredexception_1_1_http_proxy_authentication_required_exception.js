@@ -1,0 +1,4 @@
+var classsaklient_1_1errors_1_1httpproxyauthenticationrequiredexception_1_1_http_proxy_authentication_required_exception =
+[
+    [ "__init__", "classsaklient_1_1errors_1_1httpproxyauthenticationrequiredexception_1_1_http_proxy_authentication_required_exception.html#adb84e60ceeb81826dd0f9838f840baf4", null ]
+];

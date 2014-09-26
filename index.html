@@ -9,7 +9,7 @@
 			
 			.jumbotron {
 				min-width: 2340px;
-				padding: 0 0 20px 175px;
+				padding: 0 0 20px 0;
 				background-image: url(./img/sakura_logo_200x200.png);
 				background-repeat: no-repeat;
 				background-position: left center;
@@ -19,6 +19,10 @@
 				width: auto;
 				min-width: 2340px;
 				padding: 0 30px;
+			}
+
+			.jumbotron .container {
+				padding-left: 205px;
 			}
 
 			.disable-select {
@@ -316,6 +320,121 @@ class CreateServerExample {
   
  }
 }
+</code></pre></div><div class="code-each pull-left code-python"><h4><div class="pull-right"><a href="./api/python/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://pypi.python.org/pypi/saklient" target="_blank" class="btn btn-primary btn-xs">PyPI</a> <a href="https://github.com/sakura-internet/saklient.python" target="_blank" class="btn btn-primary btn-xs">Github</a></div>Python <small class="text-danger">(Beta)</small><div class="clearfix" /></h4><pre><code class="python">#!/usr/local/bin/python3
+
+import sys, time
+
+from saklient.cloud.api import API
+
+
+
+
+# settings
+token = sys.argv[1]
+secret = sys.argv[2]
+zone = sys.argv[3]
+name = 'saklient demo'
+description = 'saklient demo'
+tag = 'saklient-test'
+cpu = 1
+mem = 2
+host_name = 'saklient-test'
+password = 'C8#mf92mp!*s'
+ssh_public_key = 'ssh-rsa AAAA...'
+
+# authorize
+api = API.authorize(token,secret,zone)
+
+
+# search archives
+print('searching archives')
+archives = api.archive \
+  .with_name_like('CentOS 6.5 64bit') \
+  .with_size_gib(20) \
+  .with_shared_scope() \
+  .limit(1) \
+  .find()
+archive = archives[0]
+
+# search scripts
+print('searching scripts')
+scripts = api.script \
+  .with_name_like('WordPress') \
+  .with_shared_scope() \
+  .limit(1) \
+  .find()
+script = scripts[0]
+
+# create a disk
+print('creating a disk')
+disk = api.disk.create()
+disk.name = name
+disk.description = description
+disk.tags = [tag]
+disk.source = archive
+disk.plan = api.product.disk.ssd
+disk.save()
+
+# create a server
+print('creating a server')
+server = api.server.create()
+server.name = name
+server.description = description
+server.tags = [tag]
+server.plan = api.product.server \
+                 .get_by_spec(cpu, mem)
+server.save()
+
+# connect to shared segment
+print('connecting the server' +\
+                  ' to shared segment')
+iface = server.add_iface()
+iface.connect_to_shared_segment()
+
+# wait disk copy
+print('waiting disk copy')
+if not disk.sleep_while_copying():
+    raise Exception('failed')
+
+
+# connect the disk to the server
+print('connecting the disk')
+disk.connect_to(server)
+
+# config the disk
+diskconf = disk.create_config()
+diskconf.host_name = host_name
+diskconf.password = password
+diskconf.ssh_key = ssh_public_key
+diskconf.add_script = script
+diskconf.write()
+
+# boot
+print('booting the server')
+server.boot()
+
+# stop
+time.sleep(3)
+print('stopping the server')
+server.stop()
+if not server.sleep_until_down():
+    raise Exception('failed')
+
+
+# disconnect the disk from the server
+print('disconnecting the disk')
+disk.disconnect()
+
+# delete the server
+print('deleting the server')
+server.destroy()
+
+# delete the disk
+print('deleting the disk')
+disk.destroy()
+
+
+
 </code></pre></div><div class="code-each pull-left code-ruby"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.rb" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Ruby <small class="text-danger">(Alpha)</small><div class="clearfix" /></h4><pre><code class="ruby">#!/usr/bin/ruby
 
 
@@ -428,121 +547,6 @@ server.destroy
 # delete the disk
 puts 'deleting the disk'
 disk.destroy
-
-
-
-</code></pre></div><div class="code-each pull-left code-python"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.python" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Python <small class="text-danger">(Alpha)</small><div class="clearfix" /></h4><pre><code class="python">#!/usr/local/bin/python3
-
-import sys, time
-
-from saklient.cloud.api import API
-
-
-
-
-# settings
-token = sys.argv[1]
-secret = sys.argv[2]
-zone = sys.argv[3]
-name = 'saklient demo'
-description = 'saklient demo'
-tag = 'saklient-test'
-cpu = 1
-mem = 2
-host_name = 'saklient-test'
-password = 'C8#mf92mp!*s'
-ssh_public_key = 'ssh-rsa AAAA...'
-
-# authorize
-api = API.authorize(token,secret,zone)
-
-
-# search archives
-print('searching archives')
-archives = api.archive \
-  .with_name_like('CentOS 6.5 64bit') \
-  .with_size_gib(20) \
-  .with_shared_scope() \
-  .limit(1) \
-  .find()
-archive = archives[0]
-
-# search scripts
-print('searching scripts')
-scripts = api.script \
-  .with_name_like('WordPress') \
-  .with_shared_scope() \
-  .limit(1) \
-  .find()
-script = scripts[0]
-
-# create a disk
-print('creating a disk')
-disk = api.disk.create()
-disk.name = name
-disk.description = description
-disk.tags = [tag]
-disk.source = archive
-disk.plan = api.product.disk.ssd
-disk.save()
-
-# create a server
-print('creating a server')
-server = api.server.create()
-server.name = name
-server.description = description
-server.tags = [tag]
-server.plan = api.product.server \
-                 .get_by_spec(cpu, mem)
-server.save()
-
-# connect to shared segment
-print('connecting the server' +\
-                  ' to shared segment')
-iface = server.add_iface()
-iface.connect_to_shared_segment()
-
-# wait disk copy
-print('waiting disk copy')
-if not disk.sleep_while_copying():
-    raise Exception('failed')
-
-
-# connect the disk to the server
-print('connecting the disk')
-disk.connect_to(server)
-
-# config the disk
-diskconf = disk.create_config()
-diskconf.host_name = host_name
-diskconf.password = password
-diskconf.ssh_key = ssh_public_key
-diskconf.add_script = script
-diskconf.write()
-
-# boot
-print('booting the server')
-server.boot()
-
-# stop
-time.sleep(3)
-print('stopping the server')
-server.stop()
-if not server.sleep_until_down():
-    raise Exception('failed')
-
-
-# disconnect the disk from the server
-print('disconnecting the disk')
-disk.disconnect()
-
-# delete the server
-print('deleting the server')
-server.destroy()
-
-# delete the disk
-print('deleting the disk')
-disk.destroy()
 
 
 
@@ -928,6 +932,76 @@ class DownloadArchiveExample {
   
  }
 }
+</code></pre></div><div class="code-each pull-left code-python"><h4><div class="pull-right"><a href="./api/python/" target="_blank" class="btn btn-primary btn-xs">API</a> <a href="https://pypi.python.org/pypi/saklient" target="_blank" class="btn btn-primary btn-xs">PyPI</a> <a href="https://github.com/sakura-internet/saklient.python" target="_blank" class="btn btn-primary btn-xs">Github</a></div>Python <small class="text-danger">(Beta)</small><div class="clearfix" /></h4><pre><code class="python">#!/usr/local/bin/python3
+
+import sys, time
+from ftplib import FTP_TLS
+from saklient.cloud.api import API
+
+
+
+
+
+# settings
+token = sys.argv[1]
+secret = sys.argv[2]
+zone = sys.argv[3]
+src_name = 'GitLab'
+
+# authorize
+api = API.authorize(token,secret,zone)
+
+
+# search the source disk
+disks = api.disk \
+  .with_name_like(src_name) \
+  .limit(1) \
+  .find()
+disk = disks[0]
+
+# copy the disk to a new archive
+print('copying the disk ' +\
+                    'to a new archive')
+archive = api.archive.create()
+archive.name = 'Copy:' + disk.name
+archive.source = disk
+archive.save()
+if not archive.sleep_while_copying():
+    raise Exception('failed')
+
+
+# get FTP information
+ftp = archive.open_ftp().ftp_info
+print('FTP information:')
+print('  user: %s' % ftp.user)
+print('  pass: %s' % ftp.password)
+print('  host: %s' % ftp.host_name)
+
+# download the archive via FTPS
+print('downloading the archive')
+ftps = FTP_TLS(ftp.host_name, \
+                ftp.user, ftp.password)
+ftps.prot_p()
+file = open('archive.img', 'wb')
+ftps.retrbinary('RETR archive.img', \
+                            file.write)
+file.close()
+ftps.close()
+
+
+
+
+
+
+
+
+# delete the archive after download
+print('deleting the archive')
+archive.close_ftp()
+archive.destroy()
+
+
+
 </code></pre></div><div class="code-each pull-left code-ruby"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.rb" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Ruby <small class="text-danger">(Alpha)</small><div class="clearfix" /></h4><pre><code class="ruby">#!/usr/bin/ruby
 
 
@@ -995,76 +1069,6 @@ puts 'downloading the archive'
 puts 'deleting the archive'
 archive.close_ftp
 archive.destroy
-
-
-
-</code></pre></div><div class="code-each pull-left code-python"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.python" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Python <small class="text-danger">(Alpha)</small><div class="clearfix" /></h4><pre><code class="python">#!/usr/local/bin/python3
-
-import sys, time
-from ftplib import FTP_TLS
-from saklient.cloud.api import API
-
-
-
-
-
-# settings
-token = sys.argv[1]
-secret = sys.argv[2]
-zone = sys.argv[3]
-src_name = 'GitLab'
-
-# authorize
-api = API.authorize(token,secret,zone)
-
-
-# search the source disk
-disks = api.disk \
-  .with_name_like(src_name) \
-  .limit(1) \
-  .find()
-disk = disks[0]
-
-# copy the disk to a new archive
-print('copying the disk ' +\
-                    'to a new archive')
-archive = api.archive.create()
-archive.name = 'Copy:' + disk.name
-archive.source = disk
-archive.save()
-if not archive.sleep_while_copying():
-    raise Exception('failed')
-
-
-# get FTP information
-ftp = archive.open_ftp().ftp_info
-print('FTP information:')
-print('  user: %s' % ftp.user)
-print('  pass: %s' % ftp.password)
-print('  host: %s' % ftp.host_name)
-
-# download the archive via FTPS
-print('downloading the archive')
-ftps = FTP_TLS(ftp.host_name, \
-                ftp.user, ftp.password)
-ftps.prot_p()
-file = open('archive.img', 'wb')
-ftps.retrbinary('RETR archive.img', \
-                            file.write)
-file.close()
-ftps.close()
-
-
-
-
-
-
-
-
-# delete the archive after download
-print('deleting the archive')
-archive.close_ftp()
-archive.destroy()
 
 
 

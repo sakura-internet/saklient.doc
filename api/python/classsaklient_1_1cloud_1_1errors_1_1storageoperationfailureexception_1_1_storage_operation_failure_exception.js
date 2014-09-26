@@ -1,0 +1,4 @@
+var classsaklient_1_1cloud_1_1errors_1_1storageoperationfailureexception_1_1_storage_operation_failure_exception =
+[
+    [ "__init__", "classsaklient_1_1cloud_1_1errors_1_1storageoperationfailureexception_1_1_storage_operation_failure_exception.html#a67df6fc4eead8e0525d0f6387d922f79", null ]
+];

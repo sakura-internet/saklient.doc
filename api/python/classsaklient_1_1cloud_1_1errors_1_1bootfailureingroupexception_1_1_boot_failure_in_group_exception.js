@@ -1,0 +1,4 @@
+var classsaklient_1_1cloud_1_1errors_1_1bootfailureingroupexception_1_1_boot_failure_in_group_exception =
+[
+    [ "__init__", "classsaklient_1_1cloud_1_1errors_1_1bootfailureingroupexception_1_1_boot_failure_in_group_exception.html#a93d914ba9522210606e2ff9f1cba60be", null ]
+];

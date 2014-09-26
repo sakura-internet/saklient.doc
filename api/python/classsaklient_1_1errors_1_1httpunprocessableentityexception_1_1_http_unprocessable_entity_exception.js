@@ -1,0 +1,4 @@
+var classsaklient_1_1errors_1_1httpunprocessableentityexception_1_1_http_unprocessable_entity_exception =
+[
+    [ "__init__", "classsaklient_1_1errors_1_1httpunprocessableentityexception_1_1_http_unprocessable_entity_exception.html#ad03984a2bd599e73f4212adbc47654b6", null ]
+];
