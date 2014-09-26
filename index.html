@@ -31,6 +31,11 @@
 				-webkit-user-select: none;
 				-ms-user-select: none;
 			}
+			
+			.alert.alert-less-padding {
+				padding: 6px 10px;
+				line-height: 1.25;
+			}
 
 			pre {
 				background-color: #f8f8f8;
@@ -78,14 +83,15 @@
 		</div>
 
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 alert alert-warning">
-					saklient.node（Node.js版）の実装は実験的なものです。Node.jsでは <a href="https://github.com/sakura-internet/node-sacloud/" target="_blank">node-sacloud</a> をご利用いただけます。
-				</div>
-			</div>
 							<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-10">
 						<h2>サーバの作成&emsp;<small>Create a server</small></h2>
+					</div>
+					<div class="col-md-2 alert alert-warning alert-less-padding">
+						<small>
+							saklient.node（Node.js版）の実装は実験的なものです。<br/>
+							Node.jsでは <a href="https://github.com/sakura-internet/node-sacloud/" target="_blank">node-sacloud</a> をご利用いただけます。
+						</small>
 					</div>
 				</div>
 				<div class="row" id="code-wrapper">
@@ -786,8 +792,14 @@ disk.destroy();
 				
 				<hr>
 							<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-10">
 						<h2>ディスクイメージのダウンロード&emsp;<small>Download a disk image</small></h2>
+					</div>
+					<div class="col-md-2 alert alert-warning alert-less-padding">
+						<small>
+							saklient.node（Node.js版）の実装は実験的なものです。<br/>
+							Node.jsでは <a href="https://github.com/sakura-internet/node-sacloud/" target="_blank">node-sacloud</a> をご利用いただけます。
+						</small>
 					</div>
 				</div>
 				<div class="row" id="code-wrapper">
