@@ -412,7 +412,7 @@ diskconf = disk.create_config()
 diskconf.host_name = host_name
 diskconf.password = password
 diskconf.ssh_key = ssh_public_key
-diskconf.add_script = script
+diskconf.scripts.append(script)
 diskconf.write()
 
 # boot
