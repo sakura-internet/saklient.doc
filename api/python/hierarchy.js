@@ -16,11 +16,17 @@ var hierarchy =
     ] ],
     [ "saklient.errors.exceptionfactory.ExceptionFactory", "classsaklient_1_1errors_1_1exceptionfactory_1_1_exception_factory.html", null ],
     [ "saklient.cloud.resources.ftpinfo.FtpInfo", "classsaklient_1_1cloud_1_1resources_1_1ftpinfo_1_1_ftp_info.html", null ],
+    [ "saklient.cloud.resources.lbserver.LbServer", "classsaklient_1_1cloud_1_1resources_1_1lbserver_1_1_lb_server.html", null ],
+    [ "saklient.cloud.resources.lbvirtualip.LbVirtualIp", "classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html", null ],
     [ "saklient.cloud.models.model.Model", "classsaklient_1_1cloud_1_1models_1_1model_1_1_model.html", null ],
     [ "saklient.cloud.product.Product", "classsaklient_1_1cloud_1_1product_1_1_product.html", null ],
     [ "saklient.cloud.models.queryparams.QueryParams", "classsaklient_1_1cloud_1_1models_1_1queryparams_1_1_query_params.html", null ],
     [ "saklient.cloud.resources.resource.Resource", "classsaklient_1_1cloud_1_1resources_1_1resource_1_1_resource.html", null ],
     [ "saklient.util.Util", "classsaklient_1_1util_1_1_util.html", null ],
+    [ "Appliance", null, [
+      [ "saklient.cloud.resources.loadbalancer.LoadBalancer", "classsaklient_1_1cloud_1_1resources_1_1loadbalancer_1_1_load_balancer.html", null ],
+      [ "saklient.cloud.resources.vpcrouter.VpcRouter", "classsaklient_1_1cloud_1_1resources_1_1vpcrouter_1_1_vpc_router.html", null ]
+    ] ],
     [ "HttpBadRequestException", null, [
       [ "saklient.cloud.errors.accountnotfoundexception.AccountNotFoundException", "classsaklient_1_1cloud_1_1errors_1_1accountnotfoundexception_1_1_account_not_found_exception.html", null ],
       [ "saklient.cloud.errors.ambiguouszoneexception.AmbiguousZoneException", "classsaklient_1_1cloud_1_1errors_1_1ambiguouszoneexception_1_1_ambiguous_zone_exception.html", null ],

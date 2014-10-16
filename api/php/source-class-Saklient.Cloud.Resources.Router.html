@@ -8,7 +8,7 @@
 	<title>File Saklient/Cloud/Resources/Router.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?1562529225"></script>
-	<script type="text/javascript" src="elementlist.js?428657502"></script>
+	<script type="text/javascript" src="elementlist.js?3504515586"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -60,6 +60,9 @@
 				<li><a href="class-Saklient.Cloud.Resources.Ipv4Net.html">Ipv4Net</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Ipv6Net.html">Ipv6Net</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.IsoImage.html">IsoImage</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LbServer.html">LbServer</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LbVirtualIp.html">LbVirtualIp</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LoadBalancer.html">LoadBalancer</a></li>
 				<li class="active"><a href="class-Saklient.Cloud.Resources.Router.html">Router</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.RouterPlan.html">RouterPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Script.html">Script</a></li>
@@ -67,6 +70,7 @@
 				<li><a href="class-Saklient.Cloud.Resources.ServerInstance.html">ServerInstance</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.ServerPlan.html">ServerPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Swytch.html">Swytch</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.VpcRouter.html">VpcRouter</a></li>
 			</ul>
 
 
@@ -759,7 +763,7 @@
 </span><span id="648" class="l"><a class="l" href="#648">648: </a>            <span class="php-keyword1">case</span> <span class="php-quote">&quot;networkMaskLen&quot;</span>: <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;get_networkMaskLen();
 </span><span id="649" class="l"><a class="l" href="#649">649: </a>            <span class="php-keyword1">case</span> <span class="php-quote">&quot;bandWidthMbps&quot;</span>: <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;get_bandWidthMbps();
 </span><span id="650" class="l"><a class="l" href="#650">650: </a>            <span class="php-keyword1">case</span> <span class="php-quote">&quot;swytchId&quot;</span>: <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;get_swytchId();
-</span><span id="651" class="l"><a class="l" href="#651">651: </a>            <span class="php-keyword1">default</span>: <span class="php-keyword1">return</span> <span class="php-keyword1">null</span>;
+</span><span id="651" class="l"><a class="l" href="#651">651: </a>            <span class="php-keyword1">default</span>: <span class="php-keyword1">return</span> parent::__get(<span class="php-var">$key</span>);
 </span><span id="652" class="l"><a class="l" href="#652">652: </a>        }
 </span><span id="653" class="l"><a class="l" href="#653">653: </a>    }
 </span><span id="654" class="l"><a class="l" href="#654">654: </a>    
@@ -772,7 +776,7 @@
 </span><span id="661" class="l"><a class="l" href="#661">661: </a>            <span class="php-keyword1">case</span> <span class="php-quote">&quot;description&quot;</span>: <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;set_description(<span class="php-var">$v</span>);
 </span><span id="662" class="l"><a class="l" href="#662">662: </a>            <span class="php-keyword1">case</span> <span class="php-quote">&quot;networkMaskLen&quot;</span>: <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;set_networkMaskLen(<span class="php-var">$v</span>);
 </span><span id="663" class="l"><a class="l" href="#663">663: </a>            <span class="php-keyword1">case</span> <span class="php-quote">&quot;bandWidthMbps&quot;</span>: <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;set_bandWidthMbps(<span class="php-var">$v</span>);
-</span><span id="664" class="l"><a class="l" href="#664">664: </a>            <span class="php-keyword1">default</span>: <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> SaklientException(<span class="php-quote">'non_writable_field'</span>, <span class="php-quote">'Non-writable field: Saklient\\Cloud\\Resources\\Router#'</span>.<span class="php-var">$key</span>);
+</span><span id="664" class="l"><a class="l" href="#664">664: </a>            <span class="php-keyword1">default</span>: <span class="php-keyword1">return</span> parent::__set(<span class="php-var">$key</span>, <span class="php-var">$v</span>);
 </span><span id="665" class="l"><a class="l" href="#665">665: </a>        }
 </span><span id="666" class="l"><a class="l" href="#666">666: </a>    }
 </span><span id="667" class="l"><a class="l" href="#667">667: </a>

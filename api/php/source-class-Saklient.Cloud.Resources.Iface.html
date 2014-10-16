@@ -8,7 +8,7 @@
 	<title>File Saklient/Cloud/Resources/Iface.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?1562529225"></script>
-	<script type="text/javascript" src="elementlist.js?428657502"></script>
+	<script type="text/javascript" src="elementlist.js?3504515586"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -60,6 +60,9 @@
 				<li><a href="class-Saklient.Cloud.Resources.Ipv4Net.html">Ipv4Net</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Ipv6Net.html">Ipv6Net</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.IsoImage.html">IsoImage</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LbServer.html">LbServer</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LbVirtualIp.html">LbVirtualIp</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LoadBalancer.html">LoadBalancer</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Router.html">Router</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.RouterPlan.html">RouterPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Script.html">Script</a></li>
@@ -67,6 +70,7 @@
 				<li><a href="class-Saklient.Cloud.Resources.ServerInstance.html">ServerInstance</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.ServerPlan.html">ServerPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Swytch.html">Swytch</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.VpcRouter.html">VpcRouter</a></li>
 			</ul>
 
 
@@ -529,7 +533,7 @@
 </span><span id="418" class="l"><a class="l" href="#418">418: </a>            <span class="php-keyword1">case</span> <span class="php-quote">&quot;ipAddress&quot;</span>: <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;get_ipAddress();
 </span><span id="419" class="l"><a class="l" href="#419">419: </a>            <span class="php-keyword1">case</span> <span class="php-quote">&quot;userIpAddress&quot;</span>: <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;get_userIpAddress();
 </span><span id="420" class="l"><a class="l" href="#420">420: </a>            <span class="php-keyword1">case</span> <span class="php-quote">&quot;serverId&quot;</span>: <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;get_serverId();
-</span><span id="421" class="l"><a class="l" href="#421">421: </a>            <span class="php-keyword1">default</span>: <span class="php-keyword1">return</span> <span class="php-keyword1">null</span>;
+</span><span id="421" class="l"><a class="l" href="#421">421: </a>            <span class="php-keyword1">default</span>: <span class="php-keyword1">return</span> parent::__get(<span class="php-var">$key</span>);
 </span><span id="422" class="l"><a class="l" href="#422">422: </a>        }
 </span><span id="423" class="l"><a class="l" href="#423">423: </a>    }
 </span><span id="424" class="l"><a class="l" href="#424">424: </a>    
@@ -540,7 +544,7 @@
 </span><span id="429" class="l"><a class="l" href="#429">429: </a>        <span class="php-keyword1">switch</span> (<span class="php-var">$key</span>) {
 </span><span id="430" class="l"><a class="l" href="#430">430: </a>            <span class="php-keyword1">case</span> <span class="php-quote">&quot;userIpAddress&quot;</span>: <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;set_userIpAddress(<span class="php-var">$v</span>);
 </span><span id="431" class="l"><a class="l" href="#431">431: </a>            <span class="php-keyword1">case</span> <span class="php-quote">&quot;serverId&quot;</span>: <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;set_serverId(<span class="php-var">$v</span>);
-</span><span id="432" class="l"><a class="l" href="#432">432: </a>            <span class="php-keyword1">default</span>: <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> SaklientException(<span class="php-quote">'non_writable_field'</span>, <span class="php-quote">'Non-writable field: Saklient\\Cloud\\Resources\\Iface#'</span>.<span class="php-var">$key</span>);
+</span><span id="432" class="l"><a class="l" href="#432">432: </a>            <span class="php-keyword1">default</span>: <span class="php-keyword1">return</span> parent::__set(<span class="php-var">$key</span>, <span class="php-var">$v</span>);
 </span><span id="433" class="l"><a class="l" href="#433">433: </a>        }
 </span><span id="434" class="l"><a class="l" href="#434">434: </a>    }
 </span><span id="435" class="l"><a class="l" href="#435">435: </a>

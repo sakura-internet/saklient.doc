@@ -1543,7 +1543,7 @@
       <span class='kw'>return</span> <span class='kw'>true</span>
     <span class='kw'>end</span>
     <span class='id identifier rubyid_timeoutSec'>timeoutSec</span> <span class='op'>-=</span> <span class='id identifier rubyid_step'>step</span>
-    <span class='id identifier rubyid_sleep'>sleep</span> <span class='id identifier rubyid_step'>step</span> <span class='kw'>if</span> <span class='int'>0</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_timeoutSec'>timeoutSec</span>
+    <span class='id identifier rubyid_sleep'>sleep</span><span class='lparen'>(</span><span class='id identifier rubyid_step'>step</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='int'>0</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_timeoutSec'>timeoutSec</span>
   <span class='kw'>end</span>
   <span class='kw'>return</span> <span class='kw'>false</span>
 <span class='kw'>end</span></pre>
@@ -1557,7 +1557,7 @@
 </div>
 
     <div id="footer">
-  Generated on Thu Sep 25 10:10:13 2014 by
+  Generated on Thu Oct 16 11:16:13 2014 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.4 (ruby-2.0.0).
 </div>

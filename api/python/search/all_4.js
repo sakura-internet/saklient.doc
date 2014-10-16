@@ -1,7 +1,8 @@
 var searchData=
 [
   ['date2str',['date2str',['../classsaklient_1_1util_1_1_util.html#a87f42aedc10f8d5df935fc4c3adc3055',1,'saklient::util::Util']]],
-  ['default_5froute',['default_route',['../classsaklient_1_1cloud_1_1resources_1_1diskconfig_1_1_disk_config.html#aa7cff2a43cc855e516d8e4c3982900af',1,'saklient.cloud.resources.diskconfig.DiskConfig.default_route()'],['../classsaklient_1_1cloud_1_1resources_1_1ipv4net_1_1_ipv4_net.html#a3214bb52106df18516305071a8b6a822',1,'saklient.cloud.resources.ipv4net.Ipv4Net.default_route()']]],
+  ['default_5froute',['default_route',['../classsaklient_1_1cloud_1_1resources_1_1diskconfig_1_1_disk_config.html#aa7cff2a43cc855e516d8e4c3982900af',1,'saklient.cloud.resources.diskconfig.DiskConfig.default_route()'],['../classsaklient_1_1cloud_1_1resources_1_1ipv4net_1_1_ipv4_net.html#a3214bb52106df18516305071a8b6a822',1,'saklient.cloud.resources.ipv4net.Ipv4Net.default_route()'],['../classsaklient_1_1cloud_1_1resources_1_1loadbalancer_1_1_load_balancer.html#af07fff1ba8f70aa007c0075d7c65a157',1,'saklient.cloud.resources.loadbalancer.LoadBalancer.default_route()']]],
+  ['delay_5floop',['delay_loop',['../classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#a13969ce2b935bc7dc59c3498b1ad6f21',1,'saklient::cloud::resources::lbvirtualip::LbVirtualIp']]],
   ['deletediskb4templateexception',['DeleteDiskB4TemplateException',['../classsaklient_1_1cloud_1_1errors_1_1deletediskb4templateexception_1_1_delete_disk_b4_template_exception.html',1,'saklient::cloud::errors::deletediskb4templateexception']]],
   ['deleteipv6netsfirstexception',['DeleteIpV6NetsFirstException',['../classsaklient_1_1cloud_1_1errors_1_1deleteipv6netsfirstexception_1_1_delete_ip_v6_nets_first_exception.html',1,'saklient::cloud::errors::deleteipv6netsfirstexception']]],
   ['deleteresb4accountexception',['DeleteResB4AccountException',['../classsaklient_1_1cloud_1_1errors_1_1deleteresb4accountexception_1_1_delete_res_b4_account_exception.html',1,'saklient::cloud::errors::deleteresb4accountexception']]],
@@ -13,8 +14,8 @@ var searchData=
   ['disconnect',['disconnect',['../classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk.html#a5dffbe5e2d4b5c6f52ec191209d3041c',1,'saklient::cloud::resources::disk::Disk']]],
   ['disconnectb4deleteexception',['DisconnectB4DeleteException',['../classsaklient_1_1cloud_1_1errors_1_1disconnectb4deleteexception_1_1_disconnect_b4_delete_exception.html',1,'saklient::cloud::errors::disconnectb4deleteexception']]],
   ['disconnectb4updateexception',['DisconnectB4UpdateException',['../classsaklient_1_1cloud_1_1errors_1_1disconnectb4updateexception_1_1_disconnect_b4_update_exception.html',1,'saklient::cloud::errors::disconnectb4updateexception']]],
-  ['disk',['Disk',['../classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk.html',1,'saklient::cloud::resources::disk']]],
   ['disk',['disk',['../classsaklient_1_1cloud_1_1api_1_1_a_p_i.html#a98ac9ee4e0ae5f5c6c501aa0561b7e17',1,'saklient.cloud.api.API.disk()'],['../classsaklient_1_1cloud_1_1product_1_1_product.html#afcc7eb4f8dcc8772e9dca2734d4656af',1,'saklient.cloud.product.Product.disk()']]],
+  ['disk',['Disk',['../classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk.html',1,'saklient::cloud::resources::disk']]],
   ['disk_5fid',['disk_id',['../classsaklient_1_1cloud_1_1resources_1_1diskconfig_1_1_disk_config.html#ac123ffb7b3a17540f577ab441959e110',1,'saklient::cloud::resources::diskconfig::DiskConfig']]],
   ['diskconfig',['DiskConfig',['../classsaklient_1_1cloud_1_1resources_1_1diskconfig_1_1_disk_config.html',1,'saklient::cloud::resources::diskconfig']]],
   ['diskconnectionlimitexception',['DiskConnectionLimitException',['../classsaklient_1_1cloud_1_1errors_1_1diskconnectionlimitexception_1_1_disk_connection_limit_exception.html',1,'saklient::cloud::errors::diskconnectionlimitexception']]],

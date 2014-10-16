@@ -10,5 +10,8 @@ var classsaklient_1_1cloud_1_1models_1_1model__router_1_1_model___router =
     [ "reset", "classsaklient_1_1cloud_1_1models_1_1model__router_1_1_model___router.html#a69cb79bdaedbf3d6a66aabff98265831", null ],
     [ "sort_by_name", "classsaklient_1_1cloud_1_1models_1_1model__router_1_1_model___router.html#ab672fad8ad3720ad7cd607a97545973f", null ],
     [ "with_band_width_mbps", "classsaklient_1_1cloud_1_1models_1_1model__router_1_1_model___router.html#aa12628ce6308a3d76d3c608599fa1f1a", null ],
-    [ "with_name_like", "classsaklient_1_1cloud_1_1models_1_1model__router_1_1_model___router.html#affbf090315e37ec4230961dbbb8c6d87", null ]
+    [ "with_name_like", "classsaklient_1_1cloud_1_1models_1_1model__router_1_1_model___router.html#affbf090315e37ec4230961dbbb8c6d87", null ],
+    [ "with_tag", "classsaklient_1_1cloud_1_1models_1_1model__router_1_1_model___router.html#a6a229d787607b63ecd8e887d2e5162f9", null ],
+    [ "with_tag_dnf", "classsaklient_1_1cloud_1_1models_1_1model__router_1_1_model___router.html#affc98c21a5172def70a27fe476070223", null ],
+    [ "with_tags", "classsaklient_1_1cloud_1_1models_1_1model__router_1_1_model___router.html#ace07bd623b7372ed0d39d64abfae65c9", null ]
 ];

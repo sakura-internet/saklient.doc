@@ -8,7 +8,7 @@
 	<title>File Saklient/Cloud/Resources/DiskPlan.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?1562529225"></script>
-	<script type="text/javascript" src="elementlist.js?428657502"></script>
+	<script type="text/javascript" src="elementlist.js?3504515586"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -60,6 +60,9 @@
 				<li><a href="class-Saklient.Cloud.Resources.Ipv4Net.html">Ipv4Net</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Ipv6Net.html">Ipv6Net</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.IsoImage.html">IsoImage</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LbServer.html">LbServer</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LbVirtualIp.html">LbVirtualIp</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LoadBalancer.html">LoadBalancer</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Router.html">Router</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.RouterPlan.html">RouterPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Script.html">Script</a></li>
@@ -67,6 +70,7 @@
 				<li><a href="class-Saklient.Cloud.Resources.ServerInstance.html">ServerInstance</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.ServerPlan.html">ServerPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Swytch.html">Swytch</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.VpcRouter.html">VpcRouter</a></li>
 			</ul>
 
 
@@ -365,7 +369,7 @@
 </span><span id="254" class="l"><a class="l" href="#254">254: </a>            <span class="php-keyword1">case</span> <span class="php-quote">&quot;id&quot;</span>: <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;get_id();
 </span><span id="255" class="l"><a class="l" href="#255">255: </a>            <span class="php-keyword1">case</span> <span class="php-quote">&quot;name&quot;</span>: <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;get_name();
 </span><span id="256" class="l"><a class="l" href="#256">256: </a>            <span class="php-keyword1">case</span> <span class="php-quote">&quot;storageClass&quot;</span>: <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;get_storageClass();
-</span><span id="257" class="l"><a class="l" href="#257">257: </a>            <span class="php-keyword1">default</span>: <span class="php-keyword1">return</span> <span class="php-keyword1">null</span>;
+</span><span id="257" class="l"><a class="l" href="#257">257: </a>            <span class="php-keyword1">default</span>: <span class="php-keyword1">return</span> parent::__get(<span class="php-var">$key</span>);
 </span><span id="258" class="l"><a class="l" href="#258">258: </a>        }
 </span><span id="259" class="l"><a class="l" href="#259">259: </a>    }
 </span><span id="260" class="l"><a class="l" href="#260">260: </a>

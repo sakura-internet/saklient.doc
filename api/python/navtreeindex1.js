@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"classsaklient_1_1cloud_1_1client_1_1_client.html#abc910f6c4ca9f106611dfc0f2a129895":[1,0,0,0,1,0,5],
+"classsaklient_1_1cloud_1_1enums_1_1eapplianceclass_1_1_e_appliance_class.html":[1,0,0,0,2,0,0],
+"classsaklient_1_1cloud_1_1enums_1_1eapplianceclass_1_1_e_appliance_class.html#a0419316ff0ead049345808608e126292":[1,0,0,0,2,0,0,4],
+"classsaklient_1_1cloud_1_1enums_1_1eapplianceclass_1_1_e_appliance_class.html#a08bf6219d0b21556a4ca571d357aed6e":[1,0,0,0,2,0,0,3],
 "classsaklient_1_1cloud_1_1enums_1_1eapplianceclass_1_1_e_appliance_class.html#a195b0407a54e7c0601afcd935adafe5a":[1,0,0,0,2,0,0,2],
 "classsaklient_1_1cloud_1_1enums_1_1eapplianceclass_1_1_e_appliance_class.html#a50da2ea6cc2a48824699debab18b7704":[1,0,0,0,2,0,0,1],
 "classsaklient_1_1cloud_1_1enums_1_1eapplianceclass_1_1_e_appliance_class.html#a60e62598c7a499bac8a41d774f433495":[1,0,0,0,2,0,0,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX1 =
 "classsaklient_1_1cloud_1_1errors_1_1resalreadyexistsexception_1_1_res_already_exists_exception.html#aabc4d806309e63a72bd58a314742c47c":[1,0,0,0,3,93,0,0],
 "classsaklient_1_1cloud_1_1errors_1_1resourcepathnotfoundexception_1_1_resource_path_not_found_exception.html":[1,0,0,0,3,94,0],
 "classsaklient_1_1cloud_1_1errors_1_1resourcepathnotfoundexception_1_1_resource_path_not_found_exception.html#a538248430fadc71d9cf89868b623c5e6":[1,0,0,0,3,94,0,0],
-"classsaklient_1_1cloud_1_1errors_1_1resusedinzoneexception_1_1_res_used_in_zone_exception.html":[1,0,0,0,3,95,0],
-"classsaklient_1_1cloud_1_1errors_1_1resusedinzoneexception_1_1_res_used_in_zone_exception.html#a3880a1437305d2d2a2d56b2a0355bc40":[1,0,0,0,3,95,0,0],
-"classsaklient_1_1cloud_1_1errors_1_1runoutofipaddressexception_1_1_run_out_of_ip_address_exception.html":[1,0,0,0,3,96,0],
-"classsaklient_1_1cloud_1_1errors_1_1runoutofipaddressexception_1_1_run_out_of_ip_address_exception.html#ae9b59c0f096b01d800ef79d01b3d3185":[1,0,0,0,3,96,0,0],
-"classsaklient_1_1cloud_1_1errors_1_1samelicenserequiredexception_1_1_same_license_required_exception.html":[1,0,0,0,3,97,0]
+"classsaklient_1_1cloud_1_1errors_1_1resusedinzoneexception_1_1_res_used_in_zone_exception.html":[1,0,0,0,3,95,0]
 };

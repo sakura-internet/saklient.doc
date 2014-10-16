@@ -1,7 +1,6 @@
 var classsaklient_1_1cloud_1_1resources_1_1archive_1_1_archive =
 [
     [ "__init__", "classsaklient_1_1cloud_1_1resources_1_1archive_1_1_archive.html#a855743054c897739a9c3e12cff0b857b", null ],
-    [ "after_copy", "classsaklient_1_1cloud_1_1resources_1_1archive_1_1_archive.html#a721180658f7b7204ff50d889c369d4f7", null ],
     [ "api_deserialize_impl", "classsaklient_1_1cloud_1_1resources_1_1archive_1_1_archive.html#abee335c9d6ab2ba67c39c63a83565c46", null ],
     [ "api_serialize_impl", "classsaklient_1_1cloud_1_1resources_1_1archive_1_1_archive.html#af20b35b3ceba275f2044c856dfa0bde6", null ],
     [ "close_ftp", "classsaklient_1_1cloud_1_1resources_1_1archive_1_1_archive.html#a566bfab3aeb5f1c6606bdd648b26d44c", null ],

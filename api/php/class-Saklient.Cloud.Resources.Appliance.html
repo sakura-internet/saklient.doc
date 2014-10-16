@@ -7,7 +7,7 @@
 	<title>Class Saklient\Cloud\Resources\Appliance</title>
 
 	<script type="text/javascript" src="resources/combined.js?1562529225"></script>
-	<script type="text/javascript" src="elementlist.js?428657502"></script>
+	<script type="text/javascript" src="elementlist.js?3504515586"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -59,6 +59,9 @@
 				<li><a href="class-Saklient.Cloud.Resources.Ipv4Net.html">Ipv4Net</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Ipv6Net.html">Ipv6Net</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.IsoImage.html">IsoImage</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LbServer.html">LbServer</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LbVirtualIp.html">LbVirtualIp</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LoadBalancer.html">LoadBalancer</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Router.html">Router</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.RouterPlan.html">RouterPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Script.html">Script</a></li>
@@ -66,6 +69,7 @@
 				<li><a href="class-Saklient.Cloud.Resources.ServerInstance.html">ServerInstance</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.ServerPlan.html">ServerPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Swytch.html">Swytch</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.VpcRouter.html">VpcRouter</a></li>
 			</ul>
 
 
@@ -132,6 +136,11 @@ Saklient\Cloud\Resources\Resource
 	</dl>
 
 
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Saklient.Cloud.Resources.LoadBalancer.html">Saklient\Cloud\Resources\LoadBalancer</a>, 
+			<a href="class-Saklient.Cloud.Resources.VpcRouter.html">Saklient\Cloud\Resources\VpcRouter</a>
+	</div>
 
 
 
@@ -144,7 +153,7 @@ Saklient\Cloud\Resources\Resource
 		<b>Namespace:</b> <a href="namespace-Saklient.html">Saklient</a>\<a href="namespace-Saklient.Cloud.html">Cloud</a>\<a href="namespace-Saklient.Cloud.Resources.html">Resources</a><br>
 		
 
-		<b>Located at</b> <a href="source-class-Saklient.Cloud.Resources.Appliance.html#20-697" title="Go to source code">Saklient/Cloud/Resources/Appliance.php</a><br>
+		<b>Located at</b> <a href="source-class-Saklient.Cloud.Resources.Appliance.html#28-1197" title="Go to source code">Saklient/Cloud/Resources/Appliance.php</a><br>
 	</div>
 
 
@@ -162,7 +171,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_save">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#161-170" title="Go to source code">save</a>( )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#236-245" title="Go to source code">save</a>( )</code>
 
 		<div class="description short">
 			
@@ -199,7 +208,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_reload">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#172-181" title="Go to source code">reload</a>( )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#247-256" title="Go to source code">reload</a>( )</code>
 
 		<div class="description short">
 			
@@ -210,6 +219,80 @@ Saklient\Cloud\Resources\Resource
 		<div class="description detailed hidden">
 			
 <p>最新のリソース情報を再取得します。</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Saklient.Cloud.Resources.Appliance.html">Saklient\Cloud\Resources\Appliance</a></code></code><br>this<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSwytch" id="_getSwytch">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Saklient.Cloud.Resources.Swytch.html">Saklient\Cloud\Resources\Swytch</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSwytch">#</a>
+		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#287-298" title="Go to source code">getSwytch</a>( )</code>
+
+		<div class="description short">
+			
+<p>このルータが接続されているスイッチを取得します。</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>このルータが接続されているスイッチを取得します。</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Saklient.Cloud.Resources.Swytch.html">Saklient\Cloud\Resources\Swytch</a></code></code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="apply" id="_apply">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Saklient.Cloud.Resources.Appliance.html">Saklient\Cloud\Resources\Appliance</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_apply">#</a>
+		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#300-310" title="Go to source code">apply</a>( )</code>
+
+		<div class="description short">
+			
+<p>アプライアンスの設定を反映します。</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>アプライアンスの設定を反映します。</p>
 
 
 
@@ -236,7 +319,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_boot">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#199-209" title="Go to source code">boot</a>( )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#312-322" title="Go to source code">boot</a>( )</code>
 
 		<div class="description short">
 			
@@ -273,7 +356,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_shutdown">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#211-221" title="Go to source code">shutdown</a>( )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#324-334" title="Go to source code">shutdown</a>( )</code>
 
 		<div class="description short">
 			
@@ -310,7 +393,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stop">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#223-233" title="Go to source code">stop</a>( )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#336-346" title="Go to source code">stop</a>( )</code>
 
 		<div class="description short">
 			
@@ -347,7 +430,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_reboot">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#235-245" title="Go to source code">reboot</a>( )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#348-358" title="Go to source code">reboot</a>( )</code>
 
 		<div class="description short">
 			
@@ -373,6 +456,132 @@ Saklient\Cloud\Resources\Resource
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="sleepWhileCreating" id="_sleepWhileCreating">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sleepWhileCreating">#</a>
+		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#360-386" title="Go to source code">sleepWhileCreating</a>( <span>integer <var>$timeoutSec</var> = <span class="php-num">600</span></span> )</code>
+
+		<div class="description short">
+			
+<p>作成中のアプライアンスが利用可能になるまで待機します。</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>作成中のアプライアンスが利用可能になるまで待機します。</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$timeoutSec</var></dt>
+					<dd><code>integer</code><br>$timeoutSec=600</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>成功時はtrue、タイムアウトやエラーによる失敗時はfalseを返します。<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sleepUntilUp" id="_sleepUntilUp">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sleepUntilUp">#</a>
+		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#388-399" title="Go to source code">sleepUntilUp</a>( <span>integer <var>$timeoutSec</var> = <span class="php-num">600</span></span> )</code>
+
+		<div class="description short">
+			
+<p>アプライアンスが起動するまで待機します。</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>アプライアンスが起動するまで待機します。</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$timeoutSec</var></dt>
+					<dd><code>integer</code><br>$timeoutSec=600</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sleepUntilDown" id="_sleepUntilDown">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sleepUntilDown">#</a>
+		<code><a href="source-class-Saklient.Cloud.Resources.Appliance.html#401-412" title="Go to source code">sleepUntilDown</a>( <span>integer <var>$timeoutSec</var> = <span class="php-num">600</span></span> )</code>
+
+		<div class="description short">
+			
+<p>アプライアンスが停止するまで待機します。</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>アプライアンスが停止するまで待機します。</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$timeoutSec</var></dt>
+					<dd><code>integer</code><br>$timeoutSec=600</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>成功時はtrue、タイムアウトやエラーによる失敗時はfalseを返します。<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	</table>
 
 	<table class="summary inherited">
@@ -386,6 +595,7 @@ _className(),
 _id(), 
 _onAfterApiDeserialize(), 
 _onAfterApiSerialize(), 
+_onBeforeApiSerialize(), 
 _onBeforeSave(), 
 _reload(), 
 _rootKey(), 
@@ -396,13 +606,14 @@ apiDeserializeImpl(),
 apiSerialize(), 
 apiSerializeID(), 
 apiSerializeImpl(), 
+createWith(), 
 destroy(), 
 dump(), 
 exists(), 
 get_client(), 
 normalizeFieldName(), 
-setParam(), 
-setProperty()
+requestRetry(), 
+setParam()
 		</code></td>
 	</tr>
 	</table>
@@ -440,7 +651,7 @@ setProperty()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#24" title="Go to source code"><var>$clazz</var></a>
+				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#32" title="Go to source code"><var>$clazz</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$clazz" class="anchor">#</a>
@@ -466,7 +677,7 @@ setProperty()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#25" title="Go to source code"><var>$name</var></a>
+				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#33" title="Go to source code"><var>$name</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$name" class="anchor">#</a>
@@ -492,7 +703,7 @@ setProperty()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#26" title="Go to source code"><var>$description</var></a>
+				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#34" title="Go to source code"><var>$description</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$description" class="anchor">#</a>
@@ -518,20 +729,20 @@ setProperty()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#27" title="Go to source code"><var>$tags</var></a>
+				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#35" title="Go to source code"><var>$tags</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$tags" class="anchor">#</a>
 
 			<div class="description short">
 				
-<p>タグ</p>
+<p>タグ文字列の配列</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>タグ</p>
+<p>タグ文字列の配列</p>
 
 
 			</div>
@@ -544,7 +755,7 @@ setProperty()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#28" title="Go to source code"><var>$icon</var></a>
+				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#36" title="Go to source code"><var>$icon</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$icon" class="anchor">#</a>
@@ -563,6 +774,84 @@ setProperty()
 			</div>
 		</div></td>
 	</tr>
+	<tr data-order="planId" id="m$planId">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#37" title="Go to source code"><var>$planId</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$planId" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>プラン</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>プラン</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="rawAnnotation" id="m$rawAnnotation">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#39" title="Go to source code"><var>$rawAnnotation</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$rawAnnotation" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>注釈</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>注釈</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="rawSettings" id="m$rawSettings">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#40" title="Go to source code"><var>$rawSettings</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$rawSettings" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>設定の生データ</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>設定の生データ</p>
+
+
+			</div>
+		</div></td>
+	</tr>
 	<tr data-order="id" id="m$id">
 		<td class="attributes"><code>
 			public  read-only
@@ -570,7 +859,7 @@ setProperty()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#23" title="Go to source code"><var>$id</var></a>
+				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#31" title="Go to source code"><var>$id</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$id" class="anchor">#</a>
@@ -596,20 +885,46 @@ setProperty()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#29" title="Go to source code"><var>$ifaces</var></a>
+				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#38" title="Go to source code"><var>$ifaces</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$ifaces" class="anchor">#</a>
 
 			<div class="description short">
 				
-<p>プラン</p>
+<p>インタフェース <code><a href="class-Saklient.Cloud.Resources.Iface.html">Saklient\Cloud\Resources\Iface</a></code> の配列</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>プラン</p>
+<p>インタフェース <code><a href="class-Saklient.Cloud.Resources.Iface.html">Saklient\Cloud\Resources\Iface</a></code> の配列</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="status" id="m$status">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#41" title="Go to source code"><var>$status</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$status" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>起動状態 <code><a href="class-Saklient.Cloud.Enums.EServerInstanceStatus.html">Saklient\Cloud\Enums\EServerInstanceStatus</a></code></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>起動状態 <code><a href="class-Saklient.Cloud.Enums.EServerInstanceStatus.html">Saklient\Cloud\Enums\EServerInstanceStatus</a></code></p>
 
 
 			</div>
@@ -622,7 +937,7 @@ setProperty()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#30" title="Go to source code"><var>$serviceClass</var></a>
+				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#42" title="Go to source code"><var>$serviceClass</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$serviceClass" class="anchor">#</a>
@@ -636,6 +951,58 @@ setProperty()
 			<div class="description detailed hidden">
 				
 <p>サービスクラス</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="availability" id="m$availability">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#43" title="Go to source code"><var>$availability</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$availability" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>有効状態 <code><a href="class-Saklient.Cloud.Enums.EAvailability.html">Saklient\Cloud\Enums\EAvailability</a></code></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>有効状態 <code><a href="class-Saklient.Cloud.Enums.EAvailability.html">Saklient\Cloud\Enums\EAvailability</a></code></p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="swytchId" id="m$swytchId">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Saklient.Cloud.Resources.Appliance.html#44" title="Go to source code"><var>$swytchId</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$swytchId" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>接続先スイッチID</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>接続先スイッチID</p>
 
 
 			</div>

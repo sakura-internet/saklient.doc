@@ -474,6 +474,15 @@ var annotated =
           [ "isoimage", null, [
             [ "IsoImage", "classsaklient_1_1cloud_1_1resources_1_1isoimage_1_1_iso_image.html", "classsaklient_1_1cloud_1_1resources_1_1isoimage_1_1_iso_image" ]
           ] ],
+          [ "lbserver", null, [
+            [ "LbServer", "classsaklient_1_1cloud_1_1resources_1_1lbserver_1_1_lb_server.html", "classsaklient_1_1cloud_1_1resources_1_1lbserver_1_1_lb_server" ]
+          ] ],
+          [ "lbvirtualip", null, [
+            [ "LbVirtualIp", "classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html", "classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip" ]
+          ] ],
+          [ "loadbalancer", null, [
+            [ "LoadBalancer", "classsaklient_1_1cloud_1_1resources_1_1loadbalancer_1_1_load_balancer.html", "classsaklient_1_1cloud_1_1resources_1_1loadbalancer_1_1_load_balancer" ]
+          ] ],
           [ "resource", null, [
             [ "Resource", "classsaklient_1_1cloud_1_1resources_1_1resource_1_1_resource.html", "classsaklient_1_1cloud_1_1resources_1_1resource_1_1_resource" ]
           ] ],
@@ -497,6 +506,9 @@ var annotated =
           ] ],
           [ "swytch", null, [
             [ "Swytch", "classsaklient_1_1cloud_1_1resources_1_1swytch_1_1_swytch.html", "classsaklient_1_1cloud_1_1resources_1_1swytch_1_1_swytch" ]
+          ] ],
+          [ "vpcrouter", null, [
+            [ "VpcRouter", "classsaklient_1_1cloud_1_1resources_1_1vpcrouter_1_1_vpc_router.html", "classsaklient_1_1cloud_1_1resources_1_1vpcrouter_1_1_vpc_router" ]
           ] ]
         ] ]
       ] ],

@@ -30,6 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">saklient
+   &#160;<span id="projectnumber">0.0.2.2</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -116,6 +117,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af7350cccabea74f053be49e9c82ed826"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaklient_1_1cloud_1_1models_1_1model__appliance_1_1_model___appliance.html#af7350cccabea74f053be49e9c82ed826">reset</a></td></tr>
 <tr class="memdesc:af7350cccabea74f053be49e9c82ed826"><td class="mdescLeft">&#160;</td><td class="mdescRight">次のリクエストのために設定されているステートをすべて破棄します。  <a href="#af7350cccabea74f053be49e9c82ed826">More...</a><br /></td></tr>
 <tr class="separator:af7350cccabea74f053be49e9c82ed826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7945ebfc78383fc512f16b893373f52d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaklient_1_1cloud_1_1models_1_1model__appliance_1_1_model___appliance.html#a7945ebfc78383fc512f16b893373f52d">create_load_balancer</a></td></tr>
+<tr class="separator:a7945ebfc78383fc512f16b893373f52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2803e76c82f66eea6f09aa9b9a25c7c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaklient_1_1cloud_1_1models_1_1model__appliance_1_1_model___appliance.html#ad2803e76c82f66eea6f09aa9b9a25c7c">create_vpc_router</a></td></tr>
+<tr class="separator:ad2803e76c82f66eea6f09aa9b9a25c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcfc9dd6d515318d4a605bef7c40d72e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaklient_1_1cloud_1_1models_1_1model__appliance_1_1_model___appliance.html#adcfc9dd6d515318d4a605bef7c40d72e">get_by_id</a></td></tr>
 <tr class="memdesc:adcfc9dd6d515318d4a605bef7c40d72e"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したIDを持つ唯一のリソースを取得します。  <a href="#adcfc9dd6d515318d4a605bef7c40d72e">More...</a><br /></td></tr>
 <tr class="separator:adcfc9dd6d515318d4a605bef7c40d72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,6 +181,77 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7945ebfc78383fc512f16b893373f52d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def saklient.cloud.models.model_appliance.Model_Appliance.create_load_balancer </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>swytch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>vrid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>realIps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>isHighSpec</em> = <code>False</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">{saklient.cloud.resources.swytch.Swytch}</td><td>swytch </td></tr>
+    <tr><td class="paramname">{int}</td><td>vrid </td></tr>
+    <tr><td class="paramname">{str[]}</td><td>realIps </td></tr>
+    <tr><td class="paramname">{bool}</td><td>isHighSpec=False </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>{<a class="el" href="classsaklient_1_1cloud_1_1resources_1_1loadbalancer_1_1_load_balancer.html">saklient.cloud.resources.loadbalancer.LoadBalancer</a>} </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad2803e76c82f66eea6f09aa9b9a25c7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def saklient.cloud.models.model_appliance.Model_Appliance.create_vpc_router </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>{<a class="el" href="classsaklient_1_1cloud_1_1resources_1_1vpcrouter_1_1_vpc_router.html">saklient.cloud.resources.vpcrouter.VpcRouter</a>} </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a94c608f2292c6298326955f28cb127dc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -559,7 +635,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>saklient</b></li><li class="navelem"><b>cloud</b></li><li class="navelem"><b>models</b></li><li class="navelem"><b>model_appliance</b></li><li class="navelem"><a class="el" href="classsaklient_1_1cloud_1_1models_1_1model__appliance_1_1_model___appliance.html">Model_Appliance</a></li>
-    <li class="footer">Generated on Fri Sep 26 2014 15:37:41 for saklient by
+    <li class="footer">Generated on Thu Oct 16 2014 11:17:17 for saklient by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

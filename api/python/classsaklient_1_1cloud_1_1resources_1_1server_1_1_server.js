@@ -2,8 +2,6 @@ var classsaklient_1_1cloud_1_1resources_1_1server_1_1_server =
 [
     [ "__init__", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html#ad0862382efe224c498555b2d654d1e5e", null ],
     [ "add_iface", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html#abfd3a7f45474ddc7013764a5001a04c7", null ],
-    [ "after_down", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html#ad15afbac7a7e9c9cdb1af635764766c4", null ],
-    [ "after_status", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html#a4c5986f05f79ee49c2d022166a115f99", null ],
     [ "api_deserialize_impl", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html#aaa2c69cb6bb828b56aba38b16e1522f3", null ],
     [ "api_serialize_impl", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html#aa1bb5e55e18c6f83bbacaff15c83eeea", null ],
     [ "boot", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html#a32093dcd030c9e3c735f97239f995531", null ],
@@ -32,6 +30,7 @@ var classsaklient_1_1cloud_1_1resources_1_1server_1_1_server =
     [ "shutdown", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html#ae8b18255627b5b1ee4964b59ecdb942d", null ],
     [ "sleep_until", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html#a69740e227ae3207706295ad63c83f0ce", null ],
     [ "sleep_until_down", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html#a983e59748c7c41def71df491090780b8", null ],
+    [ "sleep_until_up", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html#a4bf7049dee8bf35686c199cad6078874", null ],
     [ "stop", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html#ad66c05618fdb9a83d21608d2086ef5d5", null ],
     [ "is_incomplete", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html#a2ac6d6721393e143a5ec0e079a1b505f", null ],
     [ "is_new", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html#a0aa8d5081324789c3d80ee2588342606", null ],

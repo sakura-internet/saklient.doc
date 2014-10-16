@@ -1,7 +1,6 @@
 var classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk =
 [
     [ "__init__", "classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk.html#a73a035e73e8dbea8291674fcfeedc57e", null ],
-    [ "after_copy", "classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk.html#ac7f6c161da46baa731d51138b88e4d30", null ],
     [ "api_deserialize_impl", "classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk.html#a99a6d5b06756c77f8f90f101a9326271", null ],
     [ "api_serialize_impl", "classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk.html#a6516b3b650d8e79f738db6febd158db0", null ],
     [ "connect_to", "classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk.html#a4d95ea2f63d4697b01ebcb3a805ef579", null ],

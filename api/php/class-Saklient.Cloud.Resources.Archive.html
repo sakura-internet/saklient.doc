@@ -7,7 +7,7 @@
 	<title>Class Saklient\Cloud\Resources\Archive</title>
 
 	<script type="text/javascript" src="resources/combined.js?1562529225"></script>
-	<script type="text/javascript" src="elementlist.js?428657502"></script>
+	<script type="text/javascript" src="elementlist.js?3504515586"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -59,6 +59,9 @@
 				<li><a href="class-Saklient.Cloud.Resources.Ipv4Net.html">Ipv4Net</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Ipv6Net.html">Ipv6Net</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.IsoImage.html">IsoImage</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LbServer.html">LbServer</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LbVirtualIp.html">LbVirtualIp</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LoadBalancer.html">LoadBalancer</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Router.html">Router</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.RouterPlan.html">RouterPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Script.html">Script</a></li>
@@ -66,6 +69,7 @@
 				<li><a href="class-Saklient.Cloud.Resources.ServerInstance.html">ServerInstance</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.ServerPlan.html">ServerPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Swytch.html">Swytch</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.VpcRouter.html">VpcRouter</a></li>
 			</ul>
 
 
@@ -144,7 +148,7 @@ Saklient\Cloud\Resources\Resource
 		<b>Namespace:</b> <a href="namespace-Saklient.html">Saklient</a>\<a href="namespace-Saklient.Cloud.html">Cloud</a>\<a href="namespace-Saklient.Cloud.Resources.html">Resources</a><br>
 		
 
-		<b>Located at</b> <a href="source-class-Saklient.Cloud.Resources.Archive.html#26-1044" title="Go to source code">Saklient/Cloud/Resources/Archive.php</a><br>
+		<b>Located at</b> <a href="source-class-Saklient.Cloud.Resources.Archive.html#26-1022" title="Go to source code">Saklient/Cloud/Resources/Archive.php</a><br>
 	</div>
 
 
@@ -236,7 +240,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_openFtp">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Archive.html#411-429" title="Go to source code">openFtp</a>( <span>boolean <var>$reset</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Archive.html#406-424" title="Go to source code">openFtp</a>( <span>boolean <var>$reset</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -282,7 +286,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_closeFtp">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Archive.html#431-443" title="Go to source code">closeFtp</a>( )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Archive.html#426-438" title="Go to source code">closeFtp</a>( )</code>
 
 		<div class="description short">
 			
@@ -319,7 +323,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sleepWhileCopying">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Archive.html#463-489" title="Go to source code">sleepWhileCopying</a>( <span>integer <var>$timeoutSec</var> = <span class="php-num">3600</span></span> )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Archive.html#440-466" title="Go to source code">sleepWhileCopying</a>( <span>integer <var>$timeoutSec</var> = <span class="php-num">3600</span></span> )</code>
 
 		<div class="description short">
 			
@@ -363,6 +367,7 @@ _className(),
 _id(), 
 _onAfterApiDeserialize(), 
 _onAfterApiSerialize(), 
+_onBeforeApiSerialize(), 
 _onBeforeSave(), 
 _reload(), 
 _rootKey(), 
@@ -373,13 +378,14 @@ apiDeserializeImpl(),
 apiSerialize(), 
 apiSerializeID(), 
 apiSerializeImpl(), 
+createWith(), 
 destroy(), 
 dump(), 
 exists(), 
 get_client(), 
 normalizeFieldName(), 
-setParam(), 
-setProperty()
+requestRetry(), 
+setParam()
 		</code></td>
 	</tr>
 	</table>
@@ -528,13 +534,13 @@ setProperty()
 
 			<div class="description short">
 				
-<p>タグ</p>
+<p>タグ文字列の配列</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>タグ</p>
+<p>タグ文字列の配列</p>
 
 
 			</div>

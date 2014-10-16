@@ -9,5 +9,8 @@ var classsaklient_1_1cloud_1_1models_1_1model__swytch_1_1_model___swytch =
     [ "offset", "classsaklient_1_1cloud_1_1models_1_1model__swytch_1_1_model___swytch.html#a8ec0309396d27130a086c5d41e4ba396", null ],
     [ "reset", "classsaklient_1_1cloud_1_1models_1_1model__swytch_1_1_model___swytch.html#a9cc5687755d012fc3cdaf26a39451e74", null ],
     [ "sort_by_name", "classsaklient_1_1cloud_1_1models_1_1model__swytch_1_1_model___swytch.html#a66fcf321e99d711df182977bdeaa0cc4", null ],
-    [ "with_name_like", "classsaklient_1_1cloud_1_1models_1_1model__swytch_1_1_model___swytch.html#a873349cb929bcaab2d4dfd58a47ba718", null ]
+    [ "with_name_like", "classsaklient_1_1cloud_1_1models_1_1model__swytch_1_1_model___swytch.html#a873349cb929bcaab2d4dfd58a47ba718", null ],
+    [ "with_tag", "classsaklient_1_1cloud_1_1models_1_1model__swytch_1_1_model___swytch.html#a9b3d2755ed46aad8db42eed3bfad7cd4", null ],
+    [ "with_tag_dnf", "classsaklient_1_1cloud_1_1models_1_1model__swytch_1_1_model___swytch.html#a47101b29e8f20ae63d393fd33a99d562", null ],
+    [ "with_tags", "classsaklient_1_1cloud_1_1models_1_1model__swytch_1_1_model___swytch.html#a1575d2a1c0a2547c8d6833a2fb1c06d9", null ]
 ];

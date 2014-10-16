@@ -10,14 +10,15 @@ var searchData=
   ['addiface',['AddIface',['../class_saklient_1_1_cloud_1_1_resources_1_1_server.html#a3df43ee1ac07e34d8f521b8b69e16bc5',1,'Saklient::Cloud::Resources::Server']]],
   ['addipv6net',['AddIpv6Net',['../class_saklient_1_1_cloud_1_1_resources_1_1_router.html#aa7821be15e1d97ae00efa8e50514fb57',1,'Saklient.Cloud.Resources.Router.AddIpv6Net()'],['../class_saklient_1_1_cloud_1_1_resources_1_1_swytch.html#a63fb2e9d06bdc1e5cc1473398da7df5b',1,'Saklient.Cloud.Resources.Swytch.AddIpv6Net()']]],
   ['addscript',['AddScript',['../class_saklient_1_1_cloud_1_1_resources_1_1_disk_config.html#afe1870cbea9e4a352a1b5fd720bfbea0',1,'Saklient::Cloud::Resources::DiskConfig']]],
+  ['addserver',['AddServer',['../class_saklient_1_1_cloud_1_1_resources_1_1_lb_virtual_ip.html#a3765fc9a9ad9b6b63c05d6272bdb7739',1,'Saklient::Cloud::Resources::LbVirtualIp']]],
   ['addstaticroute',['AddStaticRoute',['../class_saklient_1_1_cloud_1_1_resources_1_1_router.html#ac2cc140d102447d2991e8e9a27c35553',1,'Saklient.Cloud.Resources.Router.AddStaticRoute()'],['../class_saklient_1_1_cloud_1_1_resources_1_1_swytch.html#a1b452c242acae9951d9c8126a951aad7',1,'Saklient.Cloud.Resources.Swytch.AddStaticRoute()']]],
-  ['aftercopy',['AfterCopy',['../class_saklient_1_1_cloud_1_1_resources_1_1_archive.html#a26c88a4ec2b1d12cffe1240d52c2df58',1,'Saklient.Cloud.Resources.Archive.AfterCopy()'],['../class_saklient_1_1_cloud_1_1_resources_1_1_disk.html#ace076bb152aa6472ab2232cc0b8995d6',1,'Saklient.Cloud.Resources.Disk.AfterCopy()']]],
+  ['addvirtualip',['AddVirtualIp',['../class_saklient_1_1_cloud_1_1_resources_1_1_load_balancer.html#a73f3b5682585eb5bf1d0017829c351f7',1,'Saklient::Cloud::Resources::LoadBalancer']]],
   ['aftercreate',['AfterCreate',['../class_saklient_1_1_cloud_1_1_resources_1_1_router.html#a15967d2296beb68b5baf1e13c9e2c8f4',1,'Saklient::Cloud::Resources::Router']]],
-  ['afterdown',['AfterDown',['../class_saklient_1_1_cloud_1_1_resources_1_1_server.html#a35215d9d939ff0efbfeafc7d23951e63',1,'Saklient::Cloud::Resources::Server']]],
   ['ambiguousidentifierexception',['AmbiguousIdentifierException',['../class_saklient_1_1_cloud_1_1_errors_1_1_ambiguous_identifier_exception.html#a8eeb0f99714dddeb0923782556034c53',1,'Saklient::Cloud::Errors::AmbiguousIdentifierException']]],
   ['ambiguouszoneexception',['AmbiguousZoneException',['../class_saklient_1_1_cloud_1_1_errors_1_1_ambiguous_zone_exception.html#a6fc8063db6fa6e0c6906fd0e8bb5ec9e',1,'Saklient::Cloud::Errors::AmbiguousZoneException']]],
   ['apiproxytimeoutexception',['ApiProxyTimeoutException',['../class_saklient_1_1_cloud_1_1_errors_1_1_api_proxy_timeout_exception.html#a695ff4cebbd35d0102916ec4adcf570d',1,'Saklient::Cloud::Errors::ApiProxyTimeoutException']]],
   ['apiproxytimeoutnongetexception',['ApiProxyTimeoutNonGetException',['../class_saklient_1_1_cloud_1_1_errors_1_1_api_proxy_timeout_non_get_exception.html#ad94f16d73c0467162ac54f9e702eeff1',1,'Saklient::Cloud::Errors::ApiProxyTimeoutNonGetException']]],
+  ['apply',['Apply',['../class_saklient_1_1_cloud_1_1_resources_1_1_appliance.html#a5bbdc92067ed987faa90bcd08139a63d',1,'Saklient::Cloud::Resources::Appliance']]],
   ['archiveisincompleteexception',['ArchiveIsIncompleteException',['../class_saklient_1_1_cloud_1_1_errors_1_1_archive_is_incomplete_exception.html#a9635e5d2f109e53ef457757c09209262',1,'Saklient::Cloud::Errors::ArchiveIsIncompleteException']]],
   ['authorize',['Authorize',['../class_saklient_1_1_cloud_1_1_a_p_i.html#adf3d2a6d4735286e4e59b11d30bcde57',1,'Saklient::Cloud::API']]]
 ];

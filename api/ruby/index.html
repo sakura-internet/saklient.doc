@@ -75,24 +75,29 @@ href="https://secure.sakura.ad.jp/cloud/">SAKURA Cloud</a>.</p>
 <p><a href="#how-to-use-this-library-in-your-project">How to use this library
 in your project</a></p>
 </li><li>
+<p><a href="#examples">Examples</a></p>
+</li><li>
 <p><a href="#copyright-and-license">Copyright and license</a></p>
 </li></ul>
 <!-- toc stop -->
 <h2 id="label-Installation">Installation</h2>
 
-<pre class="code ruby"><code class="ruby">gem install specific_install
-gem specific_install -l git@github.com:sakura-internet/saklient.rb.git</code></pre>
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='id identifier rubyid_install'>install</span> <span class='id identifier rubyid_saklient'>saklient</span></code></pre>
 
 <h2 id="label-How+to+use+this+library+in+your+project">How to use this library in your project</h2>
 
 <pre class="ruby"><span class="ruby-identifier">require</span> <span class="ruby-string">&#39;saklient/cloud/api&#39;</span>
-<span class="ruby-identifier">api</span> = <span class="ruby-constant">Saklient</span><span class="ruby-operator">::</span><span class="ruby-constant">Cloud</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span>.<span class="ruby-identifier">authorize</span>(<span class="ruby-constant">YOUR_API_TOKEN</span>, <span class="ruby-constant">YOUR_API_SECRET</span>)
-
-<span class="ruby-comment"># To access resources in the specified zone</span>
-<span class="ruby-identifier">api_is1b</span> = <span class="ruby-identifier">api</span>.<span class="ruby-identifier">in_zone</span>(<span class="ruby-string">&quot;is1b&quot;</span>)
+<span class="ruby-identifier">api</span> = <span class="ruby-constant">Saklient</span><span class="ruby-operator">::</span><span class="ruby-constant">Cloud</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span>.<span class="ruby-identifier">authorize</span>(<span class="ruby-constant">YOUR_API_TOKEN</span>, <span class="ruby-constant">YOUR_API_SECRET</span>, <span class="ruby-constant">ZONE</span>)
+<span class="ruby-comment"># ZONE: &quot;is1a&quot; (Ishikari 1st zone), &quot;is1b&quot; (Ishikari 2nd zone), &quot;tk1v&quot; (Sandbox)</span>
+<span class="ruby-comment"># &quot;tk1v&quot; is recommended for tests</span>
 
 <span class="ruby-comment"># ...</span>
 </pre>
+
+<h2 id="label-Examples">Examples</h2>
+
+<p>Code examples are available <a
+href="http://sakura-internet.github.io/saklient.doc/">here</a>.</p>
 
 <h2 id="label-Copyright+and+license">Copyright and license</h2>
 
@@ -103,7 +108,7 @@ href="http://www.opensource.org/licenses/mit-license.php">MIT license</a>.</p>
 </div></div>
 
     <div id="footer">
-  Generated on Thu Sep 25 10:10:12 2014 by
+  Generated on Thu Oct 16 11:16:11 2014 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.4 (ruby-2.0.0).
 </div>

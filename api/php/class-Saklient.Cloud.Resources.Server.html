@@ -7,7 +7,7 @@
 	<title>Class Saklient\Cloud\Resources\Server</title>
 
 	<script type="text/javascript" src="resources/combined.js?1562529225"></script>
-	<script type="text/javascript" src="elementlist.js?428657502"></script>
+	<script type="text/javascript" src="elementlist.js?3504515586"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -59,6 +59,9 @@
 				<li><a href="class-Saklient.Cloud.Resources.Ipv4Net.html">Ipv4Net</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Ipv6Net.html">Ipv6Net</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.IsoImage.html">IsoImage</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LbServer.html">LbServer</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LbVirtualIp.html">LbVirtualIp</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.LoadBalancer.html">LoadBalancer</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Router.html">Router</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.RouterPlan.html">RouterPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Script.html">Script</a></li>
@@ -66,6 +69,7 @@
 				<li><a href="class-Saklient.Cloud.Resources.ServerInstance.html">ServerInstance</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.ServerPlan.html">ServerPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Swytch.html">Swytch</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.VpcRouter.html">VpcRouter</a></li>
 			</ul>
 
 
@@ -144,7 +148,7 @@ Saklient\Cloud\Resources\Resource
 		<b>Namespace:</b> <a href="namespace-Saklient.html">Saklient</a>\<a href="namespace-Saklient.Cloud.html">Cloud</a>\<a href="namespace-Saklient.Cloud.Resources.html">Resources</a><br>
 		
 
-		<b>Located at</b> <a href="source-class-Saklient.Cloud.Resources.Server.html#34-934" title="Go to source code">Saklient/Cloud/Resources/Server.php</a><br>
+		<b>Located at</b> <a href="source-class-Saklient.Cloud.Resources.Server.html#34-916" title="Go to source code">Saklient/Cloud/Resources/Server.php</a><br>
 	</div>
 
 
@@ -447,42 +451,40 @@ Saklient\Cloud\Resources\Resource
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="afterDown" id="_afterDown">
+	<tr data-order="sleepUntilUp" id="_sleepUntilUp">
 
 		<td class="attributes"><code>
 			 public 
-			
+			boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_afterDown">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Server.html#293-307" title="Go to source code">afterDown</a>( <span>integer <var>$timeoutSec</var></span>, <span>callable <var>$callback</var></span> )</code>
+		<a class="anchor" href="#_sleepUntilUp">#</a>
+		<code><a href="source-class-Saklient.Cloud.Resources.Server.html#293-304" title="Go to source code">sleepUntilUp</a>( <span>integer <var>$timeoutSec</var> = <span class="php-num">180</span></span> )</code>
 
 		<div class="description short">
 			
-<p>サーバが停止するまで待機します。</p>
+<p>サーバが起動するまで待機します。</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>サーバが停止するまで待機します。</p>
+<p>サーバが起動するまで待機します。</p>
 
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$timeoutSec</var></dt>
-					<dd><code>integer</code><br>$timeoutSec</dd>
-					<dt><var>$callback</var></dt>
-					<dd><code>callable</code><br>$callback</dd>
+					<dd><code>integer</code><br>$timeoutSec=180</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
 				<div class="list">
-					<code></code><br>成功時はtrue、タイムアウトやエラーによる失敗時はfalseを返します。<br>
+					<code>boolean</code><br>
 				</div>
 
 
@@ -502,7 +504,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sleepUntilDown">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Server.html#329-340" title="Go to source code">sleepUntilDown</a>( <span>integer <var>$timeoutSec</var> = <span class="php-num">180</span></span> )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Server.html#306-317" title="Go to source code">sleepUntilDown</a>( <span>integer <var>$timeoutSec</var> = <span class="php-num">180</span></span> )</code>
 
 		<div class="description short">
 			
@@ -544,7 +546,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_changePlan">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Server.html#374-391" title="Go to source code">changePlan</a>( <span><code><a href="class-Saklient.Cloud.Resources.ServerPlan.html">Saklient\Cloud\Resources\ServerPlan</a></code> <var>$planTo</var></span> )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Server.html#355-372" title="Go to source code">changePlan</a>( <span><code><a href="class-Saklient.Cloud.Resources.ServerPlan.html">Saklient\Cloud\Resources\ServerPlan</a></code> <var>$planTo</var></span> )</code>
 
 		<div class="description short">
 			
@@ -588,7 +590,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_findDisks">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Server.html#393-403" title="Go to source code">findDisks</a>( )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Server.html#374-384" title="Go to source code">findDisks</a>( )</code>
 
 		<div class="description short">
 			
@@ -625,7 +627,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addIface">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Server.html#405-417" title="Go to source code">addIface</a>( )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Server.html#386-398" title="Go to source code">addIface</a>( )</code>
 
 		<div class="description short">
 			
@@ -662,7 +664,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_insertIsoImage">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Server.html#419-435" title="Go to source code">insertIsoImage</a>( <span><code><a href="class-Saklient.Cloud.Resources.IsoImage.html">Saklient\Cloud\Resources\IsoImage</a></code> <var>$iso</var></span> )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Server.html#400-416" title="Go to source code">insertIsoImage</a>( <span><code><a href="class-Saklient.Cloud.Resources.IsoImage.html">Saklient\Cloud\Resources\IsoImage</a></code> <var>$iso</var></span> )</code>
 
 		<div class="description short">
 			
@@ -704,7 +706,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_ejectIsoImage">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Server.html#437-449" title="Go to source code">ejectIsoImage</a>( )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Server.html#418-430" title="Go to source code">ejectIsoImage</a>( )</code>
 
 		<div class="description short">
 			
@@ -743,6 +745,7 @@ _className(),
 _id(), 
 _onAfterApiDeserialize(), 
 _onAfterApiSerialize(), 
+_onBeforeApiSerialize(), 
 _onBeforeSave(), 
 _reload(), 
 _rootKey(), 
@@ -753,13 +756,14 @@ apiDeserializeImpl(),
 apiSerialize(), 
 apiSerializeID(), 
 apiSerializeImpl(), 
+createWith(), 
 destroy(), 
 dump(), 
 exists(), 
 get_client(), 
 normalizeFieldName(), 
-setParam(), 
-setProperty()
+requestRetry(), 
+setParam()
 		</code></td>
 	</tr>
 	</table>
@@ -856,13 +860,13 @@ setProperty()
 
 			<div class="description short">
 				
-<p>タグ</p>
+<p>タグ文字列の配列</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>タグ</p>
+<p>タグ文字列の配列</p>
 
 
 			</div>

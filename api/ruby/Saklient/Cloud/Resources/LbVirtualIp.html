@@ -1,0 +1,879 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Saklient::Cloud::Resources::LbVirtualIp
+  
+    &mdash; Documentation by YARD 0.8.7.4
+  
+</title>
+
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../../';
+  framesUrl = "../../../frames.html#!Saklient/Cloud/Resources/LbVirtualIp.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../../_index.html">Index (L)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../Saklient.html" title="Saklient (module)">Saklient</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../Cloud.html" title="Saklient::Cloud (module)">Cloud</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Resources.html" title="Saklient::Cloud::Resources (module)">Resources</a></span></span>
+     &raquo; 
+    <span class="title">LbVirtualIp</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Saklient::Cloud::Resources::LbVirtualIp
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Saklient::Cloud::Resources::LbVirtualIp</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/saklient/cloud/resources/lb_virtual_ip.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>ロードバランサの仮想IPアドレス.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delay_loop-instance_method" title="#delay_loop (instance method)">- (Fixnum) <strong>delay_loop</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>チェック間隔 [秒].</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#port-instance_method" title="#port (instance method)">- (Fixnum) <strong>port</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>ポート番号.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#servers-instance_method" title="#servers (instance method)">- (Array&lt;LbServer&gt;) <strong>servers</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>実サーバ <span class='object_link'><a href="LbServer.html" title="Saklient::Cloud::Resources::LbServer (class)">LbServer</a></span> の配列.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#virtual_ip_address-instance_method" title="#virtual_ip_address (instance method)">- (String) <strong>virtual_ip_address</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>VIPアドレス.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_server-instance_method" title="#add_server (instance method)">- (LbServer) <strong>add_server</strong>(settings = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_server_by_address-instance_method" title="#get_server_by_address (instance method)">- (LbServer) <strong>get_server_by_address</strong>(address) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_raw_settings-instance_method" title="#to_raw_settings (instance method)">- (any) <strong>to_raw_settings</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update_status-instance_method" title="#update_status (instance method)">- (LbVirtualIp) <strong>update_status</strong>(srvs) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="delay_loop=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="delay_loop-instance_method">
+  
+    - (<tt>Fixnum</tt>) <strong>delay_loop</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>チェック間隔 [秒]</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Fixnum</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+111
+112
+113</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/lb_virtual_ip.rb', line 111</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delay_loop'>delay_loop</span>
+  <span class='ivar'>@delay_loop</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="port=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="port-instance_method">
+  
+    - (<tt>Fixnum</tt>) <strong>port</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>ポート番号</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Fixnum</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+75
+76
+77</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/lb_virtual_ip.rb', line 75</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_port'>port</span>
+  <span class='ivar'>@port</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="servers-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="LbServer.html" title="Saklient::Cloud::Resources::LbServer (class)">LbServer</a></span>&gt;</tt>) <strong>servers</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>実サーバ <span class='object_link'><a href="LbServer.html" title="Saklient::Cloud::Resources::LbServer (class)">Saklient::Cloud::Resources::LbServer</a></span> の配列</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="LbServer.html" title="Saklient::Cloud::Resources::LbServer (class)">LbServer</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+138
+139
+140</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/lb_virtual_ip.rb', line 138</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_servers'>servers</span>
+  <span class='ivar'>@servers</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="virtual_ip_address=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="virtual_ip_address-instance_method">
+  
+    - (<tt>String</tt>) <strong>virtual_ip_address</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>VIPアドレス</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+39
+40
+41</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/lb_virtual_ip.rb', line 39</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_virtual_ip_address'>virtual_ip_address</span>
+  <span class='ivar'>@virtual_ip_address</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="add_server-instance_method">
+  
+    - (<tt><span class='object_link'><a href="LbServer.html" title="Saklient::Cloud::Resources::LbServer (class)">LbServer</a></span></tt>) <strong>add_server</strong>(settings = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>settings</span>
+      
+      
+        <span class='type'>(<tt>any</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="LbServer.html" title="Saklient::Cloud::Resources::LbServer (class)">LbServer</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+180
+181
+182
+183
+184</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/lb_virtual_ip.rb', line 180</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_server'>add_server</span><span class='lparen'>(</span><span class='id identifier rubyid_settings'>settings</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_ret'>ret</span> <span class='op'>=</span> <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Cloud</span><span class='op'>::</span><span class='const'>Resources</span><span class='op'>::</span><span class='const'>LbServer</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_settings'>settings</span><span class='rparen'>)</span>
+  <span class='ivar'>@_servers</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_ret'>ret</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_ret'>ret</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_server_by_address-instance_method">
+  
+    - (<tt><span class='object_link'><a href="LbServer.html" title="Saklient::Cloud::Resources::LbServer (class)">LbServer</a></span></tt>) <strong>get_server_by_address</strong>(address) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>address</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="LbServer.html" title="Saklient::Cloud::Resources::LbServer (class)">LbServer</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+202
+203
+204
+205
+206
+207
+208</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/lb_virtual_ip.rb', line 202</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_server_by_address'>get_server_by_address</span><span class='lparen'>(</span><span class='id identifier rubyid_address'>address</span><span class='rparen'>)</span>
+  <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_validate_type'>validate_type</span><span class='lparen'>(</span><span class='id identifier rubyid_address'>address</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>String</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='kw'>for</span> <span class='id identifier rubyid_srv'>srv</span> <span class='kw'>in</span> <span class='ivar'>@_servers</span>
+    <span class='kw'>return</span> <span class='id identifier rubyid_srv'>srv</span> <span class='kw'>if</span> <span class='id identifier rubyid_srv'>srv</span><span class='period'>.</span><span class='id identifier rubyid_ip_address'>ip_address</span> <span class='op'>==</span> <span class='id identifier rubyid_address'>address</span>
+  <span class='kw'>end</span>
+  <span class='kw'>return</span> <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_raw_settings-instance_method">
+  
+    - (<tt>any</tt>) <strong>to_raw_settings</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>any</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/lb_virtual_ip.rb', line 187</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_to_raw_settings'>to_raw_settings</span>
+  <span class='id identifier rubyid_servers'>servers</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+  <span class='kw'>for</span> <span class='id identifier rubyid_server'>server</span> <span class='kw'>in</span> <span class='ivar'>@_servers</span>
+    <span class='id identifier rubyid_servers'>servers</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_server'>server</span><span class='period'>.</span><span class='id identifier rubyid_to_raw_settings'>to_raw_settings</span>
+  <span class='kw'>end</span>
+  <span class='kw'>return</span> <span class='lbrace'>{</span>
+    <span class='label'>VirtualIPAddress:</span> <span class='ivar'>@_virtual_ip_address</span><span class='comma'>,</span>
+    <span class='label'>Port:</span> <span class='ivar'>@_port</span><span class='comma'>,</span>
+    <span class='label'>DelayLoop:</span> <span class='ivar'>@_delay_loop</span><span class='comma'>,</span>
+    <span class='label'>Servers:</span> <span class='id identifier rubyid_servers'>servers</span>
+  <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update_status-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="Saklient::Cloud::Resources::LbVirtualIp (class)">LbVirtualIp</a></span></tt>) <strong>update_status</strong>(srvs) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>srvs</span>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="Saklient::Cloud::Resources::LbVirtualIp (class)">LbVirtualIp</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/lb_virtual_ip.rb', line 212</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update_status'>update_status</span><span class='lparen'>(</span><span class='id identifier rubyid_srvs'>srvs</span><span class='rparen'>)</span>
+  <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_validate_type'>validate_type</span><span class='lparen'>(</span><span class='id identifier rubyid_srvs'>srvs</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Array</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='kw'>for</span> <span class='id identifier rubyid_srvDyn'>srvDyn</span> <span class='kw'>in</span> <span class='id identifier rubyid_srvs'>srvs</span>
+    <span class='id identifier rubyid_ip'>ip</span> <span class='op'>=</span> <span class='id identifier rubyid_srvDyn'>srvDyn</span><span class='lbracket'>[</span><span class='symbol'>:IPAddress</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_srv'>srv</span> <span class='op'>=</span> <span class='id identifier rubyid_get_server_by_address'>get_server_by_address</span><span class='lparen'>(</span><span class='id identifier rubyid_ip'>ip</span><span class='rparen'>)</span>
+    <span class='kw'>next</span> <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_srv'>srv</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_srv'>srv</span><span class='period'>.</span><span class='id identifier rubyid_update_status'>update_status</span><span class='lparen'>(</span><span class='id identifier rubyid_srvDyn'>srvDyn</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='kw'>return</span> <span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Thu Oct 16 11:16:18 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.4 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

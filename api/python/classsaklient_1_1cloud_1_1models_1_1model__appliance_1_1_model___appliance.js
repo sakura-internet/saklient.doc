@@ -1,6 +1,8 @@
 var classsaklient_1_1cloud_1_1models_1_1model__appliance_1_1_model___appliance =
 [
     [ "__init__", "classsaklient_1_1cloud_1_1models_1_1model__appliance_1_1_model___appliance.html#a883f2691bac0e8d7a6a23479801d6748", null ],
+    [ "create_load_balancer", "classsaklient_1_1cloud_1_1models_1_1model__appliance_1_1_model___appliance.html#a7945ebfc78383fc512f16b893373f52d", null ],
+    [ "create_vpc_router", "classsaklient_1_1cloud_1_1models_1_1model__appliance_1_1_model___appliance.html#ad2803e76c82f66eea6f09aa9b9a25c7c", null ],
     [ "filter_by", "classsaklient_1_1cloud_1_1models_1_1model__appliance_1_1_model___appliance.html#a94c608f2292c6298326955f28cb127dc", null ],
     [ "find", "classsaklient_1_1cloud_1_1models_1_1model__appliance_1_1_model___appliance.html#abf8d8908fc6f1e3ea986f81f31027d97", null ],
     [ "get_by_id", "classsaklient_1_1cloud_1_1models_1_1model__appliance_1_1_model___appliance.html#adcfc9dd6d515318d4a605bef7c40d72e", null ],

@@ -364,7 +364,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>タグ.</p>
+<p>タグ文字列の配列.</p>
 </div></span>
   
 </li>
@@ -402,30 +402,6 @@
   
     <span class="summary_desc"><div class='inline'>
 <p>サーバにインタフェースを1つ増設し, それを取得します.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#after_down-instance_method" title="#after_down (instance method)">- (void) <strong>after_down</strong>(timeoutSec) {|Saklient::Cloud::Resources::Server, bool| ... }</a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>サーバが停止するまで待機します.</p>
 </div></span>
   
 </li>
@@ -722,6 +698,30 @@
         <li class="public ">
   <span class="summary_signature">
     
+      <a href="#sleep_until_up-instance_method" title="#sleep_until_up (instance method)">- (bool) <strong>sleep_until_up</strong>(timeoutSec = 180) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>サーバが起動するまで待機します.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#stop-instance_method" title="#stop (instance method)">- (Server) <strong>stop</strong> </a>
     
 
@@ -797,12 +797,12 @@
       <pre class="lines">
 
 
-586
-587
-588</pre>
+566
+567
+568</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 586</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 566</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_availability'>availability</span>
   <span class='ivar'>@availability</span>
@@ -853,12 +853,12 @@
       <pre class="lines">
 
 
-389
-390
-391</pre>
+368
+369
+370</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 389</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 368</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_description'>description</span>
   <span class='ivar'>@description</span>
@@ -909,12 +909,12 @@
       <pre class="lines">
 
 
-469
-470
-471</pre>
+449
+450
+451</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 469</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 449</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_icon'>icon</span>
   <span class='ivar'>@icon</span>
@@ -965,12 +965,12 @@
       <pre class="lines">
 
 
-313
-314
-315</pre>
+292
+293
+294</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 313</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 292</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_id'>id</span>
   <span class='ivar'>@id</span>
@@ -1021,12 +1021,12 @@
       <pre class="lines">
 
 
-538
-539
-540</pre>
+518
+519
+520</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 538</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 518</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ifaces'>ifaces</span>
   <span class='ivar'>@ifaces</span>
@@ -1077,12 +1077,12 @@
       <pre class="lines">
 
 
-562
-563
-564</pre>
+542
+543
+544</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 562</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 542</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_instance'>instance</span>
   <span class='ivar'>@instance</span>
@@ -1133,12 +1133,12 @@
       <pre class="lines">
 
 
-349
-350
-351</pre>
+328
+329
+330</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 349</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 328</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_name'>name</span>
   <span class='ivar'>@name</span>
@@ -1189,12 +1189,12 @@
       <pre class="lines">
 
 
-510
-511
-512</pre>
+490
+491
+492</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 510</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 490</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_plan'>plan</span>
   <span class='ivar'>@plan</span>
@@ -1218,7 +1218,7 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>タグ</p>
+<p>タグ文字列の配列</p>
 
 
   </div>
@@ -1245,12 +1245,12 @@
       <pre class="lines">
 
 
-429
-430
-431</pre>
+409
+410
+411</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 429</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 409</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_tags'>tags</span>
   <span class='ivar'>@tags</span>
@@ -1311,107 +1311,21 @@
       <pre class="lines">
 
 
-265
-266
-267
-268
-269
-270</pre>
+244
+245
+246
+247
+248
+249</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 265</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 244</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_iface'>add_iface</span>
   <span class='id identifier rubyid_model'>model</span> <span class='op'>=</span> <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_create_class_instance'>create_class_instance</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>saklient.cloud.models.Model_Iface</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='ivar'>@_client</span><span class='rbracket'>]</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='id identifier rubyid_model'>model</span><span class='period'>.</span><span class='id identifier rubyid_create'>create</span>
-  <span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_set_property'>set_property</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>serverId</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid__id'>_id</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_server_id'>server_id</span> <span class='op'>=</span> <span class='id identifier rubyid__id'>_id</span>
   <span class='kw'>return</span> <span class='id identifier rubyid_res'>res</span><span class='period'>.</span><span class='id identifier rubyid_save'>save</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="after_down-instance_method">
-  
-    - (<tt>void</tt>) <strong>after_down</strong>(timeoutSec) {|Saklient::Cloud::Resources::Server, bool| ... }
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    <p class="note returns_void">This method returns an undefined value.</p>
-<p>サーバが停止するまで待機します.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
-  
-    <li>
-      
-        <span class='name'>timeoutSec</span>
-      
-      
-        <span class='type'>(<tt>Fixnum</tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
-
-<p class="tag_title">Yields:</p>
-<ul class="yield">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt><span class='object_link'><a href="" title="Saklient::Cloud::Resources::Server (class)">Saklient::Cloud::Resources::Server</a></span></tt>, <tt>bool</tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
-<p class="tag_title">Yield Returns:</p>
-<ul class="yieldreturn">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>void</tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-180
-181
-182
-183
-184</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 180</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_after_down'>after_down</span><span class='lparen'>(</span><span class='id identifier rubyid_timeoutSec'>timeoutSec</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_callback'>callback</span><span class='rparen'>)</span>
-  <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_validate_type'>validate_type</span><span class='lparen'>(</span><span class='id identifier rubyid_timeoutSec'>timeoutSec</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Fixnum</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
-  <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_validate_type'>validate_type</span><span class='lparen'>(</span><span class='id identifier rubyid_callback'>callback</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Proc</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_after_status'>after_status</span><span class='lparen'>(</span><span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Cloud</span><span class='op'>::</span><span class='const'>Enums</span><span class='op'>::</span><span class='const'>EServerInstanceStatus</span><span class='op'>::</span><span class='id identifier rubyid_down'>down</span><span class='comma'>,</span> <span class='id identifier rubyid_timeoutSec'>timeoutSec</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_callback'>callback</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1540,16 +1454,16 @@
       <pre class="lines">
 
 
-246
-247
-248
-249
-250
-251
-252</pre>
+225
+226
+227
+228
+229
+230
+231</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 246</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 225</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_change_plan'>change_plan</span><span class='lparen'>(</span><span class='id identifier rubyid_planTo'>planTo</span><span class='rparen'>)</span>
   <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_validate_type'>validate_type</span><span class='lparen'>(</span><span class='id identifier rubyid_planTo'>planTo</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Saklient::Cloud::Resources::ServerPlan</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -1607,15 +1521,15 @@
       <pre class="lines">
 
 
-288
-289
-290
-291
-292
-293</pre>
+267
+268
+269
+270
+271
+272</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 288</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 267</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_eject_iso_image'>eject_iso_image</span>
   <span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='id identifier rubyid__api_path'>_api_path</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_url_encode'>url_encode</span><span class='lparen'>(</span><span class='id identifier rubyid__id'>_id</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/cdrom</span><span class='tstring_end'>&#39;</span></span>
@@ -1667,13 +1581,13 @@
       <pre class="lines">
 
 
-257
-258
-259
-260</pre>
+236
+237
+238
+239</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 257</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 236</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_find_disks'>find_disks</span>
   <span class='id identifier rubyid_model'>model</span> <span class='op'>=</span> <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_create_class_instance'>create_class_instance</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>saklient.cloud.models.Model_Disk</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='ivar'>@_client</span><span class='rbracket'>]</span><span class='rparen'>)</span>
@@ -1743,17 +1657,17 @@
       <pre class="lines">
 
 
-276
-277
-278
-279
-280
-281
-282
-283</pre>
+255
+256
+257
+258
+259
+260
+261
+262</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 276</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 255</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_insert_iso_image'>insert_iso_image</span><span class='lparen'>(</span><span class='id identifier rubyid_iso'>iso</span><span class='rparen'>)</span>
   <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_validate_type'>validate_type</span><span class='lparen'>(</span><span class='id identifier rubyid_iso'>iso</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Saklient::Cloud::Resources::IsoImage</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -2177,17 +2091,90 @@
       <pre class="lines">
 
 
-210
-211
-212
-213</pre>
+187
+188
+189
+190</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 210</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 187</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_sleep_until_down'>sleep_until_down</span><span class='lparen'>(</span><span class='id identifier rubyid_timeoutSec'>timeoutSec</span> <span class='op'>=</span> <span class='int'>180</span><span class='rparen'>)</span>
   <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_validate_type'>validate_type</span><span class='lparen'>(</span><span class='id identifier rubyid_timeoutSec'>timeoutSec</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Fixnum</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
   <span class='kw'>return</span> <span class='id identifier rubyid_sleep_until'>sleep_until</span><span class='lparen'>(</span><span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Cloud</span><span class='op'>::</span><span class='const'>Enums</span><span class='op'>::</span><span class='const'>EServerInstanceStatus</span><span class='op'>::</span><span class='id identifier rubyid_down'>down</span><span class='comma'>,</span> <span class='id identifier rubyid_timeoutSec'>timeoutSec</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sleep_until_up-instance_method">
+  
+    - (<tt>bool</tt>) <strong>sleep_until_up</strong>(timeoutSec = 180) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>サーバが起動するまで待機します.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>timeoutSec</span>
+      
+      
+        <span class='type'>(<tt>Fixnum</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>180</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>bool</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+178
+179
+180
+181</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/server.rb', line 178</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sleep_until_up'>sleep_until_up</span><span class='lparen'>(</span><span class='id identifier rubyid_timeoutSec'>timeoutSec</span> <span class='op'>=</span> <span class='int'>180</span><span class='rparen'>)</span>
+  <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_validate_type'>validate_type</span><span class='lparen'>(</span><span class='id identifier rubyid_timeoutSec'>timeoutSec</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Fixnum</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_sleep_until'>sleep_until</span><span class='lparen'>(</span><span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Cloud</span><span class='op'>::</span><span class='const'>Enums</span><span class='op'>::</span><span class='const'>EServerInstanceStatus</span><span class='op'>::</span><span class='id identifier rubyid_up'>up</span><span class='comma'>,</span> <span class='id identifier rubyid_timeoutSec'>timeoutSec</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2260,7 +2247,7 @@
 </div>
 
     <div id="footer">
-  Generated on Thu Sep 25 10:10:14 2014 by
+  Generated on Thu Oct 16 11:16:13 2014 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.4 (ruby-2.0.0).
 </div>

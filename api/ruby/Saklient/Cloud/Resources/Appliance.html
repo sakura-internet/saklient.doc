@@ -112,12 +112,45 @@
 <div class="tags">
   
 
+</div><div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="LoadBalancer.html" title="Saklient::Cloud::Resources::LoadBalancer (class)">LoadBalancer</a></span>, <span class='object_link'><a href="VpcRouter.html" title="Saklient::Cloud::Resources::VpcRouter (class)">VpcRouter</a></span></p>
 </div>
+
 
 
 
   <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
   <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#availability-instance_method" title="#availability (instance method)">- (String) <strong>availability</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>有効状態 <span class='object_link'><a href="../Enums/EAvailability.html" title="Saklient::Cloud::Enums::EAvailability (class)">Enums::EAvailability</a></span>.</p>
+</div></span>
+  
+</li>
+
     
       <li class="public ">
   <span class="summary_signature">
@@ -252,7 +285,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>プラン.</p>
+<p>インタフェース <span class='object_link'><a href="Iface.html" title="Saklient::Cloud::Resources::Iface (class)">Iface</a></span> の配列.</p>
 </div></span>
   
 </li>
@@ -280,6 +313,87 @@
   
     <span class="summary_desc"><div class='inline'>
 <p>名前.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#plan_id-instance_method" title="#plan_id (instance method)">- (Fixnum) <strong>plan_id</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>プラン.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#raw_annotation-instance_method" title="#raw_annotation (instance method)">- (any) <strong>raw_annotation</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>注釈.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#raw_settings-instance_method" title="#raw_settings (instance method)">- (any) <strong>raw_settings</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>設定の生データ.</p>
 </div></span>
   
 </li>
@@ -317,6 +431,64 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#status-instance_method" title="#status (instance method)">- (String) <strong>status</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>起動状態 <span class='object_link'><a href="../Enums/EServerInstanceStatus.html" title="Saklient::Cloud::Enums::EServerInstanceStatus (class)">Enums::EServerInstanceStatus</a></span>.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#swytch_id-instance_method" title="#swytch_id (instance method)">- (String) <strong>swytch_id</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>接続先スイッチID.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#tags-instance_method" title="#tags (instance method)">- (Array&lt;String&gt;) <strong>tags</strong> </a>
     
 
@@ -335,7 +507,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>タグ.</p>
+<p>タグ文字列の配列.</p>
 </div></span>
   
 </li>
@@ -357,6 +529,30 @@
         <li class="public ">
   <span class="summary_signature">
     
+      <a href="#apply-instance_method" title="#apply (instance method)">- (Appliance) <strong>apply</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>アプライアンスの設定を反映します.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#boot-instance_method" title="#boot (instance method)">- (Appliance) <strong>boot</strong> </a>
     
 
@@ -373,6 +569,30 @@
   
     <span class="summary_desc"><div class='inline'>
 <p>アプライアンスを起動します.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_swytch-instance_method" title="#get_swytch (instance method)">- (Swytch) <strong>get_swytch</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>このルータが接続されているスイッチを取得します.</p>
 </div></span>
   
 </li>
@@ -477,6 +697,78 @@
         <li class="public ">
   <span class="summary_signature">
     
+      <a href="#sleep_until_down-instance_method" title="#sleep_until_down (instance method)">- (bool) <strong>sleep_until_down</strong>(timeoutSec = 600) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>アプライアンスが停止するまで待機します.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sleep_until_up-instance_method" title="#sleep_until_up (instance method)">- (bool) <strong>sleep_until_up</strong>(timeoutSec = 600) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>アプライアンスが起動するまで待機します.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sleep_while_creating-instance_method" title="#sleep_while_creating (instance method)">- (bool) <strong>sleep_while_creating</strong>(timeoutSec = 600) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>作成中のアプライアンスが利用可能になるまで待機します.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#stop-instance_method" title="#stop (instance method)">- (Appliance) <strong>stop</strong> </a>
     
 
@@ -512,9 +804,65 @@
     <h2>Instance Attribute Details</h2>
     
       
-      <span id="clazz=-instance_method"></span>
+      <span id=""></span>
       <div class="method_details first">
-  <h3 class="signature first" id="clazz-instance_method">
+  <h3 class="signature first" id="availability-instance_method">
+  
+    - (<tt>String</tt>) <strong>availability</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>有効状態 <span class='object_link'><a href="../Enums/EAvailability.html" title="Saklient::Cloud::Enums::EAvailability (class)">Enums::EAvailability</a></span></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+731
+732
+733</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 731</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_availability'>availability</span>
+  <span class='ivar'>@availability</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="clazz=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="clazz-instance_method">
   
     - (<tt>String</tt>) <strong>clazz</strong> 
   
@@ -552,12 +900,12 @@
       <pre class="lines">
 
 
-203
-204
-205</pre>
+326
+327
+328</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 203</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 326</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_clazz'>clazz</span>
   <span class='ivar'>@clazz</span>
@@ -608,12 +956,12 @@
       <pre class="lines">
 
 
-283
-284
-285</pre>
+406
+407
+408</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 283</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 406</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_description'>description</span>
   <span class='ivar'>@description</span>
@@ -664,12 +1012,12 @@
       <pre class="lines">
 
 
-363
-364
-365</pre>
+487
+488
+489</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 363</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 487</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_icon'>icon</span>
   <span class='ivar'>@icon</span>
@@ -720,12 +1068,12 @@
       <pre class="lines">
 
 
-166
-167
-168</pre>
+289
+290
+291</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 166</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 289</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_id'>id</span>
   <span class='ivar'>@id</span>
@@ -749,7 +1097,7 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>プラン</p>
+<p>インタフェース <span class='object_link'><a href="Iface.html" title="Saklient::Cloud::Resources::Iface (class)">Iface</a></span> の配列</p>
 
 
   </div>
@@ -776,12 +1124,12 @@
       <pre class="lines">
 
 
-391
-392
-393</pre>
+556
+557
+558</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 391</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 556</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ifaces'>ifaces</span>
   <span class='ivar'>@ifaces</span>
@@ -832,15 +1180,183 @@
       <pre class="lines">
 
 
-243
-244
-245</pre>
+366
+367
+368</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 243</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 366</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_name'>name</span>
   <span class='ivar'>@name</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="plan_id=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="plan_id-instance_method">
+  
+    - (<tt>Fixnum</tt>) <strong>plan_id</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>プラン</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Fixnum</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+528
+529
+530</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 528</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_plan_id'>plan_id</span>
+  <span class='ivar'>@plan_id</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="raw_annotation=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="raw_annotation-instance_method">
+  
+    - (<tt>any</tt>) <strong>raw_annotation</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>注釈</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>any</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+592
+593
+594</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 592</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_raw_annotation'>raw_annotation</span>
+  <span class='ivar'>@raw_annotation</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="raw_settings=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="raw_settings-instance_method">
+  
+    - (<tt>any</tt>) <strong>raw_settings</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>設定の生データ</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>any</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+632
+633
+634</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 632</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_raw_settings'>raw_settings</span>
+  <span class='ivar'>@raw_settings</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -888,15 +1404,127 @@
       <pre class="lines">
 
 
-415
-416
-417</pre>
+707
+708
+709</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 415</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 707</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_service_class'>service_class</span>
   <span class='ivar'>@service_class</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="status-instance_method">
+  
+    - (<tt>String</tt>) <strong>status</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>起動状態 <span class='object_link'><a href="../Enums/EServerInstanceStatus.html" title="Saklient::Cloud::Enums::EServerInstanceStatus (class)">Enums::EServerInstanceStatus</a></span></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+683
+684
+685</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 683</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_status'>status</span>
+  <span class='ivar'>@status</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="swytch_id-instance_method">
+  
+    - (<tt>String</tt>) <strong>swytch_id</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>接続先スイッチID</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+755
+756
+757</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 755</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_swytch_id'>swytch_id</span>
+  <span class='ivar'>@swytch_id</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -917,7 +1545,7 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>タグ</p>
+<p>タグ文字列の配列</p>
 
 
   </div>
@@ -944,12 +1572,12 @@
       <pre class="lines">
 
 
-323
-324
-325</pre>
+447
+448
+449</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 323</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 447</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_tags'>tags</span>
   <span class='ivar'>@tags</span>
@@ -967,7 +1595,68 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="boot-instance_method">
+  <h3 class="signature first" id="apply-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="Saklient::Cloud::Resources::Appliance (class)">Appliance</a></span></tt>) <strong>apply</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>アプライアンスの設定を反映します.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="Saklient::Cloud::Resources::Appliance (class)">Appliance</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>this</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+177
+178
+179
+180</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 177</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_apply'>apply</span>
+  <span class='ivar'>@_client</span><span class='period'>.</span><span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>PUT</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid__api_path'>_api_path</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_url_encode'>url_encode</span><span class='lparen'>(</span><span class='id identifier rubyid__id'>_id</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/config</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="boot-instance_method">
   
     - (<tt><span class='object_link'><a href="" title="Saklient::Cloud::Resources::Appliance (class)">Appliance</a></span></tt>) <strong>boot</strong> 
   
@@ -1010,17 +1699,75 @@
       <pre class="lines">
 
 
-119
-120
-121
-122</pre>
+185
+186
+187
+188</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 119</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 185</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_boot'>boot</span>
   <span class='ivar'>@_client</span><span class='period'>.</span><span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>PUT</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid__api_path'>_api_path</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_url_encode'>url_encode</span><span class='lparen'>(</span><span class='id identifier rubyid__id'>_id</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/power</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
   <span class='kw'>return</span> <span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_swytch-instance_method">
+  
+    - (<tt><span class='object_link'><a href="Swytch.html" title="Saklient::Cloud::Resources::Swytch (class)">Swytch</a></span></tt>) <strong>get_swytch</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>このルータが接続されているスイッチを取得します.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Swytch.html" title="Saklient::Cloud::Resources::Swytch (class)">Swytch</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+168
+169
+170
+171
+172</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 168</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_swytch'>get_swytch</span>
+  <span class='id identifier rubyid_model'>model</span> <span class='op'>=</span> <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_create_class_instance'>create_class_instance</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>saklient.cloud.models.Model_Swytch</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='ivar'>@_client</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_id'>id</span> <span class='op'>=</span> <span class='id identifier rubyid_get_swytch_id'>get_swytch_id</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_model'>model</span><span class='period'>.</span><span class='id identifier rubyid_get_by_id'>get_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1071,13 +1818,13 @@
       <pre class="lines">
 
 
-143
-144
-145
-146</pre>
+209
+210
+211
+212</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 143</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 209</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reboot'>reboot</span>
   <span class='ivar'>@_client</span><span class='period'>.</span><span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>PUT</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid__api_path'>_api_path</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_url_encode'>url_encode</span><span class='lparen'>(</span><span class='id identifier rubyid__id'>_id</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/reset</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -1132,12 +1879,12 @@
       <pre class="lines">
 
 
-101
-102
-103</pre>
+139
+140
+141</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 101</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 139</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reload'>reload</span>
   <span class='kw'>return</span> <span class='id identifier rubyid__reload'>_reload</span>
@@ -1191,12 +1938,12 @@
       <pre class="lines">
 
 
-94
-95
-96</pre>
+132
+133
+134</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 94</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 132</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_save'>save</span>
   <span class='kw'>return</span> <span class='id identifier rubyid__save'>_save</span>
@@ -1250,17 +1997,264 @@
       <pre class="lines">
 
 
-127
-128
-129
-130</pre>
+193
+194
+195
+196</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 127</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 193</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_shutdown'>shutdown</span>
   <span class='ivar'>@_client</span><span class='period'>.</span><span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>DELETE</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid__api_path'>_api_path</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_url_encode'>url_encode</span><span class='lparen'>(</span><span class='id identifier rubyid__id'>_id</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/power</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
   <span class='kw'>return</span> <span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sleep_until_down-instance_method">
+  
+    - (<tt>bool</tt>) <strong>sleep_until_down</strong>(timeoutSec = 600) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>アプライアンスが停止するまで待機します.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>timeoutSec</span>
+      
+      
+        <span class='type'>(<tt>Fixnum</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>600</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>bool</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>成功時はtrue, タイムアウトやエラーによる失敗時はfalseを返します.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+245
+246
+247
+248</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 245</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sleep_until_down'>sleep_until_down</span><span class='lparen'>(</span><span class='id identifier rubyid_timeoutSec'>timeoutSec</span> <span class='op'>=</span> <span class='int'>600</span><span class='rparen'>)</span>
+  <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_validate_type'>validate_type</span><span class='lparen'>(</span><span class='id identifier rubyid_timeoutSec'>timeoutSec</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Fixnum</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_sleep_until'>sleep_until</span><span class='lparen'>(</span><span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Cloud</span><span class='op'>::</span><span class='const'>Enums</span><span class='op'>::</span><span class='const'>EServerInstanceStatus</span><span class='op'>::</span><span class='id identifier rubyid_down'>down</span><span class='comma'>,</span> <span class='id identifier rubyid_timeoutSec'>timeoutSec</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sleep_until_up-instance_method">
+  
+    - (<tt>bool</tt>) <strong>sleep_until_up</strong>(timeoutSec = 600) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>アプライアンスが起動するまで待機します.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>timeoutSec</span>
+      
+      
+        <span class='type'>(<tt>Fixnum</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>600</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>bool</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+236
+237
+238
+239</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 236</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sleep_until_up'>sleep_until_up</span><span class='lparen'>(</span><span class='id identifier rubyid_timeoutSec'>timeoutSec</span> <span class='op'>=</span> <span class='int'>600</span><span class='rparen'>)</span>
+  <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_validate_type'>validate_type</span><span class='lparen'>(</span><span class='id identifier rubyid_timeoutSec'>timeoutSec</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Fixnum</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_sleep_until'>sleep_until</span><span class='lparen'>(</span><span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Cloud</span><span class='op'>::</span><span class='const'>Enums</span><span class='op'>::</span><span class='const'>EServerInstanceStatus</span><span class='op'>::</span><span class='id identifier rubyid_up'>up</span><span class='comma'>,</span> <span class='id identifier rubyid_timeoutSec'>timeoutSec</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sleep_while_creating-instance_method">
+  
+    - (<tt>bool</tt>) <strong>sleep_while_creating</strong>(timeoutSec = 600) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>作成中のアプライアンスが利用可能になるまで待機します.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>timeoutSec</span>
+      
+      
+        <span class='type'>(<tt>Fixnum</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>600</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>bool</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>成功時はtrue, タイムアウトやエラーによる失敗時はfalseを返します.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 218</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sleep_while_creating'>sleep_while_creating</span><span class='lparen'>(</span><span class='id identifier rubyid_timeoutSec'>timeoutSec</span> <span class='op'>=</span> <span class='int'>600</span><span class='rparen'>)</span>
+  <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_validate_type'>validate_type</span><span class='lparen'>(</span><span class='id identifier rubyid_timeoutSec'>timeoutSec</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Fixnum</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_step'>step</span> <span class='op'>=</span> <span class='int'>10</span>
+  <span class='kw'>while</span> <span class='int'>0</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_timeoutSec'>timeoutSec</span> <span class='kw'>do</span>
+    <span class='id identifier rubyid_reload'>reload</span>
+    <span class='id identifier rubyid_a'>a</span> <span class='op'>=</span> <span class='id identifier rubyid_get_availability'>get_availability</span>
+    <span class='kw'>return</span> <span class='kw'>true</span> <span class='kw'>if</span> <span class='id identifier rubyid_a'>a</span> <span class='op'>==</span> <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Cloud</span><span class='op'>::</span><span class='const'>Enums</span><span class='op'>::</span><span class='const'>EAvailability</span><span class='op'>::</span><span class='id identifier rubyid_available'>available</span>
+    <span class='id identifier rubyid_timeoutSec'>timeoutSec</span> <span class='op'>=</span> <span class='int'>0</span> <span class='kw'>if</span> <span class='id identifier rubyid_a'>a</span> <span class='op'>!=</span> <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Cloud</span><span class='op'>::</span><span class='const'>Enums</span><span class='op'>::</span><span class='const'>EAvailability</span><span class='op'>::</span><span class='id identifier rubyid_migrating'>migrating</span>
+    <span class='id identifier rubyid_timeoutSec'>timeoutSec</span> <span class='op'>-=</span> <span class='id identifier rubyid_step'>step</span>
+    <span class='id identifier rubyid_sleep'>sleep</span><span class='lparen'>(</span><span class='id identifier rubyid_step'>step</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='int'>0</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_timeoutSec'>timeoutSec</span>
+  <span class='kw'>end</span>
+  <span class='kw'>return</span> <span class='kw'>false</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1311,13 +2305,13 @@
       <pre class="lines">
 
 
-135
-136
-137
-138</pre>
+201
+202
+203
+204</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 135</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/appliance.rb', line 201</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_stop'>stop</span>
   <span class='ivar'>@_client</span><span class='period'>.</span><span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>DELETE</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid__api_path'>_api_path</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_url_encode'>url_encode</span><span class='lparen'>(</span><span class='id identifier rubyid__id'>_id</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/power</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>Force:</span> <span class='kw'>true</span> <span class='rbrace'>}</span><span class='rparen'>)</span>
@@ -1333,7 +2327,7 @@
 </div>
 
     <div id="footer">
-  Generated on Thu Sep 25 10:10:15 2014 by
+  Generated on Thu Oct 16 11:16:16 2014 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.4 (ruby-2.0.0).
 </div>

@@ -14,7 +14,6 @@ var classsaklient_1_1cloud_1_1resources_1_1script_1_1_script =
     [ "get_tags", "classsaklient_1_1cloud_1_1resources_1_1script_1_1_script.html#ae3656da51d02ec6d72c608132239fd57", null ],
     [ "reload", "classsaklient_1_1cloud_1_1resources_1_1script_1_1_script.html#a068dbd03e8037ab128ab9594420847cd", null ],
     [ "save", "classsaklient_1_1cloud_1_1resources_1_1script_1_1_script.html#ae3eff98a5499beaeb65d99c2c7266f9c", null ],
-    [ "set_annotation", "classsaklient_1_1cloud_1_1resources_1_1script_1_1_script.html#a4125cce09688add09823a6c68ae5650d", null ],
     [ "set_clazz", "classsaklient_1_1cloud_1_1resources_1_1script_1_1_script.html#a7cab5c0155215e7f851a4c8b34136e36", null ],
     [ "set_content", "classsaklient_1_1cloud_1_1resources_1_1script_1_1_script.html#a77aedcadb5c83be1c23780b7e5a48aca", null ],
     [ "set_description", "classsaklient_1_1cloud_1_1resources_1_1script_1_1_script.html#a12727bf793ff0c83d2d695f48d6ea7d2", null ],
