@@ -7,7 +7,7 @@
 	<title>Class Saklient\Cloud\API</title>
 
 	<script type="text/javascript" src="resources/combined.js?1562529225"></script>
-	<script type="text/javascript" src="elementlist.js?3504515586"></script>
+	<script type="text/javascript" src="elementlist.js?4014674378"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -49,6 +49,7 @@
 			<h3>Classes</h3>
 			<ul>
 				<li class="active"><a href="class-Saklient.Cloud.API.html">API</a></li>
+				<li><a href="class-Saklient.Cloud.Facility.html">Facility</a></li>
 				<li><a href="class-Saklient.Cloud.Product.html">Product</a></li>
 			</ul>
 
@@ -117,7 +118,7 @@
 
 				<b>See:</b>
 				API.authorize<br>
-		<b>Located at</b> <a href="source-class-Saklient.Cloud.API.html#36-405" title="Go to source code">Saklient/Cloud/API.php</a><br>
+		<b>Located at</b> <a href="source-class-Saklient.Cloud.API.html#42-480" title="Go to source code">Saklient/Cloud/API.php</a><br>
 	</div>
 
 
@@ -135,7 +136,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_authorize">#</a>
-		<code><a href="source-class-Saklient.Cloud.API.html#339-360" title="Go to source code">authorize</a>( <span>string <var>$token</var></span>, <span>string <var>$secret</var></span>, <span>string <var>$zone</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Saklient.Cloud.API.html#411-432" title="Go to source code">authorize</a>( <span>string <var>$token</var></span>, <span>string <var>$secret</var></span>, <span>string <var>$zone</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -184,7 +185,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_inZone">#</a>
-		<code><a href="source-class-Saklient.Cloud.API.html#362-381" title="Go to source code">inZone</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Saklient.Cloud.API.html#434-453" title="Go to source code">inZone</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -240,7 +241,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.API.html#40" title="Go to source code"><var>$product</var></a>
+				<a href="source-class-Saklient.Cloud.API.html#46" title="Go to source code"><var>$product</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$product" class="anchor">#</a>
@@ -259,6 +260,32 @@
 			</div>
 		</div></td>
 	</tr>
+	<tr data-order="facility" id="m$facility">
+		<td class="attributes"><code>
+			public  read-only
+			<code><a href="class-Saklient.Cloud.Facility.html">Saklient\Cloud\Facility</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Saklient.Cloud.API.html#47" title="Go to source code"><var>$facility</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$facility" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>設備情報にアクセスするためのモデルを集めたオブジェクト。</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>設備情報にアクセスするためのモデルを集めたオブジェクト。</p>
+
+
+			</div>
+		</div></td>
+	</tr>
 	<tr data-order="icon" id="m$icon">
 		<td class="attributes"><code>
 			public  read-only
@@ -266,7 +293,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.API.html#41" title="Go to source code"><var>$icon</var></a>
+				<a href="source-class-Saklient.Cloud.API.html#48" title="Go to source code"><var>$icon</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$icon" class="anchor">#</a>
@@ -292,7 +319,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.API.html#42" title="Go to source code"><var>$server</var></a>
+				<a href="source-class-Saklient.Cloud.API.html#49" title="Go to source code"><var>$server</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$server" class="anchor">#</a>
@@ -318,7 +345,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.API.html#43" title="Go to source code"><var>$disk</var></a>
+				<a href="source-class-Saklient.Cloud.API.html#50" title="Go to source code"><var>$disk</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$disk" class="anchor">#</a>
@@ -344,7 +371,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.API.html#44" title="Go to source code"><var>$appliance</var></a>
+				<a href="source-class-Saklient.Cloud.API.html#51" title="Go to source code"><var>$appliance</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$appliance" class="anchor">#</a>
@@ -370,7 +397,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.API.html#45" title="Go to source code"><var>$archive</var></a>
+				<a href="source-class-Saklient.Cloud.API.html#52" title="Go to source code"><var>$archive</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$archive" class="anchor">#</a>
@@ -396,7 +423,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.API.html#46" title="Go to source code"><var>$isoImage</var></a>
+				<a href="source-class-Saklient.Cloud.API.html#53" title="Go to source code"><var>$isoImage</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$isoImage" class="anchor">#</a>
@@ -422,7 +449,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.API.html#47" title="Go to source code"><var>$iface</var></a>
+				<a href="source-class-Saklient.Cloud.API.html#54" title="Go to source code"><var>$iface</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$iface" class="anchor">#</a>
@@ -448,7 +475,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.API.html#48" title="Go to source code"><var>$swytch</var></a>
+				<a href="source-class-Saklient.Cloud.API.html#55" title="Go to source code"><var>$swytch</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$swytch" class="anchor">#</a>
@@ -474,7 +501,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.API.html#49" title="Go to source code"><var>$router</var></a>
+				<a href="source-class-Saklient.Cloud.API.html#56" title="Go to source code"><var>$router</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$router" class="anchor">#</a>
@@ -493,6 +520,32 @@
 			</div>
 		</div></td>
 	</tr>
+	<tr data-order="bridge" id="m$bridge">
+		<td class="attributes"><code>
+			public  read-only
+			<code><a href="class-Saklient.Cloud.Models.Model_Bridge.html">Saklient\Cloud\Models\Model_Bridge</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Saklient.Cloud.API.html#57" title="Go to source code"><var>$bridge</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$bridge" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>ブリッジにアクセスするためのモデル。</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>ブリッジにアクセスするためのモデル。</p>
+
+
+			</div>
+		</div></td>
+	</tr>
 	<tr data-order="ipv6Net" id="m$ipv6Net">
 		<td class="attributes"><code>
 			public  read-only
@@ -500,7 +553,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.API.html#50" title="Go to source code"><var>$ipv6Net</var></a>
+				<a href="source-class-Saklient.Cloud.API.html#58" title="Go to source code"><var>$ipv6Net</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$ipv6Net" class="anchor">#</a>
@@ -526,7 +579,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.API.html#51" title="Go to source code"><var>$script</var></a>
+				<a href="source-class-Saklient.Cloud.API.html#59" title="Go to source code"><var>$script</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$script" class="anchor">#</a>
@@ -540,6 +593,32 @@
 			<div class="description detailed hidden">
 				
 <p>スクリプトにアクセスするためのモデル。</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="license" id="m$license">
+		<td class="attributes"><code>
+			public  read-only
+			<code><a href="class-Saklient.Cloud.Models.Model_License.html">Saklient\Cloud\Models\Model_License</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Saklient.Cloud.API.html#60" title="Go to source code"><var>$license</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$license" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>ライセンスにアクセスするためのモデル。</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>ライセンスにアクセスするためのモデル。</p>
 
 
 			</div>

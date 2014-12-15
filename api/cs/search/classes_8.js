@@ -2,6 +2,8 @@ var searchData=
 [
   ['lbserver',['LbServer',['../class_saklient_1_1_cloud_1_1_resources_1_1_lb_server.html',1,'Saklient::Cloud::Resources']]],
   ['lbvirtualip',['LbVirtualIp',['../class_saklient_1_1_cloud_1_1_resources_1_1_lb_virtual_ip.html',1,'Saklient::Cloud::Resources']]],
+  ['license',['License',['../class_saklient_1_1_cloud_1_1_resources_1_1_license.html',1,'Saklient::Cloud::Resources']]],
+  ['licenseinfo',['LicenseInfo',['../class_saklient_1_1_cloud_1_1_resources_1_1_license_info.html',1,'Saklient::Cloud::Resources']]],
   ['limitcountinaccountexception',['LimitCountInAccountException',['../class_saklient_1_1_cloud_1_1_errors_1_1_limit_count_in_account_exception.html',1,'Saklient::Cloud::Errors']]],
   ['limitcountinmemberexception',['LimitCountInMemberException',['../class_saklient_1_1_cloud_1_1_errors_1_1_limit_count_in_member_exception.html',1,'Saklient::Cloud::Errors']]],
   ['limitcountinnetworkexception',['LimitCountInNetworkException',['../class_saklient_1_1_cloud_1_1_errors_1_1_limit_count_in_network_exception.html',1,'Saklient::Cloud::Errors']]],

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['region',['Region',['../classsaklient_1_1cloud_1_1resources_1_1region_1_1_region.html',1,'saklient::cloud::resources::region']]],
   ['replicaalreadyexistsexception',['ReplicaAlreadyExistsException',['../classsaklient_1_1cloud_1_1errors_1_1replicaalreadyexistsexception_1_1_replica_already_exists_exception.html',1,'saklient::cloud::errors::replicaalreadyexistsexception']]],
   ['replicanotfoundexception',['ReplicaNotFoundException',['../classsaklient_1_1cloud_1_1errors_1_1replicanotfoundexception_1_1_replica_not_found_exception.html',1,'saklient::cloud::errors::replicanotfoundexception']]],
   ['resalreadyconnectedexception',['ResAlreadyConnectedException',['../classsaklient_1_1cloud_1_1errors_1_1resalreadyconnectedexception_1_1_res_already_connected_exception.html',1,'saklient::cloud::errors::resalreadyconnectedexception']]],

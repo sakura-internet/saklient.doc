@@ -6,7 +6,7 @@
 <title>
   Class: Saklient::Cloud::Product
   
-    &mdash; Documentation by YARD 0.8.7.4
+    &mdash; Documentation by YARD 0.8.7.6
   
 </title>
 
@@ -149,6 +149,35 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#license-instance_method" title="#license (instance method)">- (Saklient::Cloud::Models::Model_LicenseInfo) <strong>license</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>ライセンス種別情報.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#router-instance_method" title="#router (instance method)">- (Saklient::Cloud::Models::Model_RouterPlan) <strong>router</strong> </a>
     
 
@@ -254,15 +283,71 @@
       <pre class="lines">
 
 
-54
 55
-56</pre>
+56
+57</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/product.rb', line 54</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/product.rb', line 55</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_disk'>disk</span>
   <span class='ivar'>@disk</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="license-instance_method">
+  
+    - (<tt><span class='object_link'><a href="Models/Model_LicenseInfo.html" title="Saklient::Cloud::Models::Model_LicenseInfo (class)">Saklient::Cloud::Models::Model_LicenseInfo</a></span></tt>) <strong>license</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>ライセンス種別情報.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Models/Model_LicenseInfo.html" title="Saklient::Cloud::Models::Model_LicenseInfo (class)">Saklient::Cloud::Models::Model_LicenseInfo</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+101
+102
+103</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/product.rb', line 101</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_license'>license</span>
+  <span class='ivar'>@license</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -310,12 +395,12 @@
       <pre class="lines">
 
 
-77
 78
-79</pre>
+79
+80</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/product.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/product.rb', line 78</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_router'>router</span>
   <span class='ivar'>@router</span>
@@ -366,12 +451,12 @@
       <pre class="lines">
 
 
-31
 32
-33</pre>
+33
+34</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/product.rb', line 31</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/product.rb', line 32</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_server'>server</span>
   <span class='ivar'>@server</span>
@@ -387,9 +472,9 @@
 </div>
 
     <div id="footer">
-  Generated on Thu Oct 16 11:16:12 2014 by
+  Generated on Mon Dec 15 16:39:53 2014 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.7.4 (ruby-2.0.0).
+  0.8.7.6 (ruby-2.0.0).
 </div>
 
   </body>

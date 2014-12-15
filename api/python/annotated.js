@@ -387,6 +387,9 @@ var annotated =
             [ "VncProxyRequestFailureException", "classsaklient_1_1cloud_1_1errors_1_1vncproxyrequestfailureexception_1_1_vnc_proxy_request_failure_exception.html", "classsaklient_1_1cloud_1_1errors_1_1vncproxyrequestfailureexception_1_1_vnc_proxy_request_failure_exception" ]
           ] ]
         ] ],
+        [ "facility", null, [
+          [ "Facility", "classsaklient_1_1cloud_1_1facility_1_1_facility.html", "classsaklient_1_1cloud_1_1facility_1_1_facility" ]
+        ] ],
         [ "models", null, [
           [ "model", null, [
             [ "Model", "classsaklient_1_1cloud_1_1models_1_1model_1_1_model.html", "classsaklient_1_1cloud_1_1models_1_1model_1_1_model" ]
@@ -396,6 +399,9 @@ var annotated =
           ] ],
           [ "model_archive", null, [
             [ "Model_Archive", "classsaklient_1_1cloud_1_1models_1_1model__archive_1_1_model___archive.html", "classsaklient_1_1cloud_1_1models_1_1model__archive_1_1_model___archive" ]
+          ] ],
+          [ "model_bridge", null, [
+            [ "Model_Bridge", "classsaklient_1_1cloud_1_1models_1_1model__bridge_1_1_model___bridge.html", "classsaklient_1_1cloud_1_1models_1_1model__bridge_1_1_model___bridge" ]
           ] ],
           [ "model_disk", null, [
             [ "Model_Disk", "classsaklient_1_1cloud_1_1models_1_1model__disk_1_1_model___disk.html", "classsaklient_1_1cloud_1_1models_1_1model__disk_1_1_model___disk" ]
@@ -414,6 +420,15 @@ var annotated =
           ] ],
           [ "model_isoimage", null, [
             [ "Model_IsoImage", "classsaklient_1_1cloud_1_1models_1_1model__isoimage_1_1_model___iso_image.html", "classsaklient_1_1cloud_1_1models_1_1model__isoimage_1_1_model___iso_image" ]
+          ] ],
+          [ "model_license", null, [
+            [ "Model_License", "classsaklient_1_1cloud_1_1models_1_1model__license_1_1_model___license.html", "classsaklient_1_1cloud_1_1models_1_1model__license_1_1_model___license" ]
+          ] ],
+          [ "model_licenseinfo", null, [
+            [ "Model_LicenseInfo", "classsaklient_1_1cloud_1_1models_1_1model__licenseinfo_1_1_model___license_info.html", "classsaklient_1_1cloud_1_1models_1_1model__licenseinfo_1_1_model___license_info" ]
+          ] ],
+          [ "model_region", null, [
+            [ "Model_Region", "classsaklient_1_1cloud_1_1models_1_1model__region_1_1_model___region.html", "classsaklient_1_1cloud_1_1models_1_1model__region_1_1_model___region" ]
           ] ],
           [ "model_router", null, [
             [ "Model_Router", "classsaklient_1_1cloud_1_1models_1_1model__router_1_1_model___router.html", "classsaklient_1_1cloud_1_1models_1_1model__router_1_1_model___router" ]
@@ -446,6 +461,9 @@ var annotated =
           ] ],
           [ "archive", null, [
             [ "Archive", "classsaklient_1_1cloud_1_1resources_1_1archive_1_1_archive.html", "classsaklient_1_1cloud_1_1resources_1_1archive_1_1_archive" ]
+          ] ],
+          [ "bridge", null, [
+            [ "Bridge", "classsaklient_1_1cloud_1_1resources_1_1bridge_1_1_bridge.html", "classsaklient_1_1cloud_1_1resources_1_1bridge_1_1_bridge" ]
           ] ],
           [ "disk", null, [
             [ "Disk", "classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk.html", "classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk" ]
@@ -480,8 +498,17 @@ var annotated =
           [ "lbvirtualip", null, [
             [ "LbVirtualIp", "classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html", "classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip" ]
           ] ],
+          [ "license", null, [
+            [ "License", "classsaklient_1_1cloud_1_1resources_1_1license_1_1_license.html", "classsaklient_1_1cloud_1_1resources_1_1license_1_1_license" ]
+          ] ],
+          [ "licenseinfo", null, [
+            [ "LicenseInfo", "classsaklient_1_1cloud_1_1resources_1_1licenseinfo_1_1_license_info.html", "classsaklient_1_1cloud_1_1resources_1_1licenseinfo_1_1_license_info" ]
+          ] ],
           [ "loadbalancer", null, [
             [ "LoadBalancer", "classsaklient_1_1cloud_1_1resources_1_1loadbalancer_1_1_load_balancer.html", "classsaklient_1_1cloud_1_1resources_1_1loadbalancer_1_1_load_balancer" ]
+          ] ],
+          [ "region", null, [
+            [ "Region", "classsaklient_1_1cloud_1_1resources_1_1region_1_1_region.html", "classsaklient_1_1cloud_1_1resources_1_1region_1_1_region" ]
           ] ],
           [ "resource", null, [
             [ "Resource", "classsaklient_1_1cloud_1_1resources_1_1resource_1_1_resource.html", "classsaklient_1_1cloud_1_1resources_1_1resource_1_1_resource" ]
