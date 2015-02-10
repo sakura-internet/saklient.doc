@@ -102,7 +102,7 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
-<p>ロードバランサの監視対象サーバ.</p>
+<p>ロードバランサの監視対象サーバ設定.</p>
 
 
   </div>
@@ -327,28 +327,6 @@
   <span class="summary_signature">
     
       <a href="#to_raw_settings-instance_method" title="#to_raw_settings (instance method)">- (any) <strong>to_raw_settings</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#update_status-instance_method" title="#update_status (instance method)">- (LbServer) <strong>update_status</strong>(obj) </a>
     
 
     
@@ -841,89 +819,12 @@
 </table>
 </div>
     
-      <div class="method_details ">
-  <h3 class="signature " id="update_status-instance_method">
-  
-    - (<tt><span class='object_link'><a href="" title="Saklient::Cloud::Resources::LbServer (class)">LbServer</a></span></tt>) <strong>update_status</strong>(obj) 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-
-  </div>
-</div>
-<div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
-  
-    <li>
-      
-        <span class='name'>obj</span>
-      
-      
-        <span class='type'>(<tt>any</tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
-
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt><span class='object_link'><a href="" title="Saklient::Cloud::Resources::LbServer (class)">LbServer</a></span></tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-291
-292
-293
-294
-295
-296
-297
-298</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/lb_server.rb', line 291</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_update_status'>update_status</span><span class='lparen'>(</span><span class='id identifier rubyid_obj'>obj</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_connStr'>connStr</span> <span class='op'>=</span> <span class='id identifier rubyid_obj'>obj</span><span class='lbracket'>[</span><span class='symbol'>:ActiveConn</span><span class='rbracket'>]</span>
-  <span class='ivar'>@_active_connections</span> <span class='op'>=</span> <span class='int'>0</span>
-  <span class='ivar'>@_active_connections</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_connStr'>connStr</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='lparen'>(</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='lparen'>(</span><span class='int'>10</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='op'>!</span><span class='lparen'>(</span><span class='id identifier rubyid_connStr'>connStr</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
-  <span class='id identifier rubyid_status'>status</span> <span class='op'>=</span> <span class='id identifier rubyid_obj'>obj</span><span class='lbracket'>[</span><span class='symbol'>:Status</span><span class='rbracket'>]</span>
-  <span class='ivar'>@_status</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_status'>status</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>?</span> <span class='kw'>nil</span> <span class='op'>:</span> <span class='id identifier rubyid_status'>status</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='lparen'>(</span><span class='rparen'>)</span>
-  <span class='kw'>return</span> <span class='kw'>self</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
   </div>
 
 </div>
 
     <div id="footer">
-  Generated on Mon Dec 15 16:39:56 2014 by
+  Generated on Tue Feb 10 10:36:24 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.0.0).
 </div>
