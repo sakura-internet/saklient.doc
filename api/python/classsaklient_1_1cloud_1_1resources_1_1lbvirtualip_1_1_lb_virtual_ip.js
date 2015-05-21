@@ -7,6 +7,7 @@ var classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip =
     [ "get_server_by_address", "classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#a92e3823f5241ed94f03944ebd4b34d82", null ],
     [ "get_servers", "classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#a0e3816dc49e379a5683995a888cec36e", null ],
     [ "get_virtual_ip_address", "classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#a006492b137a6f44cb28b895d569c8de1", null ],
+    [ "remove_server_by_address", "classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#a46a72ec053f0adfd1f3aecf346827085", null ],
     [ "set_delay_loop", "classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#a5aeba215c3fdad22f5cfcde1bf5612fe", null ],
     [ "set_port", "classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#ad389a739d9967e154021bde46ab80846", null ],
     [ "set_virtual_ip_address", "classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#a84599816ffe460d100222d3381abee63", null ],

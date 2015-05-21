@@ -4,6 +4,8 @@ var classsaklient_1_1cloud_1_1resources_1_1iface_1_1_iface =
     [ "api_deserialize_impl", "classsaklient_1_1cloud_1_1resources_1_1iface_1_1_iface.html#ad1208673425ff78ddea5a1ed851e9ca6", null ],
     [ "api_serialize_impl", "classsaklient_1_1cloud_1_1resources_1_1iface_1_1_iface.html#ac813cbde401b287cba2f53b12c528313", null ],
     [ "connect_to_shared_segment", "classsaklient_1_1cloud_1_1resources_1_1iface_1_1_iface.html#a83c6b7fc5bbcfebb8c87308901986862", null ],
+    [ "connect_to_swytch", "classsaklient_1_1cloud_1_1resources_1_1iface_1_1_iface.html#ab6170eb40d745a99d5e8232bda3694ea", null ],
+    [ "disconnect_from_swytch", "classsaklient_1_1cloud_1_1resources_1_1iface_1_1_iface.html#aed5fa07a2a9af7022c23fd7eed3c4a4b", null ],
     [ "get_id", "classsaklient_1_1cloud_1_1resources_1_1iface_1_1_iface.html#ad7d5a8f19ff59145a2f892e9b2ce5931", null ],
     [ "get_ip_address", "classsaklient_1_1cloud_1_1resources_1_1iface_1_1_iface.html#a8bfd0df79114badb6161fb2cddd1e6fb", null ],
     [ "get_mac_address", "classsaklient_1_1cloud_1_1resources_1_1iface_1_1_iface.html#a8ac4cae3bbf3d6cb00874cbe15553f5c", null ],

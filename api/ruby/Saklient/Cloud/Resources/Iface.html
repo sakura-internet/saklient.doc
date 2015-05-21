@@ -122,6 +122,35 @@
       <li class="public ">
   <span class="summary_signature">
     
+      <a href="#activity-instance_method" title="#activity (instance method)">- (IfaceActivity) <strong>activity</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>アクティビティ.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
       <a href="#id-instance_method" title="#id (instance method)">- (String) <strong>id</strong> </a>
     
 
@@ -409,7 +438,63 @@
       
       <span id=""></span>
       <div class="method_details first">
-  <h3 class="signature first" id="id-instance_method">
+  <h3 class="signature first" id="activity-instance_method">
+  
+    - (<tt><span class='object_link'><a href="IfaceActivity.html" title="Saklient::Cloud::Resources::IfaceActivity (class)">IfaceActivity</a></span></tt>) <strong>activity</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>アクティビティ</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="IfaceActivity.html" title="Saklient::Cloud::Resources::IfaceActivity (class)">IfaceActivity</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+106
+107
+108</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 106</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_activity'>activity</span>
+  <span class='ivar'>@activity</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="id-instance_method">
   
     - (<tt>String</tt>) <strong>id</strong>  <span class="extras">(readonly)</span>
   
@@ -447,12 +532,12 @@
       <pre class="lines">
 
 
-143
-144
-145</pre>
+180
+181
+182</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 143</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 180</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_id'>id</span>
   <span class='ivar'>@id</span>
@@ -503,12 +588,12 @@
       <pre class="lines">
 
 
-191
-192
-193</pre>
+228
+229
+230</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 191</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 228</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_ip_address'>ip_address</span>
   <span class='ivar'>@ip_address</span>
@@ -559,12 +644,12 @@
       <pre class="lines">
 
 
-167
-168
-169</pre>
+204
+205
+206</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 167</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 204</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_mac_address'>mac_address</span>
   <span class='ivar'>@mac_address</span>
@@ -615,12 +700,12 @@
       <pre class="lines">
 
 
-268
-269
-270</pre>
+305
+306
+307</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 268</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 305</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_server_id'>server_id</span>
   <span class='ivar'>@server_id</span>
@@ -671,12 +756,12 @@
       <pre class="lines">
 
 
-227
-228
-229</pre>
+264
+265
+266</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 227</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 264</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_user_ip_address'>user_ip_address</span>
   <span class='ivar'>@user_ip_address</span>
@@ -737,13 +822,13 @@
       <pre class="lines">
 
 
-112
-113
-114
-115</pre>
+149
+150
+151
+152</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 112</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 149</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_connect_to_shared_segment'>connect_to_shared_segment</span>
   <span class='ivar'>@_client</span><span class='period'>.</span><span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>PUT</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid__api_path'>_api_path</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_url_encode'>url_encode</span><span class='lparen'>(</span><span class='id identifier rubyid__id'>_id</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/to/switch/shared</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -818,14 +903,14 @@
       <pre class="lines">
 
 
-103
-104
-105
-106
-107</pre>
+140
+141
+142
+143
+144</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 103</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 140</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_connect_to_swytch'>connect_to_swytch</span><span class='lparen'>(</span><span class='id identifier rubyid_swytch'>swytch</span><span class='rparen'>)</span>
   <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_validate_type'>validate_type</span><span class='lparen'>(</span><span class='id identifier rubyid_swytch'>swytch</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Saklient::Cloud::Resources::Swytch</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -881,13 +966,13 @@
       <pre class="lines">
 
 
-120
-121
-122
-123</pre>
+157
+158
+159
+160</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 120</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 157</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_disconnect_from_swytch'>disconnect_from_swytch</span>
   <span class='ivar'>@_client</span><span class='period'>.</span><span class='id identifier rubyid_request'>request</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>DELETE</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid__api_path'>_api_path</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/</span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_url_encode'>url_encode</span><span class='lparen'>(</span><span class='id identifier rubyid__id'>_id</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/to/switch</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -942,12 +1027,12 @@
       <pre class="lines">
 
 
-84
 85
-86</pre>
+86
+87</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 84</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 85</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reload'>reload</span>
   <span class='kw'>return</span> <span class='id identifier rubyid__reload'>_reload</span>
@@ -1001,12 +1086,12 @@
       <pre class="lines">
 
 
-77
 78
-79</pre>
+79
+80</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 77</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/iface.rb', line 78</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_save'>save</span>
   <span class='kw'>return</span> <span class='id identifier rubyid__save'>_save</span>
@@ -1021,7 +1106,7 @@
 </div>
 
     <div id="footer">
-  Generated on Tue Feb 10 10:36:21 2015 by
+  Generated on Fri May  1 18:30:09 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.0.0).
 </div>

@@ -12,6 +12,8 @@ var searchData=
   ['destroy',['destroy',['../classsaklient_1_1cloud_1_1resources_1_1resource_1_1_resource.html#a02ad248f5ae02c6eb7655ee360600537',1,'saklient::cloud::resources::resource::Resource']]],
   ['disabledinsandboxexception',['DisabledInSandboxException',['../classsaklient_1_1cloud_1_1errors_1_1disabledinsandboxexception_1_1_disabled_in_sandbox_exception.html',1,'saklient::cloud::errors::disabledinsandboxexception']]],
   ['disconnect',['disconnect',['../classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk.html#a5dffbe5e2d4b5c6f52ec191209d3041c',1,'saklient::cloud::resources::disk::Disk']]],
+  ['disconnect_5ffrom_5fbridge',['disconnect_from_bridge',['../classsaklient_1_1cloud_1_1resources_1_1swytch_1_1_swytch.html#ade87ff5e0765be9137a9cb1e74075a15',1,'saklient::cloud::resources::swytch::Swytch']]],
+  ['disconnect_5ffrom_5fswytch',['disconnect_from_swytch',['../classsaklient_1_1cloud_1_1resources_1_1iface_1_1_iface.html#aed5fa07a2a9af7022c23fd7eed3c4a4b',1,'saklient::cloud::resources::iface::Iface']]],
   ['disconnectb4deleteexception',['DisconnectB4DeleteException',['../classsaklient_1_1cloud_1_1errors_1_1disconnectb4deleteexception_1_1_disconnect_b4_delete_exception.html',1,'saklient::cloud::errors::disconnectb4deleteexception']]],
   ['disconnectb4updateexception',['DisconnectB4UpdateException',['../classsaklient_1_1cloud_1_1errors_1_1disconnectb4updateexception_1_1_disconnect_b4_update_exception.html',1,'saklient::cloud::errors::disconnectb4updateexception']]],
   ['disk',['disk',['../classsaklient_1_1cloud_1_1api_1_1_a_p_i.html#a98ac9ee4e0ae5f5c6c501aa0561b7e17',1,'saklient.cloud.api.API.disk()'],['../classsaklient_1_1cloud_1_1product_1_1_product.html#afcc7eb4f8dcc8772e9dca2734d4656af',1,'saklient.cloud.product.Product.disk()']]],

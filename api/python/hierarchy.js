@@ -17,6 +17,7 @@ var hierarchy =
     [ "saklient.errors.exceptionfactory.ExceptionFactory", "classsaklient_1_1errors_1_1exceptionfactory_1_1_exception_factory.html", null ],
     [ "saklient.cloud.facility.Facility", "classsaklient_1_1cloud_1_1facility_1_1_facility.html", null ],
     [ "saklient.cloud.resources.ftpinfo.FtpInfo", "classsaklient_1_1cloud_1_1resources_1_1ftpinfo_1_1_ftp_info.html", null ],
+    [ "saklient.cloud.resources.ipv4range.Ipv4Range", "classsaklient_1_1cloud_1_1resources_1_1ipv4range_1_1_ipv4_range.html", null ],
     [ "saklient.cloud.resources.lbserver.LbServer", "classsaklient_1_1cloud_1_1resources_1_1lbserver_1_1_lb_server.html", null ],
     [ "saklient.cloud.resources.lbvirtualip.LbVirtualIp", "classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html", null ],
     [ "saklient.cloud.models.model.Model", "classsaklient_1_1cloud_1_1models_1_1model_1_1_model.html", null ],

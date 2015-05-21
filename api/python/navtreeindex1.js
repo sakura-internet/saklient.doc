@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"classsaklient_1_1cloud_1_1api_1_1_a_p_i.html#ad09352d93d62f01d6ce3cc3c80f3690d":[1,0,0,0,0,0,13],
 "classsaklient_1_1cloud_1_1api_1_1_a_p_i.html#ad39f0a98a596eed24df4a091a3b86276":[1,0,0,0,0,0,14],
 "classsaklient_1_1cloud_1_1api_1_1_a_p_i.html#ad67ffae5c5db9ca3bcc2e636b17a6741":[1,0,0,0,0,0,17],
 "classsaklient_1_1cloud_1_1api_1_1_a_p_i.html#ad92827b5e515f92212faa2870788b7c6":[1,0,0,0,0,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classsaklient_1_1cloud_1_1errors_1_1paymentregistrationexception_1_1_payment_registration_exception.html#a9cef27b9b0ce0e5f257a5c0f43c7c246":[1,0,0,0,3,85,0,0],
 "classsaklient_1_1cloud_1_1errors_1_1paymenttelcertificationexception_1_1_payment_tel_certification_exception.html":[1,0,0,0,3,86,0],
 "classsaklient_1_1cloud_1_1errors_1_1paymenttelcertificationexception_1_1_payment_tel_certification_exception.html#a2e98d7f3312ff0c97dcba53a85e4b32c":[1,0,0,0,3,86,0,0],
-"classsaklient_1_1cloud_1_1errors_1_1paymentunpayableexception_1_1_payment_unpayable_exception.html":[1,0,0,0,3,87,0],
-"classsaklient_1_1cloud_1_1errors_1_1paymentunpayableexception_1_1_payment_unpayable_exception.html#a564444caa74673ba61d77ac11fd125a1":[1,0,0,0,3,87,0,0]
+"classsaklient_1_1cloud_1_1errors_1_1paymentunpayableexception_1_1_payment_unpayable_exception.html":[1,0,0,0,3,87,0]
 };

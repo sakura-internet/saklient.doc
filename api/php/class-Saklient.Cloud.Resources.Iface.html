@@ -7,7 +7,7 @@
 	<title>Class Saklient\Cloud\Resources\Iface</title>
 
 	<script type="text/javascript" src="resources/combined.js?1562529225"></script>
-	<script type="text/javascript" src="elementlist.js?4014674378"></script>
+	<script type="text/javascript" src="elementlist.js?3748091866"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -58,6 +58,7 @@
 				<li><a href="class-Saklient.Cloud.Resources.Icon.html">Icon</a></li>
 				<li class="active"><a href="class-Saklient.Cloud.Resources.Iface.html">Iface</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Ipv4Net.html">Ipv4Net</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.Ipv4Range.html">Ipv4Range</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Ipv6Net.html">Ipv6Net</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.IsoImage.html">IsoImage</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.LbServer.html">LbServer</a></li>
@@ -152,7 +153,7 @@ Saklient\Cloud\Resources\Resource
 		<b>Namespace:</b> <a href="namespace-Saklient.html">Saklient</a>\<a href="namespace-Saklient.Cloud.html">Cloud</a>\<a href="namespace-Saklient.Cloud.Resources.html">Resources</a><br>
 		
 
-		<b>Located at</b> <a href="source-class-Saklient.Cloud.Resources.Iface.html#14-436" title="Go to source code">Saklient/Cloud/Resources/Iface.php</a><br>
+		<b>Located at</b> <a href="source-class-Saklient.Cloud.Resources.Iface.html#16-465" title="Go to source code">Saklient/Cloud/Resources/Iface.php</a><br>
 	</div>
 
 
@@ -170,7 +171,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_save">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Iface.html#125-134" title="Go to source code">save</a>( )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Iface.html#127-136" title="Go to source code">save</a>( )</code>
 
 		<div class="description short">
 			
@@ -207,7 +208,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_reload">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Iface.html#136-145" title="Go to source code">reload</a>( )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Iface.html#138-147" title="Go to source code">reload</a>( )</code>
 
 		<div class="description short">
 			
@@ -233,6 +234,48 @@ Saklient\Cloud\Resources\Resource
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="connectToSwytch" id="_connectToSwytch">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Saklient.Cloud.Resources.Iface.html">Saklient\Cloud\Resources\Iface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connectToSwytch">#</a>
+		<code><a href="source-class-Saklient.Cloud.Resources.Iface.html#165-178" title="Go to source code">connectToSwytch</a>( <span><code><a href="class-Saklient.Cloud.Resources.Swytch.html">Saklient\Cloud\Resources\Swytch</a></code> <var>$swytch</var></span> )</code>
+
+		<div class="description short">
+			
+<p>スイッチに接続します。</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>スイッチに接続します。</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$swytch</var></dt>
+					<dd><code><code><a href="class-Saklient.Cloud.Resources.Swytch.html">Saklient\Cloud\Resources\Swytch</a></code></code><br>$swytch 接続先のスイッチ。</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Saklient.Cloud.Resources.Iface.html">Saklient\Cloud\Resources\Iface</a></code></code><br>this<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="connectToSharedSegment" id="_connectToSharedSegment">
 
 		<td class="attributes"><code>
@@ -244,7 +287,7 @@ Saklient\Cloud\Resources\Resource
 
 		<td class="name"><div>
 		<a class="anchor" href="#_connectToSharedSegment">#</a>
-		<code><a href="source-class-Saklient.Cloud.Resources.Iface.html#163-173" title="Go to source code">connectToSharedSegment</a>( )</code>
+		<code><a href="source-class-Saklient.Cloud.Resources.Iface.html#180-190" title="Go to source code">connectToSharedSegment</a>( )</code>
 
 		<div class="description short">
 			
@@ -255,6 +298,43 @@ Saklient\Cloud\Resources\Resource
 		<div class="description detailed hidden">
 			
 <p>共有セグメントに接続します。</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Saklient.Cloud.Resources.Iface.html">Saklient\Cloud\Resources\Iface</a></code></code><br>this<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="disconnectFromSwytch" id="_disconnectFromSwytch">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Saklient.Cloud.Resources.Iface.html">Saklient\Cloud\Resources\Iface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_disconnectFromSwytch">#</a>
+		<code><a href="source-class-Saklient.Cloud.Resources.Iface.html#192-202" title="Go to source code">disconnectFromSwytch</a>( )</code>
+
+		<div class="description short">
+			
+<p>スイッチから切断します。</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>スイッチから切断します。</p>
 
 
 
@@ -339,7 +419,7 @@ setParam()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.Resources.Iface.html#20" title="Go to source code"><var>$userIpAddress</var></a>
+				<a href="source-class-Saklient.Cloud.Resources.Iface.html#22" title="Go to source code"><var>$userIpAddress</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$userIpAddress" class="anchor">#</a>
@@ -365,7 +445,7 @@ setParam()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.Resources.Iface.html#21" title="Go to source code"><var>$serverId</var></a>
+				<a href="source-class-Saklient.Cloud.Resources.Iface.html#23" title="Go to source code"><var>$serverId</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$serverId" class="anchor">#</a>
@@ -391,7 +471,7 @@ setParam()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.Resources.Iface.html#17" title="Go to source code"><var>$id</var></a>
+				<a href="source-class-Saklient.Cloud.Resources.Iface.html#19" title="Go to source code"><var>$id</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$id" class="anchor">#</a>
@@ -417,7 +497,7 @@ setParam()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.Resources.Iface.html#18" title="Go to source code"><var>$macAddress</var></a>
+				<a href="source-class-Saklient.Cloud.Resources.Iface.html#20" title="Go to source code"><var>$macAddress</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$macAddress" class="anchor">#</a>
@@ -443,7 +523,7 @@ setParam()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Saklient.Cloud.Resources.Iface.html#19" title="Go to source code"><var>$ipAddress</var></a>
+				<a href="source-class-Saklient.Cloud.Resources.Iface.html#21" title="Go to source code"><var>$ipAddress</var></a>
 		</td>
 		<td class="description"><div>
 			<a href="#m$ipAddress" class="anchor">#</a>

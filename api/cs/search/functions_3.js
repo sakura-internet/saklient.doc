@@ -10,6 +10,8 @@ var searchData=
   ['disconnect',['Disconnect',['../class_saklient_1_1_cloud_1_1_resources_1_1_disk.html#ac6ab94fb676d92deefcd99c7fcf2d935',1,'Saklient::Cloud::Resources::Disk']]],
   ['disconnectb4deleteexception',['DisconnectB4DeleteException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disconnect_b4_delete_exception.html#afcc3b344a0a6a08eb082fb0638ae1435',1,'Saklient::Cloud::Errors::DisconnectB4DeleteException']]],
   ['disconnectb4updateexception',['DisconnectB4UpdateException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disconnect_b4_update_exception.html#a4fcfafae32826f830f34dd961d62a569',1,'Saklient::Cloud::Errors::DisconnectB4UpdateException']]],
+  ['disconnectfrombridge',['DisconnectFromBridge',['../class_saklient_1_1_cloud_1_1_resources_1_1_swytch.html#a17a66c7821c994dfa647b2fff4bdccaf',1,'Saklient::Cloud::Resources::Swytch']]],
+  ['disconnectfromswytch',['DisconnectFromSwytch',['../class_saklient_1_1_cloud_1_1_resources_1_1_iface.html#ac40f6b097d0440fc96e264df6bbdbec1',1,'Saklient::Cloud::Resources::Iface']]],
   ['diskconnectionlimitexception',['DiskConnectionLimitException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disk_connection_limit_exception.html#a21d6c60114c04d63376512329fd73def',1,'Saklient::Cloud::Errors::DiskConnectionLimitException']]],
   ['diskiscopyingexception',['DiskIsCopyingException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disk_is_copying_exception.html#a9c19b4d1b4f60adfcae388e9e6da5ac3',1,'Saklient::Cloud::Errors::DiskIsCopyingException']]],
   ['diskisnotavailableexception',['DiskIsNotAvailableException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disk_is_not_available_exception.html#aebcc68f5df24df6c0e92508c473510e2',1,'Saklient::Cloud::Errors::DiskIsNotAvailableException']]],

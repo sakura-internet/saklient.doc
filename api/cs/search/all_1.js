@@ -8,7 +8,7 @@ var searchData=
   ['bootfailureingroupexception',['BootFailureInGroupException',['../class_saklient_1_1_cloud_1_1_errors_1_1_boot_failure_in_group_exception.html#a926b7bbfc3ef91b4d85732ded0906903',1,'Saklient::Cloud::Errors::BootFailureInGroupException']]],
   ['bootfailureingroupexception',['BootFailureInGroupException',['../class_saklient_1_1_cloud_1_1_errors_1_1_boot_failure_in_group_exception.html',1,'Saklient::Cloud::Errors']]],
   ['bridge',['Bridge',['../class_saklient_1_1_cloud_1_1_resources_1_1_bridge.html',1,'Saklient::Cloud::Resources']]],
-  ['bridge',['Bridge',['../class_saklient_1_1_cloud_1_1_a_p_i.html#a12dd656723bb8df0e6d13ff08861b43b',1,'Saklient::Cloud::API']]],
+  ['bridge',['Bridge',['../class_saklient_1_1_cloud_1_1_a_p_i.html#a12dd656723bb8df0e6d13ff08861b43b',1,'Saklient.Cloud.API.Bridge()'],['../class_saklient_1_1_cloud_1_1_resources_1_1_swytch.html#a37dff694be639f0df475e1f035fc9821',1,'Saklient.Cloud.Resources.Swytch.Bridge()']]],
   ['busyexception',['BusyException',['../class_saklient_1_1_cloud_1_1_errors_1_1_busy_exception.html',1,'Saklient::Cloud::Errors']]],
   ['busyexception',['BusyException',['../class_saklient_1_1_cloud_1_1_errors_1_1_busy_exception.html#a184eb498e8eed88279354a76ee514399',1,'Saklient::Cloud::Errors::BusyException']]]
 ];

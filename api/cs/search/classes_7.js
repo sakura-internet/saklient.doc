@@ -9,6 +9,7 @@ var searchData=
   ['invalidrangeexception',['InvalidRangeException',['../class_saklient_1_1_cloud_1_1_errors_1_1_invalid_range_exception.html',1,'Saklient::Cloud::Errors']]],
   ['invaliduriargumentexception',['InvalidUriArgumentException',['../class_saklient_1_1_cloud_1_1_errors_1_1_invalid_uri_argument_exception.html',1,'Saklient::Cloud::Errors']]],
   ['ipv4net',['Ipv4Net',['../class_saklient_1_1_cloud_1_1_resources_1_1_ipv4_net.html',1,'Saklient::Cloud::Resources']]],
+  ['ipv4range',['Ipv4Range',['../class_saklient_1_1_cloud_1_1_resources_1_1_ipv4_range.html',1,'Saklient::Cloud::Resources']]],
   ['ipv6net',['Ipv6Net',['../class_saklient_1_1_cloud_1_1_resources_1_1_ipv6_net.html',1,'Saklient::Cloud::Resources']]],
   ['ipv6netalreadyattachedexception',['IpV6NetAlreadyAttachedException',['../class_saklient_1_1_cloud_1_1_errors_1_1_ip_v6_net_already_attached_exception.html',1,'Saklient::Cloud::Errors']]],
   ['isoimage',['IsoImage',['../class_saklient_1_1_cloud_1_1_resources_1_1_iso_image.html',1,'Saklient::Cloud::Resources']]]

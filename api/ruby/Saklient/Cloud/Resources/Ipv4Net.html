@@ -264,6 +264,35 @@
 </li>
 
     
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#range-instance_method" title="#range (instance method)">- (Ipv4Range) <strong>range</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>利用可能なIPアドレス範囲.</p>
+</div></span>
+  
+</li>
+
+    
   </ul>
 
 
@@ -355,12 +384,12 @@
       <pre class="lines">
 
 
-133
-134
-135</pre>
+167
+168
+169</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/ipv4_net.rb', line 133</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/ipv4_net.rb', line 167</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_address'>address</span>
   <span class='ivar'>@address</span>
@@ -411,12 +440,12 @@
       <pre class="lines">
 
 
-181
-182
-183</pre>
+215
+216
+217</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/ipv4_net.rb', line 181</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/ipv4_net.rb', line 215</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_default_route'>default_route</span>
   <span class='ivar'>@default_route</span>
@@ -467,12 +496,12 @@
       <pre class="lines">
 
 
-109
-110
-111</pre>
+143
+144
+145</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/ipv4_net.rb', line 109</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/ipv4_net.rb', line 143</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_id'>id</span>
   <span class='ivar'>@id</span>
@@ -523,12 +552,12 @@
       <pre class="lines">
 
 
-157
-158
-159</pre>
+191
+192
+193</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/ipv4_net.rb', line 157</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/ipv4_net.rb', line 191</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_mask_len'>mask_len</span>
   <span class='ivar'>@mask_len</span>
@@ -579,15 +608,71 @@
       <pre class="lines">
 
 
-205
-206
-207</pre>
+239
+240
+241</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/ipv4_net.rb', line 205</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/ipv4_net.rb', line 239</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_next_hop'>next_hop</span>
   <span class='ivar'>@next_hop</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="range-instance_method">
+  
+    - (<tt><span class='object_link'><a href="Ipv4Range.html" title="Saklient::Cloud::Resources::Ipv4Range (class)">Ipv4Range</a></span></tt>) <strong>range</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>利用可能なIPアドレス範囲</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Ipv4Range.html" title="Saklient::Cloud::Resources::Ipv4Range (class)">Ipv4Range</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+57
+58
+59</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/ipv4_net.rb', line 57</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_range'>range</span>
+  <span class='ivar'>@range</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -645,12 +730,12 @@
       <pre class="lines">
 
 
-76
-77
-78</pre>
+100
+101
+102</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/ipv4_net.rb', line 76</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/ipv4_net.rb', line 100</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reload'>reload</span>
   <span class='kw'>return</span> <span class='id identifier rubyid__reload'>_reload</span>
@@ -665,7 +750,7 @@
 </div>
 
     <div id="footer">
-  Generated on Tue Feb 10 10:36:23 2015 by
+  Generated on Fri May  1 18:30:10 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.0.0).
 </div>

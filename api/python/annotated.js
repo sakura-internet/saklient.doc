@@ -486,6 +486,9 @@ var annotated =
           [ "ipv4net", null, [
             [ "Ipv4Net", "classsaklient_1_1cloud_1_1resources_1_1ipv4net_1_1_ipv4_net.html", "classsaklient_1_1cloud_1_1resources_1_1ipv4net_1_1_ipv4_net" ]
           ] ],
+          [ "ipv4range", null, [
+            [ "Ipv4Range", "classsaklient_1_1cloud_1_1resources_1_1ipv4range_1_1_ipv4_range.html", "classsaklient_1_1cloud_1_1resources_1_1ipv4range_1_1_ipv4_range" ]
+          ] ],
           [ "ipv6net", null, [
             [ "Ipv6Net", "classsaklient_1_1cloud_1_1resources_1_1ipv6net_1_1_ipv6_net.html", "classsaklient_1_1cloud_1_1resources_1_1ipv6net_1_1_ipv6_net" ]
           ] ],

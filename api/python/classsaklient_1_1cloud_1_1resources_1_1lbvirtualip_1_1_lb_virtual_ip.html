@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">saklient
-   &#160;<span id="projectnumber">0.0.2.2</span>
+   &#160;<span id="projectnumber">0.0.2.7</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('classsaklient_1_1cloud_1_1resources_1_
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a006492b137a6f44cb28b895d569c8de1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#a006492b137a6f44cb28b895d569c8de1">get_virtual_ip_address</a></td></tr>
-<tr class="memdesc:a006492b137a6f44cb28b895d569c8de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロードバランサの仮想IPアドレス。  <a href="#a006492b137a6f44cb28b895d569c8de1">More...</a><br /></td></tr>
+<tr class="memdesc:a006492b137a6f44cb28b895d569c8de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロードバランサの仮想IPアドレス設定。  <a href="#a006492b137a6f44cb28b895d569c8de1">More...</a><br /></td></tr>
 <tr class="separator:a006492b137a6f44cb28b895d569c8de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84599816ffe460d100222d3381abee63"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#a84599816ffe460d100222d3381abee63">set_virtual_ip_address</a></td></tr>
 <tr class="separator:a84599816ffe460d100222d3381abee63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,11 +116,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab22ebf65417d5fcb60f8db8a74a5267d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#ab22ebf65417d5fcb60f8db8a74a5267d">__init__</a></td></tr>
 <tr class="separator:ab22ebf65417d5fcb60f8db8a74a5267d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71e5529e77ce942ccbefd023906788f1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#a71e5529e77ce942ccbefd023906788f1">add_server</a></td></tr>
+<tr class="memdesc:a71e5529e77ce942ccbefd023906788f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">監視対象サーバ設定を追加します。  <a href="#a71e5529e77ce942ccbefd023906788f1">More...</a><br /></td></tr>
 <tr class="separator:a71e5529e77ce942ccbefd023906788f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d3825064191df81d2375f0b7c3d6fa"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#a01d3825064191df81d2375f0b7c3d6fa">to_raw_settings</a></td></tr>
 <tr class="separator:a01d3825064191df81d2375f0b7c3d6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92e3823f5241ed94f03944ebd4b34d82"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#a92e3823f5241ed94f03944ebd4b34d82">get_server_by_address</a></td></tr>
+<tr class="memdesc:a92e3823f5241ed94f03944ebd4b34d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したIPアドレスにマッチする監視対象サーバ設定のうち、最初にマッチしたものを取得します。  <a href="#a92e3823f5241ed94f03944ebd4b34d82">More...</a><br /></td></tr>
 <tr class="separator:a92e3823f5241ed94f03944ebd4b34d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a72ec053f0adfd1f3aecf346827085"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#a46a72ec053f0adfd1f3aecf346827085">remove_server_by_address</a></td></tr>
+<tr class="memdesc:a46a72ec053f0adfd1f3aecf346827085"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したIPアドレスにマッチする監視対象サーバ設定をすべて削除します。  <a href="#a46a72ec053f0adfd1f3aecf346827085">More...</a><br /></td></tr>
+<tr class="separator:a46a72ec053f0adfd1f3aecf346827085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7754215523ecbc880010a25af203023f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html#a7754215523ecbc880010a25af203023f">update_status</a></td></tr>
 <tr class="separator:a7754215523ecbc880010a25af203023f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -202,9 +207,11 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>監視対象サーバ設定を追加します。 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">{any}</td><td>settings=None </td></tr>
+    <tr><td class="paramname">{any}</td><td>settings=None 設定オブジェクト </td></tr>
   </table>
   </dd>
 </dl>
@@ -269,13 +276,15 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>指定したIPアドレスにマッチする監視対象サーバ設定のうち、最初にマッチしたものを取得します。 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">{str}</td><td>address </td></tr>
+    <tr><td class="paramname">{str}</td><td>address 検索するIPアドレス </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{<a class="el" href="classsaklient_1_1cloud_1_1resources_1_1lbserver_1_1_lb_server.html">saklient.cloud.resources.lbserver.LbServer</a>} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>{<a class="el" href="classsaklient_1_1cloud_1_1resources_1_1lbserver_1_1_lb_server.html">saklient.cloud.resources.lbserver.LbServer</a>} 監視対象サーバ設定（見つからなかった場合はnull） </dd></dl>
 
 </div>
 </div>
@@ -310,8 +319,43 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>ロードバランサの仮想IPアドレス。 </p>
+<p>ロードバランサの仮想IPアドレス設定。 </p>
 <dl class="section return"><dt>Returns</dt><dd>{str} </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a46a72ec053f0adfd1f3aecf346827085"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def saklient.cloud.resources.lbvirtualip.LbVirtualIp.remove_server_by_address </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定したIPアドレスにマッチする監視対象サーバ設定をすべて削除します。 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">{str}</td><td>address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>{<a class="el" href="classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html">saklient.cloud.resources.lbvirtualip.LbVirtualIp</a>} </dd></dl>
 
 </div>
 </div>
@@ -454,6 +498,8 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">{any[]}</td><td>srvs </td></tr>
@@ -473,7 +519,7 @@ Properties</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>saklient</b></li><li class="navelem"><b>cloud</b></li><li class="navelem"><b>resources</b></li><li class="navelem"><b>lbvirtualip</b></li><li class="navelem"><a class="el" href="classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html">LbVirtualIp</a></li>
-    <li class="footer">Generated on Mon Dec 15 2014 16:38:36 for saklient by
+    <li class="footer">Generated on Tue Apr 28 2015 18:40:43 for saklient by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>
