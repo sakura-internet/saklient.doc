@@ -168,7 +168,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>アクティビティを取得します.</p>
+<p>現在の最新のアクティビティ情報を取得し, samplesに格納します.</p>
 </div></span>
   
 </li>
@@ -228,12 +228,12 @@
       <pre class="lines">
 
 
-29
-30
-31</pre>
+31
+32
+33</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/disk_activity.rb', line 29</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/disk_activity.rb', line 31</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_samples'>samples</span>
   <span class='ivar'>@samples</span>
@@ -262,9 +262,9 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>アクティビティを取得します.</p>
+<p>現在の最新のアクティビティ情報を取得し, samplesに格納します.</p>
 
-<pre class="code ruby"><code class="ruby">	 * @return アクティビティ</code></pre>
+<pre class="code ruby"><code class="ruby">	 * @return this</code></pre>
 
 
   </div>
@@ -321,15 +321,15 @@
       <pre class="lines">
 
 
-61
-62
 63
 64
 65
-66</pre>
+66
+67
+68</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/disk_activity.rb', line 61</span>
+      <pre class="code"><span class="info file"># File 'lib/saklient/cloud/resources/disk_activity.rb', line 63</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_fetch'>fetch</span><span class='lparen'>(</span><span class='id identifier rubyid_startDate'>startDate</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_endDate'>endDate</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='const'>Saklient</span><span class='op'>::</span><span class='const'>Util</span><span class='op'>::</span><span class='id identifier rubyid_validate_type'>validate_type</span><span class='lparen'>(</span><span class='id identifier rubyid_startDate'>startDate</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>NativeDate</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
@@ -347,7 +347,7 @@
 </div>
 
     <div id="footer">
-  Generated on Fri May  1 18:30:13 2015 by
+  Generated on Wed Jun  3 11:38:50 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.0.0).
 </div>
