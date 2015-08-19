@@ -7,6 +7,7 @@ var searchData=
   ['accessxhrorapikeyexception',['AccessXhrOrApiKeyException',['../classsaklient_1_1cloud_1_1errors_1_1accessxhrorapikeyexception_1_1_access_xhr_or_api_key_exception.html',1,'saklient::cloud::errors::accessxhrorapikeyexception']]],
   ['accountnotfoundexception',['AccountNotFoundException',['../classsaklient_1_1cloud_1_1errors_1_1accountnotfoundexception_1_1_account_not_found_exception.html',1,'saklient::cloud::errors::accountnotfoundexception']]],
   ['accountnotspecifiedexception',['AccountNotSpecifiedException',['../classsaklient_1_1cloud_1_1errors_1_1accountnotspecifiedexception_1_1_account_not_specified_exception.html',1,'saklient::cloud::errors::accountnotspecifiedexception']]],
+  ['activity',['Activity',['../classsaklient_1_1cloud_1_1resources_1_1activity_1_1_activity.html',1,'saklient::cloud::resources::activity']]],
   ['ambiguousidentifierexception',['AmbiguousIdentifierException',['../classsaklient_1_1cloud_1_1errors_1_1ambiguousidentifierexception_1_1_ambiguous_identifier_exception.html',1,'saklient::cloud::errors::ambiguousidentifierexception']]],
   ['ambiguouszoneexception',['AmbiguousZoneException',['../classsaklient_1_1cloud_1_1errors_1_1ambiguouszoneexception_1_1_ambiguous_zone_exception.html',1,'saklient::cloud::errors::ambiguouszoneexception']]],
   ['api',['API',['../classsaklient_1_1cloud_1_1api_1_1_a_p_i.html',1,'saklient::cloud::api']]],

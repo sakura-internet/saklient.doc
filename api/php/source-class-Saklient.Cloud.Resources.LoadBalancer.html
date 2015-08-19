@@ -8,7 +8,7 @@
 	<title>File Saklient/Cloud/Resources/LoadBalancer.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?1562529225"></script>
-	<script type="text/javascript" src="elementlist.js?3748091866"></script>
+	<script type="text/javascript" src="elementlist.js?3044773276"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360">
 
 </head>
@@ -49,15 +49,18 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
+				<li><a href="class-Saklient.Cloud.Resources.Activity.html">Activity</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Appliance.html">Appliance</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Archive.html">Archive</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Bridge.html">Bridge</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Disk.html">Disk</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.DiskActivity.html">DiskActivity</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.DiskConfig.html">DiskConfig</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.DiskPlan.html">DiskPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.FtpInfo.html">FtpInfo</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Icon.html">Icon</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Iface.html">Iface</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.IfaceActivity.html">IfaceActivity</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Ipv4Net.html">Ipv4Net</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Ipv4Range.html">Ipv4Range</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Ipv6Net.html">Ipv6Net</a></li>
@@ -69,9 +72,11 @@
 				<li class="active"><a href="class-Saklient.Cloud.Resources.LoadBalancer.html">LoadBalancer</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Region.html">Region</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Router.html">Router</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.RouterActivity.html">RouterActivity</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.RouterPlan.html">RouterPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Script.html">Script</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Server.html">Server</a></li>
+				<li><a href="class-Saklient.Cloud.Resources.ServerActivity.html">ServerActivity</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.ServerInstance.html">ServerInstance</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.ServerPlan.html">ServerPlan</a></li>
 				<li><a href="class-Saklient.Cloud.Resources.Swytch.html">Swytch</a></li>
@@ -416,7 +421,7 @@
 </span><span id="296" class="l"><a class="l" href="#296">296: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_reloadStatus" href="#_reloadStatus">reloadStatus</a>()
 </span><span id="297" class="l"><a class="l" href="#297">297: </a>    {
 </span><span id="298" class="l"><a class="l" href="#298">298: </a>        <span class="php-var">$result</span> = <span class="php-var">$this</span>-&gt;requestRetry(<span class="php-quote">&quot;GET&quot;</span>, <span class="php-var">$this</span>-&gt;_apiPath() . <span class="php-quote">&quot;/&quot;</span> . Util::<span class="php-keyword2">urlEncode</span>(<span class="php-var">$this</span>-&gt;_id()) . <span class="php-quote">&quot;/status&quot;</span>);
-</span><span id="299" class="l"><a class="l" href="#299">299: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">array_key_exists</span>(<span class="php-quote">&quot;LoadBalancer&quot;</span>, (<span class="php-keyword1">array</span>)(<span class="php-var">$result</span>))) {
+</span><span id="299" class="l"><a class="l" href="#299">299: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$result</span> != <span class="php-keyword1">null</span> &amp;&amp; <span class="php-keyword2">array_key_exists</span>(<span class="php-quote">&quot;LoadBalancer&quot;</span>, (<span class="php-keyword1">array</span>)(<span class="php-var">$result</span>))) {
 </span><span id="300" class="l"><a class="l" href="#300">300: </a>            <span class="php-var">$vips</span> = <span class="php-var">$result</span>-&gt;{<span class="php-quote">&quot;LoadBalancer&quot;</span>};
 </span><span id="301" class="l"><a class="l" href="#301">301: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$vips</span> <span class="php-keyword1">as</span> <span class="php-var">$vipDyn</span>) {
 </span><span id="302" class="l"><a class="l" href="#302">302: </a>                <span class="php-var">$vipStr</span> = <span class="php-var">$vipDyn</span>-&gt;{<span class="php-quote">&quot;VirtualIPAddress&quot;</span>};

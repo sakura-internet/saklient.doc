@@ -4,6 +4,8 @@ var searchData=
   ['samelicenserequiredexception',['SameLicenseRequiredException',['../classsaklient_1_1cloud_1_1errors_1_1samelicenserequiredexception_1_1_same_license_required_exception.html',1,'saklient::cloud::errors::samelicenserequiredexception']]],
   ['script',['Script',['../classsaklient_1_1cloud_1_1resources_1_1script_1_1_script.html',1,'saklient::cloud::resources::script']]],
   ['server',['Server',['../classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html',1,'saklient::cloud::resources::server']]],
+  ['serveractivity',['ServerActivity',['../classsaklient_1_1cloud_1_1resources_1_1serveractivity_1_1_server_activity.html',1,'saklient::cloud::resources::serveractivity']]],
+  ['serveractivitysample',['ServerActivitySample',['../classsaklient_1_1cloud_1_1resources_1_1serveractivitysample_1_1_server_activity_sample.html',1,'saklient::cloud::resources::serveractivitysample']]],
   ['servercouldnotstopexception',['ServerCouldNotStopException',['../classsaklient_1_1cloud_1_1errors_1_1servercouldnotstopexception_1_1_server_could_not_stop_exception.html',1,'saklient::cloud::errors::servercouldnotstopexception']]],
   ['serverinstance',['ServerInstance',['../classsaklient_1_1cloud_1_1resources_1_1serverinstance_1_1_server_instance.html',1,'saklient::cloud::resources::serverinstance']]],
   ['serveriscleaningexception',['ServerIsCleaningException',['../classsaklient_1_1cloud_1_1errors_1_1serveriscleaningexception_1_1_server_is_cleaning_exception.html',1,'saklient::cloud::errors::serveriscleaningexception']]],

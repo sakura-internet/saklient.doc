@@ -9,6 +9,7 @@ var searchData=
   ['disconnectb4deleteexception',['DisconnectB4DeleteException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disconnect_b4_delete_exception.html',1,'Saklient::Cloud::Errors']]],
   ['disconnectb4updateexception',['DisconnectB4UpdateException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disconnect_b4_update_exception.html',1,'Saklient::Cloud::Errors']]],
   ['disk',['Disk',['../class_saklient_1_1_cloud_1_1_resources_1_1_disk.html',1,'Saklient::Cloud::Resources']]],
+  ['diskactivitysample',['DiskActivitySample',['../class_saklient_1_1_cloud_1_1_resources_1_1_disk_activity_sample.html',1,'Saklient::Cloud::Resources']]],
   ['diskconfig',['DiskConfig',['../class_saklient_1_1_cloud_1_1_resources_1_1_disk_config.html',1,'Saklient::Cloud::Resources']]],
   ['diskconnectionlimitexception',['DiskConnectionLimitException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disk_connection_limit_exception.html',1,'Saklient::Cloud::Errors']]],
   ['diskiscopyingexception',['DiskIsCopyingException',['../class_saklient_1_1_cloud_1_1_errors_1_1_disk_is_copying_exception.html',1,'Saklient::Cloud::Errors']]],

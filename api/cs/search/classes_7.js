@@ -2,6 +2,7 @@ var searchData=
 [
   ['icon',['Icon',['../class_saklient_1_1_cloud_1_1_resources_1_1_icon.html',1,'Saklient::Cloud::Resources']]],
   ['iface',['Iface',['../class_saklient_1_1_cloud_1_1_resources_1_1_iface.html',1,'Saklient::Cloud::Resources']]],
+  ['ifaceactivitysample',['IfaceActivitySample',['../class_saklient_1_1_cloud_1_1_resources_1_1_iface_activity_sample.html',1,'Saklient::Cloud::Resources']]],
   ['illegaldasusageexception',['IllegalDasUsageException',['../class_saklient_1_1_cloud_1_1_errors_1_1_illegal_das_usage_exception.html',1,'Saklient::Cloud::Errors']]],
   ['inmigrationexception',['InMigrationException',['../class_saklient_1_1_cloud_1_1_errors_1_1_in_migration_exception.html',1,'Saklient::Cloud::Errors']]],
   ['invalidformatexception',['InvalidFormatException',['../class_saklient_1_1_cloud_1_1_errors_1_1_invalid_format_exception.html',1,'Saklient::Cloud::Errors']]],

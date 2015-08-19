@@ -2,6 +2,8 @@ var searchData=
 [
   ['icon',['Icon',['../classsaklient_1_1cloud_1_1resources_1_1icon_1_1_icon.html',1,'saklient::cloud::resources::icon']]],
   ['iface',['Iface',['../classsaklient_1_1cloud_1_1resources_1_1iface_1_1_iface.html',1,'saklient::cloud::resources::iface']]],
+  ['ifaceactivity',['IfaceActivity',['../classsaklient_1_1cloud_1_1resources_1_1ifaceactivity_1_1_iface_activity.html',1,'saklient::cloud::resources::ifaceactivity']]],
+  ['ifaceactivitysample',['IfaceActivitySample',['../classsaklient_1_1cloud_1_1resources_1_1ifaceactivitysample_1_1_iface_activity_sample.html',1,'saklient::cloud::resources::ifaceactivitysample']]],
   ['illegaldasusageexception',['IllegalDasUsageException',['../classsaklient_1_1cloud_1_1errors_1_1illegaldasusageexception_1_1_illegal_das_usage_exception.html',1,'saklient::cloud::errors::illegaldasusageexception']]],
   ['inmigrationexception',['InMigrationException',['../classsaklient_1_1cloud_1_1errors_1_1inmigrationexception_1_1_in_migration_exception.html',1,'saklient::cloud::errors::inmigrationexception']]],
   ['invalidformatexception',['InvalidFormatException',['../classsaklient_1_1cloud_1_1errors_1_1invalidformatexception_1_1_invalid_format_exception.html',1,'saklient::cloud::errors::invalidformatexception']]],

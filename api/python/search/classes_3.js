@@ -9,6 +9,8 @@ var searchData=
   ['disconnectb4deleteexception',['DisconnectB4DeleteException',['../classsaklient_1_1cloud_1_1errors_1_1disconnectb4deleteexception_1_1_disconnect_b4_delete_exception.html',1,'saklient::cloud::errors::disconnectb4deleteexception']]],
   ['disconnectb4updateexception',['DisconnectB4UpdateException',['../classsaklient_1_1cloud_1_1errors_1_1disconnectb4updateexception_1_1_disconnect_b4_update_exception.html',1,'saklient::cloud::errors::disconnectb4updateexception']]],
   ['disk',['Disk',['../classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk.html',1,'saklient::cloud::resources::disk']]],
+  ['diskactivity',['DiskActivity',['../classsaklient_1_1cloud_1_1resources_1_1diskactivity_1_1_disk_activity.html',1,'saklient::cloud::resources::diskactivity']]],
+  ['diskactivitysample',['DiskActivitySample',['../classsaklient_1_1cloud_1_1resources_1_1diskactivitysample_1_1_disk_activity_sample.html',1,'saklient::cloud::resources::diskactivitysample']]],
   ['diskconfig',['DiskConfig',['../classsaklient_1_1cloud_1_1resources_1_1diskconfig_1_1_disk_config.html',1,'saklient::cloud::resources::diskconfig']]],
   ['diskconnectionlimitexception',['DiskConnectionLimitException',['../classsaklient_1_1cloud_1_1errors_1_1diskconnectionlimitexception_1_1_disk_connection_limit_exception.html',1,'saklient::cloud::errors::diskconnectionlimitexception']]],
   ['diskiscopyingexception',['DiskIsCopyingException',['../classsaklient_1_1cloud_1_1errors_1_1diskiscopyingexception_1_1_disk_is_copying_exception.html',1,'saklient::cloud::errors::diskiscopyingexception']]],

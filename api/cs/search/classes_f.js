@@ -3,6 +3,7 @@ var searchData=
   ['samelicenserequiredexception',['SameLicenseRequiredException',['../class_saklient_1_1_cloud_1_1_errors_1_1_same_license_required_exception.html',1,'Saklient::Cloud::Errors']]],
   ['script',['Script',['../class_saklient_1_1_cloud_1_1_resources_1_1_script.html',1,'Saklient::Cloud::Resources']]],
   ['server',['Server',['../class_saklient_1_1_cloud_1_1_resources_1_1_server.html',1,'Saklient::Cloud::Resources']]],
+  ['serveractivitysample',['ServerActivitySample',['../class_saklient_1_1_cloud_1_1_resources_1_1_server_activity_sample.html',1,'Saklient::Cloud::Resources']]],
   ['servercouldnotstopexception',['ServerCouldNotStopException',['../class_saklient_1_1_cloud_1_1_errors_1_1_server_could_not_stop_exception.html',1,'Saklient::Cloud::Errors']]],
   ['serverinstance',['ServerInstance',['../class_saklient_1_1_cloud_1_1_resources_1_1_server_instance.html',1,'Saklient::Cloud::Resources']]],
   ['serveriscleaningexception',['ServerIsCleaningException',['../class_saklient_1_1_cloud_1_1_errors_1_1_server_is_cleaning_exception.html',1,'Saklient::Cloud::Errors']]],

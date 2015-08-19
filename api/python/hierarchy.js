@@ -1,7 +1,9 @@
 var hierarchy =
 [
+    [ "saklient.cloud.resources.activity.Activity", "classsaklient_1_1cloud_1_1resources_1_1activity_1_1_activity.html", null ],
     [ "saklient.cloud.api.API", "classsaklient_1_1cloud_1_1api_1_1_a_p_i.html", null ],
     [ "saklient.cloud.client.Client", "classsaklient_1_1cloud_1_1client_1_1_client.html", null ],
+    [ "saklient.cloud.resources.diskactivitysample.DiskActivitySample", "classsaklient_1_1cloud_1_1resources_1_1diskactivitysample_1_1_disk_activity_sample.html", null ],
     [ "saklient.cloud.resources.diskconfig.DiskConfig", "classsaklient_1_1cloud_1_1resources_1_1diskconfig_1_1_disk_config.html", null ],
     [ "saklient.cloud.enums.eapplianceclass.EApplianceClass", "classsaklient_1_1cloud_1_1enums_1_1eapplianceclass_1_1_e_appliance_class.html", null ],
     [ "saklient.cloud.enums.eavailability.EAvailability", "classsaklient_1_1cloud_1_1enums_1_1eavailability_1_1_e_availability.html", null ],
@@ -17,6 +19,7 @@ var hierarchy =
     [ "saklient.errors.exceptionfactory.ExceptionFactory", "classsaklient_1_1errors_1_1exceptionfactory_1_1_exception_factory.html", null ],
     [ "saklient.cloud.facility.Facility", "classsaklient_1_1cloud_1_1facility_1_1_facility.html", null ],
     [ "saklient.cloud.resources.ftpinfo.FtpInfo", "classsaklient_1_1cloud_1_1resources_1_1ftpinfo_1_1_ftp_info.html", null ],
+    [ "saklient.cloud.resources.ifaceactivitysample.IfaceActivitySample", "classsaklient_1_1cloud_1_1resources_1_1ifaceactivitysample_1_1_iface_activity_sample.html", null ],
     [ "saklient.cloud.resources.ipv4range.Ipv4Range", "classsaklient_1_1cloud_1_1resources_1_1ipv4range_1_1_ipv4_range.html", null ],
     [ "saklient.cloud.resources.lbserver.LbServer", "classsaklient_1_1cloud_1_1resources_1_1lbserver_1_1_lb_server.html", null ],
     [ "saklient.cloud.resources.lbvirtualip.LbVirtualIp", "classsaklient_1_1cloud_1_1resources_1_1lbvirtualip_1_1_lb_virtual_ip.html", null ],
@@ -24,7 +27,15 @@ var hierarchy =
     [ "saklient.cloud.product.Product", "classsaklient_1_1cloud_1_1product_1_1_product.html", null ],
     [ "saklient.cloud.models.queryparams.QueryParams", "classsaklient_1_1cloud_1_1models_1_1queryparams_1_1_query_params.html", null ],
     [ "saklient.cloud.resources.resource.Resource", "classsaklient_1_1cloud_1_1resources_1_1resource_1_1_resource.html", null ],
+    [ "saklient.cloud.resources.routeractivitysample.RouterActivitySample", "classsaklient_1_1cloud_1_1resources_1_1routeractivitysample_1_1_router_activity_sample.html", null ],
+    [ "saklient.cloud.resources.serveractivitysample.ServerActivitySample", "classsaklient_1_1cloud_1_1resources_1_1serveractivitysample_1_1_server_activity_sample.html", null ],
     [ "saklient.util.Util", "classsaklient_1_1util_1_1_util.html", null ],
+    [ "Activity", null, [
+      [ "saklient.cloud.resources.diskactivity.DiskActivity", "classsaklient_1_1cloud_1_1resources_1_1diskactivity_1_1_disk_activity.html", null ],
+      [ "saklient.cloud.resources.ifaceactivity.IfaceActivity", "classsaklient_1_1cloud_1_1resources_1_1ifaceactivity_1_1_iface_activity.html", null ],
+      [ "saklient.cloud.resources.routeractivity.RouterActivity", "classsaklient_1_1cloud_1_1resources_1_1routeractivity_1_1_router_activity.html", null ],
+      [ "saklient.cloud.resources.serveractivity.ServerActivity", "classsaklient_1_1cloud_1_1resources_1_1serveractivity_1_1_server_activity.html", null ]
+    ] ],
     [ "Appliance", null, [
       [ "saklient.cloud.resources.loadbalancer.LoadBalancer", "classsaklient_1_1cloud_1_1resources_1_1loadbalancer_1_1_load_balancer.html", null ],
       [ "saklient.cloud.resources.vpcrouter.VpcRouter", "classsaklient_1_1cloud_1_1resources_1_1vpcrouter_1_1_vpc_router.html", null ]

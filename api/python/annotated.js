@@ -456,6 +456,9 @@ var annotated =
           [ "Product", "classsaklient_1_1cloud_1_1product_1_1_product.html", "classsaklient_1_1cloud_1_1product_1_1_product" ]
         ] ],
         [ "resources", null, [
+          [ "activity", null, [
+            [ "Activity", "classsaklient_1_1cloud_1_1resources_1_1activity_1_1_activity.html", "classsaklient_1_1cloud_1_1resources_1_1activity_1_1_activity" ]
+          ] ],
           [ "appliance", null, [
             [ "Appliance", "classsaklient_1_1cloud_1_1resources_1_1appliance_1_1_appliance.html", "classsaklient_1_1cloud_1_1resources_1_1appliance_1_1_appliance" ]
           ] ],
@@ -467,6 +470,12 @@ var annotated =
           ] ],
           [ "disk", null, [
             [ "Disk", "classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk.html", "classsaklient_1_1cloud_1_1resources_1_1disk_1_1_disk" ]
+          ] ],
+          [ "diskactivity", null, [
+            [ "DiskActivity", "classsaklient_1_1cloud_1_1resources_1_1diskactivity_1_1_disk_activity.html", "classsaklient_1_1cloud_1_1resources_1_1diskactivity_1_1_disk_activity" ]
+          ] ],
+          [ "diskactivitysample", null, [
+            [ "DiskActivitySample", "classsaklient_1_1cloud_1_1resources_1_1diskactivitysample_1_1_disk_activity_sample.html", "classsaklient_1_1cloud_1_1resources_1_1diskactivitysample_1_1_disk_activity_sample" ]
           ] ],
           [ "diskconfig", null, [
             [ "DiskConfig", "classsaklient_1_1cloud_1_1resources_1_1diskconfig_1_1_disk_config.html", "classsaklient_1_1cloud_1_1resources_1_1diskconfig_1_1_disk_config" ]
@@ -482,6 +491,12 @@ var annotated =
           ] ],
           [ "iface", null, [
             [ "Iface", "classsaklient_1_1cloud_1_1resources_1_1iface_1_1_iface.html", "classsaklient_1_1cloud_1_1resources_1_1iface_1_1_iface" ]
+          ] ],
+          [ "ifaceactivity", null, [
+            [ "IfaceActivity", "classsaklient_1_1cloud_1_1resources_1_1ifaceactivity_1_1_iface_activity.html", "classsaklient_1_1cloud_1_1resources_1_1ifaceactivity_1_1_iface_activity" ]
+          ] ],
+          [ "ifaceactivitysample", null, [
+            [ "IfaceActivitySample", "classsaklient_1_1cloud_1_1resources_1_1ifaceactivitysample_1_1_iface_activity_sample.html", "classsaklient_1_1cloud_1_1resources_1_1ifaceactivitysample_1_1_iface_activity_sample" ]
           ] ],
           [ "ipv4net", null, [
             [ "Ipv4Net", "classsaklient_1_1cloud_1_1resources_1_1ipv4net_1_1_ipv4_net.html", "classsaklient_1_1cloud_1_1resources_1_1ipv4net_1_1_ipv4_net" ]
@@ -519,6 +534,12 @@ var annotated =
           [ "router", null, [
             [ "Router", "classsaklient_1_1cloud_1_1resources_1_1router_1_1_router.html", "classsaklient_1_1cloud_1_1resources_1_1router_1_1_router" ]
           ] ],
+          [ "routeractivity", null, [
+            [ "RouterActivity", "classsaklient_1_1cloud_1_1resources_1_1routeractivity_1_1_router_activity.html", "classsaklient_1_1cloud_1_1resources_1_1routeractivity_1_1_router_activity" ]
+          ] ],
+          [ "routeractivitysample", null, [
+            [ "RouterActivitySample", "classsaklient_1_1cloud_1_1resources_1_1routeractivitysample_1_1_router_activity_sample.html", "classsaklient_1_1cloud_1_1resources_1_1routeractivitysample_1_1_router_activity_sample" ]
+          ] ],
           [ "routerplan", null, [
             [ "RouterPlan", "classsaklient_1_1cloud_1_1resources_1_1routerplan_1_1_router_plan.html", "classsaklient_1_1cloud_1_1resources_1_1routerplan_1_1_router_plan" ]
           ] ],
@@ -527,6 +548,12 @@ var annotated =
           ] ],
           [ "server", null, [
             [ "Server", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server.html", "classsaklient_1_1cloud_1_1resources_1_1server_1_1_server" ]
+          ] ],
+          [ "serveractivity", null, [
+            [ "ServerActivity", "classsaklient_1_1cloud_1_1resources_1_1serveractivity_1_1_server_activity.html", "classsaklient_1_1cloud_1_1resources_1_1serveractivity_1_1_server_activity" ]
+          ] ],
+          [ "serveractivitysample", null, [
+            [ "ServerActivitySample", "classsaklient_1_1cloud_1_1resources_1_1serveractivitysample_1_1_server_activity_sample.html", "classsaklient_1_1cloud_1_1resources_1_1serveractivitysample_1_1_server_activity_sample" ]
           ] ],
           [ "serverinstance", null, [
             [ "ServerInstance", "classsaklient_1_1cloud_1_1resources_1_1serverinstance_1_1_server_instance.html", "classsaklient_1_1cloud_1_1resources_1_1serverinstance_1_1_server_instance" ]

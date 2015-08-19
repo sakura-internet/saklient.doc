@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['macaddress',['MacAddress',['../class_saklient_1_1_cloud_1_1_resources_1_1_iface.html#a85dab28dab57011dc2849140dbf8fd93',1,'Saklient::Cloud::Resources::Iface']]],
-  ['masklen',['MaskLen',['../class_saklient_1_1_cloud_1_1_resources_1_1_ipv4_net.html#a914791f64b90284db2ce724842a92b2c',1,'Saklient.Cloud.Resources.Ipv4Net.MaskLen()'],['../class_saklient_1_1_cloud_1_1_resources_1_1_load_balancer.html#a96827a145bb06580954489bba5dd48a0',1,'Saklient.Cloud.Resources.LoadBalancer.MaskLen()']]],
-  ['memorymib',['MemoryMib',['../class_saklient_1_1_cloud_1_1_resources_1_1_server_plan.html#aa8ed690aa7a43496dec7de1135107421',1,'Saklient::Cloud::Resources::ServerPlan']]]
+  ['last',['Last',['../class_saklient_1_1_cloud_1_1_resources_1_1_ipv4_range.html#ad2332ad409a66cdc1441d6f950b2912a',1,'Saklient::Cloud::Resources::Ipv4Range']]],
+  ['license',['License',['../class_saklient_1_1_cloud_1_1_a_p_i.html#acad3a4fc78cf6c8cb1c2b1b4a5e25f2b',1,'Saklient.Cloud.API.License()'],['../class_saklient_1_1_cloud_1_1_product.html#a645ad3f2225c5298a7afabefa17c8a0b',1,'Saklient.Cloud.Product.License()']]]
 ];
