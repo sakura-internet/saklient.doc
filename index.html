@@ -688,11 +688,11 @@ $disk-&gt;destroy;
 </code></pre></div><div class="code-each pull-left code-javascript"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.node" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Node.js <small class="text-danger">(Experimental)</small><div class="clearfix" /></h4><pre><code class="javascript">
 
 
-var Fiber = require('fibers');
+
 var saklient = require('saklient');
 
 
-Fiber(function(){
+
 
 // settings
 var token = process.argv[2];
@@ -798,7 +798,7 @@ server.destroy();
 console.log('deleting the disk');
 disk.destroy();
 
-}).run();
+
 
 </code></pre></div>						<div class="clearfix"></div>
 					</div>
@@ -1171,12 +1171,12 @@ $archive-&gt;destroy;
 </code></pre></div><div class="code-each pull-left code-javascript"><h4><div class="pull-right"><a href="https://github.com/sakura-internet/saklient.node" target="_blank" class="btn btn-primary btn-xs disabled">Github</a></div>Node.js <small class="text-danger">(Experimental)</small><div class="clearfix" /></h4><pre><code class="javascript">
 
 
-var Fiber = require('fibers');
+
 var saklient = require('saklient');
 
 
 
-Fiber(function(){
+
 
 // settings
 var token = process.argv[2];
@@ -1236,7 +1236,7 @@ console.log('deleting the archive');
 archive.closeFtp();
 archive.destroy();
 
-}).run();
+
 
 </code></pre></div>						<div class="clearfix"></div>
 					</div>
